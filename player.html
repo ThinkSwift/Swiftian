@@ -26,12 +26,26 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const music = document.getElementById("background-music");
+
+    // Restore playback state
     if (localStorage.getItem("isPlaying") === "true") {
         music.play();
     }
-    
-    music.onplay = () => localStorage.setItem("isPlaying", "true");
-    music.onpause = () => localStorage.setItem("isPlaying", "false");
+
+    music.onplay = () => {
+        localStorage.setItem("isPlaying", "true");
+        parent.postMessage("playing", "*");
+    };
+    music.onpause = () => {
+        localStorage.setItem("isPlaying", "false");
+        parent.postMessage("paused", "*");
+    };
+
+    // Receive messages from main page
+    window.addEventListener("message", function(event) {
+        if (event.data === "play") music.play();
+        if (event.data === "pause") music.pause();
+    });
 });
 </script>
 
