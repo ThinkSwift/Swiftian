@@ -9,42 +9,45 @@ layout: default
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #6200ea;
+    background: rgba(98, 0, 234, 0.9); /* Slight transparency */
     color: white;
     border: none;
-    padding: 10px 14px;
-    font-size: 14px;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
     cursor: pointer;
-    border-radius: 20px;
-    transition: background 0.3s ease, transform 0.2s ease;
+    border-radius: 25px;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
     z-index: 1000;
 }
 
 #music-button:hover {
-    background-color: #3700b3;
+    background: rgba(55, 0, 179, 0.9);
+    transform: scale(1.05);
 }
 
 /* Active (Loop On) Style */
 #music-button.loop-active {
-    background-color: #ff9800;
+    background: rgba(255, 152, 0, 0.9);
 }
 
-/* Small Icon Inside Button */
+/* Play/Pause Icon */
 #music-icon {
-    font-size: 16px;
+    font-size: 18px;
 }
 </style>
 
-<!-- Single Floating Music Button -->
+<!-- Floating Music Button -->
 <button id="music-button">
-    <span id="music-icon">🎵</span> <span id="music-label">Play</span>
+    <span id="music-icon">🎵</span> <span id="music-label">Swiftian Groove</span>
 </button>
 
 <audio id="background-music">
-    <source src="/assets/music/Mixea_MediumNeutral_Swiftian Groove.mp3" type="audio/mpeg">
+    <source src="/assets/music/Swiftian Groove.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 
@@ -63,16 +66,14 @@ document.addEventListener("DOMContentLoaded", function() {
         if (isPlaying) {
             music.pause();
             musicIcon.innerHTML = "🎵";
-            musicLabel.innerText = "Play";
         } else {
             music.play();
             musicIcon.innerHTML = "⏸";
-            musicLabel.innerText = "Pause";
         }
         isPlaying = !isPlaying;
     });
 
-    // Long Press to Toggle Loop Mode
+    // Right-Click / Long Press to Toggle Loop Mode
     musicButton.addEventListener("contextmenu", function(event) {
         event.preventDefault();
         isLooping = !isLooping;
