@@ -19,6 +19,18 @@ Swiftian is designed to make learning Swift easy and fun, with hands-on projects
 
 ---
 
+## 🎵 Swiftian Groove
+Check out the futuristic groove of **Swiftian Groove**! Click play to listen. 🚀🎵
+
+<div style="text-align: center;">
+    <audio controls>
+        <source src="/assets/music/Mixea_MediumNeutral_Swiftian Groove.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+---
+
 ## 📌 Start Learning Today!
 [🚀 Get Started](https://swiftian.com/get-started)
 
