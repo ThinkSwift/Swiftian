@@ -5,61 +5,43 @@ layout: default
 
 <style>
 /* Floating Music Button */
-#music-container {
+#music-button {
     position: fixed;
     top: 20px;
     right: 20px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    z-index: 1000;
-}
-
-#music-button {
     background-color: #6200ea;
     color: white;
     border: none;
-    padding: 10px 16px;
+    padding: 10px 14px;
     font-size: 14px;
     cursor: pointer;
     border-radius: 20px;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    z-index: 1000;
 }
 
 #music-button:hover {
     background-color: #3700b3;
 }
 
-/* Small Loop Toggle */
-#loop-toggle {
-    width: 24px;
-    height: 24px;
-    background-color: #444;
-    color: white;
-    border: none;
-    font-size: 12px;
-    cursor: pointer;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.3s ease;
-}
-
-#loop-toggle.active {
+/* Active (Loop On) Style */
+#music-button.loop-active {
     background-color: #ff9800;
 }
 
-#loop-toggle:hover {
-    background-color: #666;
+/* Small Icon Inside Button */
+#music-icon {
+    font-size: 16px;
 }
 </style>
 
-<!-- Floating Music Controls -->
-<div id="music-container">
-    <button id="music-button">🎵 Play</button>
-    <button id="loop-toggle" title="Loop off">🔁</button>
-</div>
+<!-- Single Floating Music Button -->
+<button id="music-button">
+    <span id="music-icon">🎵</span> <span id="music-label">Play</span>
+</button>
 
 <audio id="background-music">
     <source src="/assets/music/Mixea_MediumNeutral_Swiftian Groove.mp3" type="audio/mpeg">
@@ -69,28 +51,34 @@ layout: default
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const musicButton = document.getElementById("music-button");
-    const loopToggle = document.getElementById("loop-toggle");
+    const musicIcon = document.getElementById("music-icon");
+    const musicLabel = document.getElementById("music-label");
     const music = document.getElementById("background-music");
 
     let isPlaying = false;
     let isLooping = false;
 
+    // Play/Pause Toggle
     musicButton.addEventListener("click", function() {
         if (isPlaying) {
             music.pause();
-            musicButton.innerHTML = "🎵 Play";
+            musicIcon.innerHTML = "🎵";
+            musicLabel.innerText = "Play";
         } else {
             music.play();
-            musicButton.innerHTML = "⏸ Pause";
+            musicIcon.innerHTML = "⏸";
+            musicLabel.innerText = "Pause";
         }
         isPlaying = !isPlaying;
     });
 
-    loopToggle.addEventListener("click", function() {
+    // Long Press to Toggle Loop Mode
+    musicButton.addEventListener("contextmenu", function(event) {
+        event.preventDefault();
         isLooping = !isLooping;
         music.loop = isLooping;
-        loopToggle.classList.toggle("active", isLooping);
-        loopToggle.title = isLooping ? "Loop on" : "Loop off";
+        musicButton.classList.toggle("loop-active", isLooping);
+        musicButton.title = isLooping ? "Loop On" : "Loop Off";
     });
 });
 </script>
