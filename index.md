@@ -3,13 +3,16 @@ title: Welcome to Swiftian
 layout: default
 ---
 
+<!-- Persistent Music Player -->
+<iframe src="/player.html" id="music-iframe" style="display: none;"></iframe>
+
 <style>
 /* Floating Music Button */
 #music-button {
     position: fixed;
     top: 20px;
     right: 20px;
-    background: rgba(98, 0, 234, 0.9); /* Slight transparency */
+    background: rgba(98, 0, 234, 0.9);
     color: white;
     border: none;
     padding: 12px 20px;
@@ -30,12 +33,11 @@ layout: default
     transform: scale(1.05);
 }
 
-/* Active (Loop On) Style */
+/* Loop Active Style */
 #music-button.loop-active {
     background: rgba(255, 152, 0, 0.9);
 }
 
-/* Play/Pause Icon */
 #music-icon {
     font-size: 18px;
 }
@@ -46,40 +48,29 @@ layout: default
     <span id="music-icon">🎵</span> <span id="music-label">Swiftian Groove</span>
 </button>
 
-<audio id="background-music">
-    <source src="/assets/music/Swiftian Groove.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
-
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const musicButton = document.getElementById("music-button");
-    const musicIcon = document.getElementById("music-icon");
-    const musicLabel = document.getElementById("music-label");
-    const music = document.getElementById("background-music");
-
+    const musicFrame = document.getElementById("music-iframe").contentWindow;
+    
     let isPlaying = false;
-    let isLooping = false;
 
     // Play/Pause Toggle
     musicButton.addEventListener("click", function() {
         if (isPlaying) {
-            music.pause();
-            musicIcon.innerHTML = "🎵";
+            musicFrame.postMessage("pause", "*");
+            musicButton.innerHTML = "🎵 Swiftian Groove";
         } else {
-            music.play();
-            musicIcon.innerHTML = "⏸";
+            musicFrame.postMessage("play", "*");
+            musicButton.innerHTML = "⏸ Swiftian Groove";
         }
         isPlaying = !isPlaying;
     });
 
-    // Right-Click / Long Press to Toggle Loop Mode
-    musicButton.addEventListener("contextmenu", function(event) {
-        event.preventDefault();
-        isLooping = !isLooping;
-        music.loop = isLooping;
-        musicButton.classList.toggle("loop-active", isLooping);
-        musicButton.title = isLooping ? "Loop On" : "Loop Off";
+    // Ensure iframe music remains persistent
+    window.addEventListener("message", function(event) {
+        if (event.data === "playing") isPlaying = true;
+        if (event.data === "paused") isPlaying = false;
     });
 });
 </script>
