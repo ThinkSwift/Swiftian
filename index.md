@@ -4,8 +4,7 @@ layout: default
 ---
 
 <!-- Persistent Music Player -->
-<iframe src="/Swiftian/player.html" id="music-iframe" style="display: none;"></iframe>
-
+<iframe src="./player.html" id="music-iframe" style="display: none;"></iframe>
 
 <style>
 /* Floating Music Button */
