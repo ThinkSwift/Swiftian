@@ -92,6 +92,8 @@ Swiftian is designed to make learning Swift easy and fun, with hands-on projects
 📚 Read the [Documentation](https://swiftian.com/docs)  
 💬 Join the Community (Coming Soon!)
 
+[🔒 Privacy Policy](/privacy/)
+
 ### 🎨 **Dark Mode Support**
 <style>
 @media (prefers-color-scheme: dark) {
