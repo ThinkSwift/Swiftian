@@ -1,3 +1,4 @@
 theme: null
-exclude:
-  - "*.md"
+markdown: kramdown
+kramdown:
+  input: GFM
