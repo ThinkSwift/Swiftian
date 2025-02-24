@@ -1,0 +1,9 @@
+title: "Swiftian - Learn to Code"
+description: "Swiftian is a platform for learning Swift through interactive coding projects."
+url: "https://swiftian.com"
+permalink: pretty
+author: "Swiftian Team"
+
+# Sitemap settings
+plugins:
+  - jekyll-sitemap
