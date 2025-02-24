@@ -86,9 +86,6 @@ document.addEventListener("DOMContentLoaded", function() {
 Swiftian is designed to make learning Swift easy and fun, with hands-on projects that help you build real-world applications.
 
 ## 📌 Start Learning Today!
-[🚀 Get Started](https://swiftian.com/get-started)
-
-📚 Read the [Documentation](https://swiftian.com/docs)  
 💬 Join the Community (Coming Soon!)
 
 [🔒 Privacy Policy](/privacy/)
