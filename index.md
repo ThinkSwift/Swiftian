@@ -1,5 +1,8 @@
 ---
-title: Welcome to Swiftian
+title: "Swiftian - Learn to Code"
+description: "Master Swift through hands-on coding exercises and real-world projects."
+keywords: "Swift, iOS, coding, programming, learn Swift, SwiftUI, software development"
+author: "Swiftian Team"
 layout: default
 ---
 
