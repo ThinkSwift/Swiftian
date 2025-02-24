@@ -3,6 +3,8 @@ title: Welcome to Swiftian
 layout: default
 ---
 
+
+{% raw %}
 <!-- Persistent Music Player -->
 <iframe src="./player.html" id="music-iframe" style="display: none;"></iframe>
 
@@ -27,19 +29,9 @@ layout: default
     transition: all 0.3s ease;
     z-index: 1000;
 }
-
 #music-button:hover {
     background: rgba(55, 0, 179, 0.9);
     transform: scale(1.05);
-}
-
-/* Loop Active Style */
-#music-button.loop-active {
-    background: rgba(255, 152, 0, 0.9);
-}
-
-#music-icon {
-    font-size: 18px;
 }
 </style>
 
@@ -74,8 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
-
----
+{% endraw %}
 
 # 🚀 Welcome to Swiftian
 
