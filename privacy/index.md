@@ -1,10 +1,8 @@
 ---
 title: "Swiftian Privacy Policy"
 layout: default
-favicon: "/favicon.png"
 ---
 
-<!-- 상단에 '← Back to Home' 버튼/링크 추가 -->
 [← Back to Home](/)
 
 # Privacy Policy
