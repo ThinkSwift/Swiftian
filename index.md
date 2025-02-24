@@ -4,6 +4,7 @@ description: "Master Swift through hands-on coding exercises and real-world proj
 keywords: "Swift, iOS, coding, programming, learn Swift, SwiftUI, software development"
 author: "Swiftian Team"
 layout: default
+favicon: "/favicon.png"
 ---
 
 
