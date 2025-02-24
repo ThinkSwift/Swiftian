@@ -7,14 +7,13 @@ layout: default
 favicon: "/favicon.png"
 ---
 
+---
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title | default: "Swiftian - Learn to Code" }}</title>
-  
-  <!-- Favicon (절대 경로로 직접 설정) -->
   <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
 </head>
-
+---
 
 <!-- Persistent Music Player -->
 <iframe src="./player.html" id="music-iframe" style="display: none;"></iframe>
