@@ -22,7 +22,7 @@ We do not store, process, or transmit personal data to any external servers.
 
 ## 3. Contact
 If you have any questions or concerns about this Privacy Policy,  
-please contact us at [dev@swiftian.com](mailto:dev@swiftian.com).
+please contact us at [dev@swiftian.com](mailto:contact@swiftian.com).
 
 ## 4. Changes to This Policy
 We may update or modify this Privacy Policy at any time.  
