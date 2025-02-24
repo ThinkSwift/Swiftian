@@ -4,7 +4,6 @@ layout: default
 ---
 
 
-{% raw %}
 <!-- Persistent Music Player -->
 <iframe src="./player.html" id="music-iframe" style="display: none;"></iframe>
 
@@ -66,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
-{% endraw %}
+---
 
 # 🚀 Welcome to Swiftian
 
