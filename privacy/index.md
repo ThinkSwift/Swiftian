@@ -4,9 +4,13 @@ layout: default
 favicon: "/favicon.png"
 ---
 
+<!-- 상단에 '← Back to Home' 버튼/링크 추가 -->
+[← Back to Home](/)
+
 # Privacy Policy
 
-Swiftian and its associated apps do not collect any personal information. We do not store, process, or transmit personal data to any external servers.
+Swiftian and its associated apps do not collect any personal information.  
+We do not store, process, or transmit personal data to any external servers.
 
 ## 1. No Data Collection
 - No user registration or login is required.
@@ -17,10 +21,11 @@ Swiftian and its associated apps do not collect any personal information. We do 
 - Our apps do not integrate with external services that collect personal information.
 
 ## 3. Contact
-If you have any questions or concerns about this Privacy Policy, feel free to reach out to us at:
-[dev@swiftian.com](mailto:dev@swiftian.com)
+If you have any questions or concerns about this Privacy Policy,  
+please contact us at [dev@swiftian.com](mailto:dev@swiftian.com).
 
 ## 4. Changes to This Policy
-We may update or modify this Privacy Policy at any time. Please review this page periodically. Any significant changes will be clearly indicated.
+We may update or modify this Privacy Policy at any time.  
+Please review this page periodically. Any significant changes will be clearly indicated.
 
 **Effective Date:** February 24, 2025
