@@ -7,21 +7,12 @@ layout: default
 favicon: "/favicon.png"
 ---
 
----
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
-
-  <title>{{ page.title | default: "Swiftian - Learn to Code" }}</title>
-  <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
-</head>
----
-
+<!-- 여기부터는 HTML/Markdown 본문(Body) 영역 -->
 <!-- Persistent Music Player -->
 <iframe src="./player.html" id="music-iframe" style="display: none;"></iframe>
 
 <style>
-/* Floating Music Button */
+/* Floating Music Button CSS */
 #music-button {
     position: fixed;
     top: 20px;
@@ -78,6 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+
 ---
 
 # 🚀 Welcome to Swiftian
@@ -94,15 +86,11 @@ document.addEventListener("DOMContentLoaded", function() {
 > "Think Swift, Code Fast."  
 Swiftian is designed to make learning Swift easy and fun, with hands-on projects that help you build real-world applications.
 
----
-
 ## 📌 Start Learning Today!
 [🚀 Get Started](https://swiftian.com/get-started)
 
 📚 Read the [Documentation](https://swiftian.com/docs)  
-💬 Join the Community (Coming Soon!)  
-
----
+💬 Join the Community (Coming Soon!)
 
 ### 🎨 **Dark Mode Support**
 <style>
@@ -116,8 +104,6 @@ Swiftian is designed to make learning Swift easy and fun, with hands-on projects
   }
 }
 </style>
-
----
 
 🔹 **Swiftian - Think Swift.**  
 📌 Made with ❤️ by the Swiftian Team.
