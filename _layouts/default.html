@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title | default: site.title }}</title>
+  
+  <!-- Favicon 추가 -->
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
+
+  <!-- 테마 CSS 불러오기 등 필요하다면 -->
+  <!-- {{ '/assets/main.css' | relative_url }} -->
+
+</head>
+<body>
+  {{ content }}
+</body>
+</html>
