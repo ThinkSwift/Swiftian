@@ -1,10 +1,9 @@
 ---
-title: "Swiftian - Learn to Code | Master Swift Programming"
+title: "Learn to Code"
 description: "Master Swift through hands-on coding exercises and real-world projects."
 keywords: "Swift, iOS, coding, programming, learn Swift, SwiftUI, software development"
 author: "Swiftian Team"
 layout: default
-favicon: "/favicon.png"
 ---
 
 <!-- 여기부터는 HTML/Markdown 본문(Body) 영역 -->
