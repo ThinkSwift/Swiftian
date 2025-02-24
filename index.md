@@ -10,6 +10,8 @@ favicon: "/favicon.png"
 ---
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
+
   <title>{{ page.title | default: "Swiftian - Learn to Code" }}</title>
   <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
 </head>
