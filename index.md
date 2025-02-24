@@ -94,18 +94,5 @@ Swiftian is designed to make learning Swift easy and fun, with hands-on projects
 
 [🔒 Privacy Policy](/privacy/)
 
-### 🎨 **Dark Mode Support**
-<style>
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-    color: #ffffff;
-  }
-  a {
-    color: #bb86fc;
-  }
-}
-</style>
-
 🔹 **Swiftian - Think Swift.**  
 📌 Made with ❤️ by the Swiftian Team.
