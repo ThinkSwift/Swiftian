@@ -4,10 +4,16 @@ description: "Master Swift through hands-on coding exercises and real-world proj
 keywords: "Swift, iOS, coding, programming, learn Swift, SwiftUI, software development"
 author: "Swiftian Team"
 layout: default
+favicon: "/favicon.png"
 ---
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  
+  <!-- Favicon (Front Matter에서 가져오기) -->
+  <link rel="icon" type="image/png" href="{{ page.favicon | default: site.baseurl + '/favicon.png' }}" sizes="32x32">
+</head>
 
 <!-- Persistent Music Player -->
 <iframe src="./player.html" id="music-iframe" style="display: none;"></iframe>
