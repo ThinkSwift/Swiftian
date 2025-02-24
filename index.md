@@ -4,7 +4,7 @@ layout: default
 ---
 
 <!-- Persistent Music Player -->
-<iframe src="/repository-name/player.html" id="music-iframe" style="display: none;"></iframe>
+<iframe src="/Swiftian/player.html" id="music-iframe" style="display: none;"></iframe>
 
 
 <style>
