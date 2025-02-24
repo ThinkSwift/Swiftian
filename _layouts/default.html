@@ -3,21 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title | default: "Swiftian" }}</title>
-  
+
   <!-- Favicon: Use page.favicon if specified, otherwise use the default (/favicon.png) -->
   <link rel="icon" type="image/png" href="{{ page.favicon | default: '/favicon.png' }}" sizes="32x32">
-  
+
   <style>
     /* Container for center alignment and width limit */
     .content-container {
-      max-width: 900px;  /* Desired maximum width (can use pixels, rem, etc.) */
-      margin: 0 auto;    /* Center alignment via automatic left/right margins */
-      padding: 1rem;     /* Slight horizontal padding to reduce a cramped feel */
+      max-width: 900px;  
+      margin: 0 auto;    
+      padding: 1rem;     
+    }
+
+    /* Light Mode (Default) */
+    body {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    a {
+      color: #007bff;
+    }
+
+    /* Dark Mode */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #121212;
+        color: #ffffff;
+      }
+      a {
+        color: #bb86fc;
+      }
+      /* Optionally, modify any other components' color, background, etc. */
     }
   </style>
 </head>
 <body>
-  <!-- Div wrapping the actual content -->
   <div class="content-container">
     {{ content }}
   </div>
