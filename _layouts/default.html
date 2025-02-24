@@ -1,0 +1,25 @@
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title | default: "Swiftian" }}</title>
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
+  
+  <style>
+    /* Dark Mode (prefers-color-scheme) */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #121212;
+        color: #ffffff;
+      }
+      a {
+        color: #bb86fc;
+      }
+    }
+  </style>
+</head>
+<body>
+  {{ content }}
+</body>
+</html>
