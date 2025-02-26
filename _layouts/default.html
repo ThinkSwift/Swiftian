@@ -1,23 +1,13 @@
----
-title: "تعلم البرمجة"
-description: "إتقان Swift من خلال التمارين العملية والمشاريع الواقعية."
-keywords: "Swift, iOS, البرمجة, تعلم Swift, SwiftUI, تطوير البرمجيات"
-author: "فريق Swiftian"
-layout: default
-lang: ar
----
-
-
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: 'en' }}" dir="{% if page.lang == 'ar' or page.lang == 'he' %}rtl{% else %}ltr{% endif %}">
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title | default: "Swiftian" }}</title>
 
-  <!-- Favicon: Use page.favicon if specified, otherwise use the default (/favicon.png) -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="{{ page.favicon | default: '/favicon.png' }}" sizes="32x32">
 
-  <!-- Load Google Fonts (Noto Sans supports multiple languages) -->
+  <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
@@ -46,12 +36,18 @@ lang: ar
       }
     }
 
-    /* Adjust layout for RTL languages */
-    html[dir="rtl"] body {
-      text-align: right;
-    }
-    html[dir="ltr"] body {
-      text-align: left;
+    /* Container Styling */
+    .content-container {
+      max-width: 900px;  
+      margin: 0 auto;  /* Center the content */
+      padding: 1rem;
+      {% if page.lang == 'ar' or page.lang == 'he' %}
+        direction: rtl;
+        text-align: right;
+      {% else %}
+        direction: ltr;
+        text-align: left;
+      {% endif %}
     }
   </style>
 </head>
