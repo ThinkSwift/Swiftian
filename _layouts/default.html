@@ -7,6 +7,8 @@
   <!-- Favicon: Use page.favicon if specified, otherwise use the default (/favicon.png) -->
   <link rel="icon" type="image/png" href="{{ page.favicon | default: '/favicon.png' }}" sizes="32x32">
 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
     /* Container for center alignment and width limit */
     .content-container {
@@ -14,7 +16,11 @@
       margin: 0 auto;    
       padding: 1rem;     
     }
-
+    
+    body {
+      font-family: "Noto Sans", "Arial", sans-serif;
+    }
+    
     /* Light Mode (Default) */
     body {
       background-color: #ffffff;
