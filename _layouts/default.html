@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}" dir="{% if page.lang == 'ar' or page.lang == 'he' %}rtl{% else %}ltr{% endif %}">
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title | default: "Swiftian" }}</title>
@@ -7,21 +7,16 @@
   <!-- Favicon: Use page.favicon if specified, otherwise use the default (/favicon.png) -->
   <link rel="icon" type="image/png" href="{{ page.favicon | default: '/favicon.png' }}" sizes="32x32">
 
+  <!-- Load Google Fonts (Noto Sans supports multiple languages) -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
-    /* Container for center alignment and width limit */
-    .content-container {
-      max-width: 900px;  
-      margin: 0 auto;    
-      padding: 1rem;     
-    }
-    
+    /* Set the default font */
     body {
       font-family: "Noto Sans", "Arial", sans-serif;
     }
-    
-    /* Light Mode (Default) */
+
+    /* Light Mode */
     body {
       background-color: #ffffff;
       color: #000000;
@@ -41,29 +36,12 @@
       }
     }
 
-    /* Floating Music Button */
-    #music-button {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: rgba(98, 0, 234, 0.9);
-        color: white;
-        border: none;
-        padding: 12px 20px;
-        font-size: 15px;
-        font-weight: bold;
-        cursor: pointer;
-        border-radius: 25px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease;
-        z-index: 1000;
+    /* Adjust layout for RTL languages */
+    html[dir="rtl"] body {
+      text-align: right;
     }
-    #music-button:hover {
-        background: rgba(55, 0, 179, 0.9);
-        transform: scale(1.05);
+    html[dir="ltr"] body {
+      text-align: left;
     }
   </style>
 </head>
@@ -71,40 +49,5 @@
   <div class="content-container">
     {{ content }}
   </div>
-
-  <!-- Persistent Music Player -->
-  <iframe src="/player.html" id="music-iframe" style="display: none;"></iframe>
-
-  <!-- Floating Music Button -->
-  <button id="music-button">
-    <span id="music-icon">🎵</span> <span id="music-label">Swiftian Groove</span>
-  </button>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const musicButton = document.getElementById("music-button");
-        const musicFrame = document.getElementById("music-iframe").contentWindow;
-        
-        let isPlaying = false;
-
-        // Play/Pause Toggle
-        musicButton.addEventListener("click", function() {
-            if (isPlaying) {
-                musicFrame.postMessage("pause", "*");
-                musicButton.innerHTML = "🎵 Swiftian Groove";
-            } else {
-                musicFrame.postMessage("play", "*");
-                musicButton.innerHTML = "⏸ Swiftian Groove";
-            }
-            isPlaying = !isPlaying;
-        });
-
-        // Ensure iframe music remains persistent
-        window.addEventListener("message", function(event) {
-            if (event.data === "playing") isPlaying = true;
-            if (event.data === "paused") isPlaying = false;
-        });
-    });
-  </script>
 </body>
 </html>
