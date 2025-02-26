@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: 'en' }}" dir="{% if page.lang == 'ar' or page.lang == 'he' %}rtl{% else %}ltr{% endif %}">
+<html lang="{{ page.lang | default: 'en' }}" dir="{% if page.lang == 'ar' or page.lang == 'he' or page.lang == 'ur' %}rtl{% else %}ltr{% endif %}">
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title | default: "Swiftian" }}</title>
@@ -41,7 +41,7 @@
       max-width: 900px;  
       margin: 0 auto;  /* Center the content */
       padding: 1rem;
-      {% if page.lang == 'ar' or page.lang == 'he' %}
+      {% if page.lang == 'ar' or page.lang == 'he' or page.lang == 'ur' %}
         direction: rtl;
         text-align: right;
       {% else %}
