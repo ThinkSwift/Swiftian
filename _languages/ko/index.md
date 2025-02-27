@@ -1,4 +1,5 @@
 ---
+permalink: /ko/
 title: "코딩을 배워보세요"
 description: "Swift를 직접 코딩하며 배우고, 실전 프로젝트를 만들어보세요."
 keywords: "Swift, iOS, 코딩, 프로그래밍, Swift 배우기, SwiftUI, 소프트웨어 개발"
