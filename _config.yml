@@ -7,3 +7,22 @@ author: "Swiftian Team"
 # Sitemap settings
 plugins:
   - jekyll-sitemap
+
+# Enable multilingual collections
+collections:
+  languages:
+    output: true
+    permalink: /:path/
+
+# SEO Optimization for Multilingual Support
+defaults:
+  - scope:
+      path: ""
+      type: "languages"
+    values:
+      sitemap: true
+
+# Generate hreflang tags for search engines
+liquid:
+  filters:
+    - "append: 'hreflang', page.lang"
