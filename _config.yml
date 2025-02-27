@@ -8,17 +8,22 @@ author: "Swiftian Team"
 plugins:
   - jekyll-sitemap
 
+# Define the 'languages' collection to process the _languages folder
+collections:
+  languages:
+    output: true        # Output collection items as standalone pages
+    permalink: /:path/   # Use the file's path (e.g., _languages/ko/index.md becomes /ko/)
+
 # SEO Optimization for Multilingual Support
 defaults:
   - scope:
-      path: "ko/*"
+      path: "ko/*"      # Applies to files in the 'ko' directory within the collection
+      type: languages   # Ensure the default applies to the languages collection
     values:
       sitemap: true
   - scope:
       path: "en/*"
+      type: languages
     values:
       sitemap: true
 
-# Ensure Jekyll treats `ko/` as a normal page, not a collection
-exclude:
-  - languages
