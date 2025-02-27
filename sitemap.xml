@@ -1,38 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-    <!-- Homepage -->
-    <url>
-        <loc>https://swiftian.com/</loc>
-        <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-        {% for lang in site.languages.docs %}
-            <xhtml:link rel="alternate" hreflang="{{ lang.lang }}" href="https://swiftian.com/{{ lang.path }}" />
-        {% endfor %}
-    </url>
-
-    <!-- About Page -->
-    <url>
-        <loc>https://swiftian.com/about</loc>
-        <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        {% for lang in site.languages.docs %}
-            <xhtml:link rel="alternate" hreflang="{{ lang.lang }}" href="https://swiftian.com/{{ lang.path }}/about" />
-        {% endfor %}
-    </url>
-
-    <!-- Dynamic Pages for Each Language -->
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://swiftian.com/</loc>
+    <!-- Dynamically insert the current build time -->
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <!-- hreflang tags for alternate language versions of the homepage -->
     {% for lang in site.languages.docs %}
-        <url>
-            <loc>https://swiftian.com/{{ lang.path }}/</loc>
-            <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>0.9</priority>
-            <xhtml:link rel="alternate" hreflang="{{ lang.lang }}" href="https://swiftian.com/{{ lang.path }}/" />
-        </url>
+      <xhtml:link rel="alternate" hreflang="{{ lang.lang }}" href="https://swiftian.com/{{ lang.path }}" />
     {% endfor %}
-
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://swiftian.com/about</loc>
+    <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <!-- hreflang tags for alternate language versions of the About page -->
+    {% for lang in site.languages.docs %}
+      <xhtml:link rel="alternate" hreflang="{{ lang.lang }}" href="https://swiftian.com/{{ lang.path }}/about" />
+    {% endfor %}
+  </url>
+  
+  <!-- Dynamic Language Pages -->
+  {% for lang in site.languages.docs %}
+    <url>
+      <!-- Each language page will be output at a URL like https://swiftian.com/ko/ -->
+      <loc>https://swiftian.com/{{ lang.path }}/</loc>
+      <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+      <!-- Self-referencing hreflang tag for each language page -->
+      <xhtml:link rel="alternate" hreflang="{{ lang.lang }}" href="https://swiftian.com/{{ lang.path }}/" />
+    </url>
+  {% endfor %}
+  
 </urlset>
