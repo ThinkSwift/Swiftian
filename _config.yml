@@ -8,17 +8,10 @@ author: "Swiftian Team"
 plugins:
   - jekyll-sitemap
 
-# Enable multilingual collections
-collections:
-  languages:
-    output: true
-    permalink: /:path/
-
 # SEO Optimization for Multilingual Support
 defaults:
   - scope:
-      path: ""
-      type: "languages"
+      path: "languages/*"
     values:
       sitemap: true
 
