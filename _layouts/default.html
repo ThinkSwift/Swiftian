@@ -2,6 +2,24 @@
 <html lang="{{ page.lang | default: 'en' }}" dir="{% if page.lang == 'ar' or page.lang == 'he' or page.lang == 'ur' %}rtl{% else %}ltr{% endif %}">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.description | default: 'Learn Swift through interactive coding projects.' }}">
+  <meta name="keywords" content="Swift, Learn Swift, Coding, Programming">
+  <meta name="author" content="Swiftian Team">
+  
+  <!-- Open Graph (For Social Media Previews) -->
+  <meta property="og:title" content="{{ page.title | default: 'Swiftian' }}">
+  <meta property="og:description" content="{{ page.description | default: 'Learn Swift through interactive coding projects.' }}">
+  <meta property="og:image" content="{{ site.url }}/images/social-preview.png">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card (For Twitter Previews) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: 'Swiftian' }}">
+  <meta name="twitter:description" content="{{ page.description | default: 'Learn Swift through interactive coding projects.' }}">
+  <meta name="twitter:image" content="{{ site.url }}/images/social-preview.png">
+
   <title>{{ page.title | default: "Swiftian" }}</title>
 
   <!-- Favicon -->
@@ -9,6 +27,14 @@
 
   <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Canonical URL to Prevent Duplicate Content -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <!-- hreflang for Multilingual SEO -->
+  {% for lang in site.languages.docs %}
+    <link rel="alternate" hreflang="{{ lang.lang }}" href="{{ site.url }}/{{ lang.path }}">
+  {% endfor %}
 
   <style>
     /* Set the default font */
