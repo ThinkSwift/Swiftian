@@ -12,18 +12,11 @@ plugins:
 collections:
   languages:
     output: true        # Output collection items as standalone pages
-    permalink: /:path/   # Use the file's path (e.g., _languages/ko/index.md becomes /ko/)
+    permalink: /:path/   # This will use the file's relative path within _languages
 
 # SEO Optimization for Multilingual Support
 defaults:
   - scope:
-      path: "ko/*"      # Applies to files in the 'ko' directory within the collection
-      type: languages   # Ensure the default applies to the languages collection
+      type: languages   # Apply defaults for all language items
     values:
       sitemap: true
-  - scope:
-      path: "en/*"
-      type: languages
-    values:
-      sitemap: true
-
