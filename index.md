@@ -1,8 +1,7 @@
 ---
-title: "Learn to Code"
-description: "Master Swift through hands-on coding exercises and real-world projects."
-keywords: "Swift, iOS, coding, programming, learn Swift, SwiftUI, software development"
-author: "Swiftian Team"
+title: "Swiftian: Learn to Code"
+description: "Swiftian is a coding education platform where you can master Swift through hands-on coding exercises and real-world projects."
+keywords: "Swiftian, Swift, iOS, coding, programming, learn Swift, SwiftUI, game development"
 layout: default
 ---
 
