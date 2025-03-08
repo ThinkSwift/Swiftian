@@ -7,7 +7,7 @@ permalink: /ko/
 lang: ko
 ---
 
-## [← 홈으로](/ko/)
+[← 홈으로](/ko/)
 
 # Think Swift.
 
@@ -25,4 +25,4 @@ Swiftian은 작은 화면에서도 효과적인 코딩이 가능하도록 최소
 
 ---
 
-## [나만의 우주 만들기 →](/ko/universe/)
+[나만의 우주 만들기 →](/ko/universe/)
