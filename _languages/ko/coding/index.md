@@ -3,7 +3,7 @@ layout: default
 title: "Think Swift."
 description: "최소화된 환경에서 인터랙티브하게 Swift를 학습하세요. 작게 시작해 크게 생각하고, 단계별로 코딩을 마스터하세요."
 keywords: "Swift, SwiftUI, 코딩, 스위프트 배우기, iOS"
-permalink: /ko/
+permalink: /ko/coding/
 lang: ko
 ---
 
