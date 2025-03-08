@@ -5,6 +5,9 @@ description: "최소화된 환경에서 인터랙티브하게 Swift를 학습하
 keywords: "Swift, SwiftUI, 코딩, 스위프트 배우기, iOS"
 ---
 
+# [← 홈으로](/ko/)
+---
+
 # Think Swift.
 
 ### 작게 시작하고 크게 생각하세요.
@@ -21,4 +24,4 @@ Swiftian은 작은 화면에서도 효과적인 코딩이 가능하도록 최소
 
 ---
 
-[← 홈으로](/ko/) | [나만의 우주 만들기 →](/ko/universe/)
+[나만의 우주 만들기 →](/ko/universe/)
