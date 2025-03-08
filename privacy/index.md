@@ -1,6 +1,9 @@
 ---
-title: "Swiftian Privacy Policy"
 layout: default
+title: "Privacy Policy"
+permalink: /privacy/
+robots: noindex, nofollow
+description: "Swiftian Privacy Policy page."
 ---
 
 [← Back to Home](/)
