@@ -6,7 +6,6 @@ keywords: "Mars Rebels, 스토리텔링, 창의적 코딩, Swift"
 ---
 
 ## [← 홈으로](/ko/)
----
 
 # 나만의 우주 만들기.
 
