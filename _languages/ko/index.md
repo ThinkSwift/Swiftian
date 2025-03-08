@@ -19,5 +19,5 @@ lang: ko
 
 ---
 <footer>
-  <small><a href="/ko/privacy/">개인정보 보호정책</a></small>
+  <small><a href="/privacy/">개인정보 보호정책</a></small>
 </footer>
