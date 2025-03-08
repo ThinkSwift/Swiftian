@@ -3,10 +3,11 @@ layout: default
 title: "나만의 우주 만들기."
 description: "스토리텔링과 결합된 몰입형 코딩 교육. SF 세계 Mars Rebels의 흥미로운 이야기와 함께 창의적인 코딩을 경험하세요."
 keywords: "Mars Rebels, 스토리텔링, 창의적 코딩, Swift"
+permalink: /ko/universe/
+lang: ko
 ---
 
-## [← 홈으로](/ko/)
-
+[← 홈으로](/ko/)
 
 # 나만의 우주 만들기.
 
@@ -28,4 +29,4 @@ Swiftian은 기술만 가르치지 않습니다.
 
 ---
 
-# [← Think Swift](/ko/coding/) | [비트와 함께 움직이기 →](/ko/groove/)
+[← Think Swift](/ko/coding/) | [비트와 함께 움직이기 →](/ko/groove/)
