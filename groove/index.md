@@ -10,7 +10,7 @@ keywords: "coding music, productivity, creativity, music, focus"
 # Move with the Beat.
 
 <p align="center">
-  <img src="/assets/images/swiftian_groove.png" alt="Swiftian Groove" style="width: 100%; max-width: 400px; height: auto;">
+  <img src="/assets/images/swiftian_groove.png" alt="Swiftian Groove" style="width: 100%; max-width: 250px; height: auto;">
 </p>
 
 ### Rhythm Fuels Creativity.
