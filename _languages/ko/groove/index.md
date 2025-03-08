@@ -32,4 +32,4 @@ Swiftian은 리듬을 창의력의 필수 요소로 봅니다.
 
 ---
 
-### [← 나만의 우주 만들기](/ko/universe/) | [창작자들을 위한 공간 →](/ko/creators/)
+[← 나만의 우주 만들기](/ko/universe/) | [창작자들을 위한 공간 →](/ko/creators/)
