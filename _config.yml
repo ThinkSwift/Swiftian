@@ -8,23 +8,23 @@ author: "Swiftian Team"
 plugins:
   - jekyll-sitemap
 
-# SEO Optimization for Multilingual Support
+collections:
+  languages:
+    output: true
+    permalink: /:path/
+
 defaults:
   - scope:
       path: "_languages"
     values:
       sitemap: true
       author: "Swiftian Team"
-
-# SEO defaults for main pages
   - scope:
       path: ""
     values:
       sitemap: true
-
-# Multilingual SEO default setting
-defaults:
   - scope:
       type: languages
     values:
       sitemap: true
+      layout: default
