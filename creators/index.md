@@ -26,4 +26,4 @@ Stay tuned for future updates, new projects, and more ways to be involved. Swift
 
 ---
 
-# [← Move with the Beat](/groove/) | [Home →](/)
+# [← Move with the Beat](/groove/) 
