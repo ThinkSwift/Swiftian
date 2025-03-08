@@ -4,67 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 개선된 SEO 설정 -->
+  <!-- Page Description and Keywords for SEO -->
   <meta name="description" content="{{ page.description | default: 'Make something new. Push boundaries. Swiftian is a curated, interactive platform to learn Swift and creative coding.' }}">
-  <meta name="keywords" content="{{ page.keywords | default: 'Swiftian, Swift, SwiftUI, iOS, creative coding, programming, storytelling' }}">
+  <meta name="keywords" content="{{ page.keywords | default: 'Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift' }}">
   <meta name="author" content="{{ page.author | default: 'Swiftian Team' }}">
 
-  <!-- Privacy 페이지 SEO 차단 설정 -->
+  <!-- Robots meta tag to instruct search engines -->
   {% if page.robots %}
     <meta name="robots" content="{{ page.robots }}">
   {% else %}
     <meta name="robots" content="index, follow">
   {% endif %}
 
-  <!-- Open Graph 설정 (기존 유지) -->
+  <!-- Open Graph tags for social media previews -->
   <meta property="og:title" content="{{ page.title }} – Swiftian">
-  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:description" content="{{ page.description | default: 'Make something new. Push boundaries. Swiftian is a curated, interactive platform to learn Swift and creative coding.' }}">
   <meta property="og:image" content="{{ site.url }}/images/social-preview.png">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:type" content="website">
 
-  <!-- Twitter 설정 (기존 유지) -->
+  <!-- Twitter Card tags for Twitter previews -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page.title }} – Swiftian">
-  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:description" content="{{ page.description | default: 'Make something new. Push boundaries. Swiftian is a curated, interactive platform to learn Swift and creative coding.' }}">
   <meta name="twitter:image" content="{{ site.url }}/images/social-preview.png">
 
-  <!-- 페이지 타이틀 (수정) -->
+  <!-- Page Title -->
   <title>{{ page.title }} – Swiftian</title>
 
-  <!-- Favicon (기존 유지) -->
+  <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="/favicon.png">
 
-  <!-- Canonical URL (기존 유지) -->
+  <!-- Google Fonts 유지 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Canonical URL to prevent duplicate content issues -->
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
-  <!-- hreflang tags 다국어 준비 (기존 유지) -->
+  <!-- hreflang tags for multilingual SEO -->
   {% for lang in site.languages.docs %}
     <link rel="alternate" hreflang="{{ lang.lang }}" href="{{ site.url }}/{{ lang.path }}">
   {% endfor %}
 
-  <!-- 스타일 (기존 유지) -->
-  <link href="/assets/css/style.css" rel="stylesheet">
+  <!-- Structured Data in JSON-LD for enhanced SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ page.title | default: 'Swiftian' }}",
+    "url": "{{ site.url }}"
+  }
+  </script>
 
   <style>
+    /* Default font setting */
     body {
       font-family: "Noto Sans", "Arial", sans-serif;
+    }
+
+    /* Light mode styling */
+    body {
       background-color: #ffffff;
       color: #000000;
     }
+    a {
+      color: #007bff;
+    }
 
+    /* Dark mode styling */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #121212;
+        color: #ffffff;
+      }
+      a {
+        color: #bb86fc;
+      }
+    }
+
+    /* Container styling for page content */
     .content-container {
       max-width: 900px;
-      margin: 0 auto;
+      margin: 0 auto;  /* Center the content */
       padding: 1rem;
       {% if page.lang == 'ar' or page.lang == 'he' or page.lang == 'ur' %}
         direction: rtl;
+        text-align: right;
+      {% else %}
+        direction: ltr;
+        text-align: left;
       {% endif %}
     }
   </style>
-
-  <title>{{ page.title }} – Swiftian</title> <!-- 타이틀 수정됨 -->
 </head>
 <body>
   <div class="content-container">
