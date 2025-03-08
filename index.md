@@ -19,3 +19,7 @@ The journey starts here.
 <footer>
   <small><a href="/privacy/">Privacy Policy</a></small>
 </footer>
+
+---
+
+## 📄 **/coding/index.md**
