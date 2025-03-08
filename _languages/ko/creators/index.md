@@ -3,10 +3,11 @@ layout: default
 title: "창작자들을 위한 공간."
 description: "Swiftian은 크리에이터들이 모여 성장하고 협력하며 혁신하는 커뮤니티 중심 플랫폼입니다."
 keywords: "Swiftian, 크리에이터, 협업, 코딩 커뮤니티"
+permalink: /ko/creators/
+lang: ko
 ---
 
-# [← 홈으로](/ko/)
----
+[← 홈으로](/ko/)
 
 # 창작자들을 위한 공간.
 
@@ -28,4 +29,4 @@ Swiftian은 계속해서 새로운 프로젝트, 참여 기회, 커뮤니티 활
 
 ---
 
-# [← 비트와 함께 움직이기](/ko/groove/) 
+[← 비트와 함께 움직이기](/ko/groove/) 
