@@ -3,9 +3,12 @@ layout: default
 title: "비트와 함께 움직이기."
 description: "생산성과 몰입감을 위한 특화된 음악을 경험하세요. Swiftian의 리듬과 함께 더욱 창의적인 코딩을 즐겨보세요."
 keywords: "코딩 음악, 비트, 생산성 음악, 창의력 음악"
+permalink: /ko/groove/
+lang: ko
 ---
 
-# [← 홈으로](/ko/)
+[← 홈으로](/ko/)
+
 ---
 
 # 비트와 함께 움직이기.
@@ -27,4 +30,4 @@ Swiftian은 리듬을 창의력의 필수 요소로 봅니다.
 
 ---
 
-# [← 나만의 우주 만들기](/ko/universe/) | [창작자들을 위한 공간 →](/ko/creators/)
+[← 나만의 우주 만들기](/ko/universe/) | [창작자들을 위한 공간 →](/ko/creators/)
