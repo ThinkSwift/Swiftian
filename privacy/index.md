@@ -7,6 +7,7 @@ description: "Swiftian Privacy Policy page."
 ---
 
 [← Back to Home](/)
+---
 
 # Privacy Policy
 
