@@ -15,3 +15,7 @@ Swiftian isn't just another platform—it's meticulously built to guide you thro
 
 ### Made for Mobile First.
 Currently optimized for iOS, Swiftian’s minimalist design brings coding directly to your fingertips. Soon, we’ll expand into Android, Python, and beyond, helping you take your skills wherever you go.
+
+---
+
+# [← Home](/) | [Build Your Universe →](/universe/)
