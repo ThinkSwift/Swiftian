@@ -5,7 +5,7 @@ description: "스토리텔링과 결합된 몰입형 코딩 교육. SF 세계 Ma
 keywords: "Mars Rebels, 스토리텔링, 창의적 코딩, Swift"
 ---
 
-# [← 홈으로](/ko/)
+## [← 홈으로](/ko/)
 ---
 
 # 나만의 우주 만들기.
