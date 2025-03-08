@@ -22,4 +22,3 @@ The journey starts here.
 
 ---
 
-## 📄 **/coding/index.md**
