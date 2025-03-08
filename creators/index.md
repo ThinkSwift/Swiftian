@@ -6,7 +6,6 @@ keywords: "Swiftian, creators, coding community, collaboration"
 ---
 
 [← Back to Home](/)
----
 
 # Made for Creators.
 
@@ -26,4 +25,4 @@ Stay tuned for future updates, new projects, and more ways to be involved. Swift
 
 ---
 
-# [← Move with the Beat](/groove/) 
+[← Move with the Beat](/groove/) 
