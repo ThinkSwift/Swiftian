@@ -6,7 +6,6 @@ keywords: "Swift, SwiftUI, 코딩, 스위프트 배우기, iOS"
 ---
 
 # [← 홈으로](/ko/)
----
 
 # Think Swift.
 
