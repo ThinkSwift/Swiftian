@@ -16,9 +16,7 @@ The journey starts here.
 - [Move with the Beat →](/groove/)
 - [Made for Creators →](/creators/)
 
+---
 <footer>
   <small><a href="/privacy/">Privacy Policy</a></small>
 </footer>
-
----
-
