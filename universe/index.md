@@ -20,3 +20,7 @@ You’ll have access to handpicked assets, characters, and interactive scenarios
 ### More Than Just Lessons.
 We integrate storytelling deeply into your learning experience.  
 With Swiftian, you’re not just writing code—you’re building your own adventure.
+
+---
+
+# [← Think Swift](/coding/) | [Move with the Beat →](/groove/)
