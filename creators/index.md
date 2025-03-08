@@ -20,3 +20,7 @@ We don't just teach coding; we build relationships. We invite creators from all 
 ### More to Come.
 This is only the beginning.  
 Stay tuned for future updates, new projects, and more ways to be involved. Swiftian is yours to grow.
+
+---
+
+# [← Move with the Beat](/groove/) | [Home →](/)
