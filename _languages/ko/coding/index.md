@@ -5,7 +5,7 @@ description: "최소화된 환경에서 인터랙티브하게 Swift를 학습하
 keywords: "Swift, SwiftUI, 코딩, 스위프트 배우기, iOS"
 ---
 
-# [← 홈으로](/ko/)
+## [← 홈으로](/ko/)
 
 # Think Swift.
 
