@@ -1,5 +1,5 @@
-title: "Swiftian - Learn to Code"
-description: "Swiftian is a platform for learning Swift through interactive coding projects."
+title: "Swiftian - Create. Explore."
+description: "Swiftian is a curated, interactive platform for learning Swift through creative coding projects, engaging storytelling, and rhythm-enhanced productivity."
 url: "https://swiftian.com"
 permalink: pretty
 author: "Swiftian Team"
@@ -8,15 +8,23 @@ author: "Swiftian Team"
 plugins:
   - jekyll-sitemap
 
-# Define the 'languages' collection to process the _languages folder
-collections:
-  languages:
-    output: true        # Output collection items as standalone pages
-    permalink: /:path/   # This will use the file's relative path within _languages
-
 # SEO Optimization for Multilingual Support
 defaults:
   - scope:
-      type: languages   # Apply defaults for all language items
+      path: "_languages"
+    values:
+      sitemap: true
+      author: "Swiftian Team"
+
+# SEO defaults for main pages
+  - scope:
+      path: ""
+    values:
+      sitemap: true
+
+# Multilingual SEO default setting
+defaults:
+  - scope:
+      type: languages
     values:
       sitemap: true
