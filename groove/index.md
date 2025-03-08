@@ -9,6 +9,8 @@ keywords: "coding music, productivity, creativity, music, focus"
 
 # Move with the Beat.
 
+![Swiftian Groove](/assets/images/swiftian_groove.png)
+
 ### Rhythm Fuels Creativity.
 Good music boosts productivity, sharpens focus, and enhances creativity. Swiftian incorporates carefully curated soundscapes that synchronize perfectly with your coding rhythm.
 
