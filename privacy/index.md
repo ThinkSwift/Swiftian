@@ -30,6 +30,3 @@ We may update or modify this Privacy Policy at any time.
 Please review this page periodically. Any significant changes will be clearly indicated.
 
 **Effective Date:** February 24, 2025
-
----
-[Privacy Policy on the App Store](https://link-to-your-appstore-page).
