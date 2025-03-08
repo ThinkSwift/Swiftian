@@ -11,6 +11,10 @@ lang: ko
 
 # 비트와 함께 움직이기.
 
+<p align="center">
+  <img src="/assets/images/swiftian_groove.png" alt="Swiftian Groove" style="width: 100%; max-width: 250px; height: auto;">
+</p>
+
 ### 리듬이 창의력을 만듭니다.
 좋은 음악은 몰입도를 높이고 창의성을 자극합니다.  
 Swiftian은 여러분의 코딩 환경에 완벽히 어울리는 음악과 비트를 제공합니다.
