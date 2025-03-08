@@ -5,6 +5,9 @@ description: "Curated music designed specifically for coding productivity and cr
 keywords: "coding music, productivity, creativity, music, focus"
 ---
 
+[← Back to Home](/)
+---
+
 # Move with the Beat.
 
 ### Rhythm Fuels Creativity.
