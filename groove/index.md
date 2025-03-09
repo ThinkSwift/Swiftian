@@ -5,7 +5,7 @@ description: "Curated music designed specifically for coding productivity and cr
 keywords: "coding music, productivity, creativity, music, focus"
 ---
 
-[← Back to Home](/)
+#### [← Back to Home](/)
 
 # Move with the Beat.
 
@@ -27,4 +27,4 @@ Expect regular updates as we add more soundscapes, rhythms, and beats designed e
 
 ---
 
-[← Build Your Universe](/universe/) | [Made for Creators →](/creators/)
+#### [← Build Your Universe](/universe/) | [Made for Creators →](/creators/)
