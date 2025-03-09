@@ -9,6 +9,10 @@ keywords: "Mars Rebels, storytelling, creative coding, Swift"
 
 # Build Your Universe.
 
+<p align="center">
+  <img src="/assets/images/titan_skech_800.png" alt="Swiftian Groove" style="width: 100%; max-width: 250px; height: auto;">
+</p>
+
 ### Why Isn’t Learning Fun?
 Coding shouldn't feel like work.  
 Yet, it often does—because we lack stories that capture our imagination.
