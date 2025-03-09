@@ -7,9 +7,13 @@ permalink: /ko/coding/
 lang: ko
 ---
 
-[← 홈으로](/ko/)
+#### [← 홈으로](/ko/)
 
 # Think Swift.
+
+<p align="center">
+  <img src="/assets/images/coding_panic_1024.png" alt="Coding Panic" style="width: 100%; max-width: 250px; height: auto;">
+</p>
 
 ### 작게 시작하고 크게 생각하세요.
 코딩을 배우는 게 왜 어려워야 할까요?  
@@ -23,6 +27,9 @@ Swiftian은 작은 화면에서도 효과적인 코딩이 가능하도록 최소
 현재는 iOS 기반이지만, 곧 Android와 Python 등 다양한 언어와 플랫폼으로 확장될 예정입니다.  
 언제 어디서나 Swiftian과 함께 코딩하세요.
 
+<p align="center">
+  <img src="/assets/images/swiftian_logo_180.png" alt="Swiftian: Learn to Code" style="width: 100%; max-width: 80px; height: auto;">
+</p>
 ---
 
-[나만의 우주 만들기 →](/ko/universe/)
+#### [나만의 우주 만들기 →](/ko/universe/)
