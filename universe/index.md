@@ -29,4 +29,4 @@ With Swiftian, you’re not just writing code—you’re building your own adven
 
 ---
 
-[← Think Swift](/coding/) | [Move with the Beat →](/groove/)
+[← Think Swift](/coding/) |||| () oo [Move with the Beat →](/groove/)
