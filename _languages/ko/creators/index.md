@@ -27,6 +27,10 @@ Swiftian은 개발자, 디자이너, 스토리텔러 등 다양한 분야의 창
 이것은 시작에 불과합니다.  
 Swiftian은 계속해서 새로운 프로젝트, 참여 기회, 커뮤니티 활동을 통해 확장해나갈 것입니다.
 
+<p align="center">
+  <img src="/assets/images/iFlipbook.gif" alt="iFlipbook" style="width: 100%; max-width: 180px; height: auto;">
+</p>
+
 ---
 
 [← 비트와 함께 움직이기](/ko/groove/) 
