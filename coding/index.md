@@ -22,6 +22,10 @@ Swiftian isn't just another platform—it's meticulously built to guide you thro
 ### Made for Mobile First.
 Currently optimized for iOS, Swiftian’s minimalist design brings coding directly to your fingertips. Soon, we’ll expand into Android, Python, and beyond, helping you take your skills wherever you go.
 
+<p align="center">
+  <img src="/assets/images/coding_panic_180.png" alt="Swiftian Groove" style="width: 100%; max-width: 120px; height: auto;">
+</p>
+
 ---
 
 #### [Build Your Universe →](/universe/)
