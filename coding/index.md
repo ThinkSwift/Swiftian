@@ -5,7 +5,7 @@ description: "Learn Swift through curated, interactive lessons. Start small, thi
 keywords: "Swift, coding, SwiftUI, learn Swift, mobile development"
 ---
 
-[← Back to Home](/)
+#### [← Back to Home](/)
 
 # Think Swift.
 
@@ -24,4 +24,4 @@ Currently optimized for iOS, Swiftian’s minimalist design brings coding direct
 
 ---
 
-[Build Your Universe →](/universe/)
+#### [Build Your Universe →](/universe/)
