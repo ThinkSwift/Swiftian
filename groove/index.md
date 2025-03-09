@@ -26,7 +26,7 @@ Sound is essential to creative coding, just like DNA to life. Our growing collec
 Expect regular updates as we add more soundscapes, rhythms, and beats designed exclusively to power your coding experience.
 
 <p align="center">
-  <video controls style="width: 100%; max-width: 250px;">
+  <video controls style="width: 100%; max-width: 200px;">
     <source src="/assets/videos/swiftian_groove_720.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
