@@ -8,6 +8,10 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift"
 
 # Create. Explore.
 
+<p align="center">
+  <img src="/assets/images/swiftian_logo_1024.png" alt="Swiftian Groove" style="width: 100%; max-width: 250px; height: auto;">
+</p>
+
 Make something new. Push boundaries.  
 The journey starts here.
 
