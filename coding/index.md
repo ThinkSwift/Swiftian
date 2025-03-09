@@ -10,7 +10,7 @@ keywords: "Swift, coding, SwiftUI, learn Swift, mobile development"
 # Think Swift.
 
 <p align="center">
-  <img src="/assets/images/coding_panic_1024.png" alt="Swiftian Groove" style="width: 100%; max-width: 250px; height: auto;">
+  <img src="/assets/images/coding_panic_1024.png" alt="Coding Panic" style="width: 100%; max-width: 250px; height: auto;">
 </p>
 
 ### Start Small, Think Big.
@@ -23,7 +23,7 @@ Swiftian isn't just another platform—it's meticulously built to guide you thro
 Currently optimized for iOS, Swiftian’s minimalist design brings coding directly to your fingertips. Soon, we’ll expand into Android, Python, and beyond, helping you take your skills wherever you go.
 
 <p align="center">
-  <img src="/assets/images/coding_panic_180.png" alt="Swiftian Groove" style="width: 100%; max-width: 120px; height: auto;">
+  <img src="/assets/images/coding_panic_180.png" alt="Swiftian: Learn to Code" style="width: 100%; max-width: 120px; height: auto;">
 </p>
 
 ---
