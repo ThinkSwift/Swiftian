@@ -30,6 +30,13 @@ Swiftian은 리듬을 창의력의 필수 요소로 봅니다.
 ### 지속적 확장
 코딩 여정을 더욱 흥미롭게 만들어줄 특화된 음악과 비트를 계속해서 만나보세요.
 
+<p align="center">
+  <video controls style="width: 100%; max-width: 250px;">
+    <source src="/assets/videos/swiftian_groove_720.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</p>
+
 ---
 
 #### [← 나만의 우주 만들기](/ko/universe/) | [창작자들을 위한 공간 →](/ko/creators/)
