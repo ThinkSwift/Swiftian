@@ -5,7 +5,7 @@ description: "Swiftian is a community-focused platform built for creators to gro
 keywords: "Swiftian, creators, coding community, collaboration"
 ---
 
-[← Back to Home](/)
+#### [← Back to Home](/)
 
 # Made for Creators.
 
@@ -25,4 +25,4 @@ Stay tuned for future updates, new projects, and more ways to be involved. Swift
 
 ---
 
-[← Move with the Beat](/groove/) 
+#### [← Move with the Beat](/groove/) 
