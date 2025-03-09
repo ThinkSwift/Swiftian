@@ -7,9 +7,13 @@ permalink: /ko/universe/
 lang: ko
 ---
 
-[← 홈으로](/ko/)
+#### [← 홈으로](/ko/)
 
 # 나만의 우주 만들기.
+
+<p align="center">
+  <img src="/assets/images/titan_sketch_800.jpg" alt="Titan Sketch" style="width: 100%; max-width: 250px; height: auto;">
+</p>
 
 ### 왜 코딩은 재미없어야 할까?
 배움은 즐거워야 합니다. 하지만 지금까지의 코딩 교육은 기술적이고 지루했습니다.  
@@ -29,4 +33,4 @@ Swiftian은 기술만 가르치지 않습니다.
 
 ---
 
-[← Think Swift](/ko/coding/) | [비트와 함께 움직이기 →](/ko/groove/)
+#### [← Think Swift](/ko/coding/) | [비트와 함께 움직이기 →](/ko/groove/)
