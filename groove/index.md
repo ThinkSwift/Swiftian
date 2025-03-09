@@ -25,6 +25,13 @@ Sound is essential to creative coding, just like DNA to life. Our growing collec
 ### Continuously Expanding.
 Expect regular updates as we add more soundscapes, rhythms, and beats designed exclusively to power your coding experience.
 
+<p align="center">
+  <video controls style="width: 100%; max-width: 720px;">
+    <source src="/assets/video/swiftian_groove_720.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</p>
+
 ---
 
 #### [← Build Your Universe](/universe/) | [Made for Creators →](/creators/)
