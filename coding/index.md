@@ -9,6 +9,10 @@ keywords: "Swift, coding, SwiftUI, learn Swift, mobile development"
 
 # Think Swift.
 
+<p align="center">
+  <img src="/assets/images/coding_panic_1024.png" alt="Swiftian Groove" style="width: 100%; max-width: 250px; height: auto;">
+</p>
+
 ### Start Small, Think Big.
 Learning to code often feels overwhelming—huge screens, endless windows, too much space. Swiftian simplifies it all. A minimalist, curated coding environment that lets you start small and dream big.
 
