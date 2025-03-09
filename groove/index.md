@@ -27,7 +27,7 @@ Expect regular updates as we add more soundscapes, rhythms, and beats designed e
 
 <p align="center">
   <video controls style="width: 100%; max-width: 250px;">
-    <source src="/assets/video/swiftian_groove_720.mp4" type="video/mp4">
+    <source src="/assets/videos/swiftian_groove_720.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </p>
