@@ -13,13 +13,14 @@ lang: ko
   <img src="/assets/images/swiftian_logo_1024.png" alt="Swiftian" style="width: 100%; max-width: 180px; height: auto;">
 </p>
 
-<p align="center" style="font-size: 1.5rem; font-weight: bold; margin-top: -10px;">
+<p align="center" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 2px;">
   Swiftian
 </p>
 
-<p align="center" style="font-size: 0.9rem; color: gray;">
+<p align="center" style="font-size: 0.9rem; color: gray; margin-top: 0;">
   스위프티안
 </p>
+
 
 새로운 것을 만들어보세요.  
 한계를 뛰어넘는 여정이 여기에서 시작됩니다.
