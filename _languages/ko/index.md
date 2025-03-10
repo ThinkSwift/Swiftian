@@ -13,7 +13,7 @@ lang: ko
   <img src="/assets/images/swiftian_logo_1024.png" alt="Swiftian" style="width: 100%; max-width: 180px; height: auto;">
 </p>
 
-<p align="center" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 2px;">
+<p align="center" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1px;">
   Swiftian
 </p>
 
