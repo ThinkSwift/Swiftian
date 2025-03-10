@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "창조하고 탐험하라."
-description: "새로운 것을 만들어보세요. Swiftian은 창의적인 코딩 프로젝트와 스토리텔링을 통해 Swift를 배우는 인터랙티브 학습 플랫폼입니다."
-keywords: "Swiftian, 스위프트, Swift, iOS, 코딩, 프로그래밍, 창의적 코딩"
+title: "스위프티안 - Swiftian 공식 사이트"
+description: "Swiftian(스위프티안)은 창의적인 코딩 프로젝트와 스토리텔링을 통해 Swift를 배우는 인터랙티브 학습 플랫폼입니다."
+keywords: "스위프티안, Swiftian, 스위프트, Swift, iOS, 코딩, 프로그래밍, 창의적 코딩"
 permalink: /ko/
 lang: ko
 ---
 
-# 창조하고 탐험하라.
+# 스위프티안 - 창조하고 탐험하라.
 
 <p align="center">
   <img src="/assets/images/swiftian_logo_1024.png" alt="Swiftian" style="width: 100%; max-width: 180px; height: auto;">
@@ -15,6 +15,10 @@ lang: ko
 
 <p align="center" style="font-size: 1.5rem; font-weight: bold; margin-top: -10px;">
   Swiftian
+</p>
+
+<p align="center" style="font-size: 0.9rem; color: gray;">
+  스위프티안
 </p>
 
 새로운 것을 만들어보세요.  
