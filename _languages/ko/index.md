@@ -17,11 +17,6 @@ lang: ko
   Think Swift.
 </p>
 
-<p align="center" style="font-size: 0.9rem; color: gray; margin-top: 0;">
-  Swiftian
-</p>
-
-
 새로운 것을 만들어보세요.  
 한계를 뛰어넘는 여정이 여기에서 시작됩니다.
 
