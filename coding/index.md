@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "Think Swift."
+title: "Create. Explore."
 description: "Learn Swift through curated, interactive lessons. Start small, think big, and master coding step by step."
 keywords: "Swift, coding, SwiftUI, learn Swift, mobile development"
 ---
 
 #### [← Back to Home](/)
 
-# Think Swift.
+# Create. Explore.
 
 <p align="center">
   <img src="/assets/images/coding_panic_1024.png" alt="Coding Panic" style="width: 100%; max-width: 250px; height: auto;">
