@@ -28,4 +28,4 @@ Currently optimized for iOS, Swiftian’s minimalist design brings coding direct
 
 ---
 
-#### [Build Your Universe →](/universe/)
+#### [Build Your Universe. →](/universe/)
