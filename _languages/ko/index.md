@@ -7,14 +7,14 @@ permalink: /ko/
 lang: ko
 ---
 
-# 스위프티안 - 창조하고 탐험하라.
+# 스위프티안
 
 <p align="center">
   <img src="/assets/images/swiftian_logo_1024.png" alt="Swiftian" style="width: 100%; max-width: 180px; height: auto;">
 </p>
 
 <p align="center" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1px;">
-  Swiftian
+  Think Swift.
 </p>
 
 <p align="center" style="font-size: 0.9rem; color: gray; margin-top: 0;">
@@ -25,7 +25,7 @@ lang: ko
 새로운 것을 만들어보세요.  
 한계를 뛰어넘는 여정이 여기에서 시작됩니다.
 
-- [Think Swift →](/ko/coding/)
+- [창조하고 탐험하라 →](/ko/coding/)
 - [나만의 우주 만들기 →](/ko/universe/)
 - [비트와 함께 움직이기 →](/ko/groove/)
 - [창작자들을 위한 공간 →](/ko/creators/)
