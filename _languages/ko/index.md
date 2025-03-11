@@ -13,12 +13,12 @@ lang: ko
   <img src="/assets/images/swiftian_logo_1024.png" alt="Swiftian" style="width: 100%; max-width: 180px; height: auto;">
 </p>
 
-<p align="center" style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1px;">
+<p align="center" style="font-size: 1.5rem; font-weight: bold; margin-top: -10px;">
   Think Swift.
 </p>
 
 <p align="center" style="font-size: 0.9rem; color: gray; margin-top: 0;">
-  스위프티안
+  Swiftian
 </p>
 
 
