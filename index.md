@@ -6,7 +6,7 @@ description: "Make something new. Push boundaries. Swiftian is a curated, intera
 keywords: "Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift"
 ---
 
-# Swiftian.
+# Swiftian
 
 <p align="center">
   <img src="/assets/images/swiftian_logo_1024.png" alt="Swiftian" style="width: 100%; max-width: 180px; height: auto;">
@@ -19,7 +19,7 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift"
 Make something new. Push boundaries.  
 The journey starts here.
 
-- [Create. Explore. →](/coding/)
+- [Create Explore →](/coding/)
 - [Build Your Universe →](/universe/)
 - [Move with the Beat →](/groove/)
 - [Made for Creators →](/creators/)
