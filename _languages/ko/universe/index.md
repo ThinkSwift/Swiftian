@@ -33,4 +33,4 @@ Swiftian은 기술만 가르치지 않습니다.
 
 ---
 
-#### [← Think Swift](/ko/coding/) | [비트와 함께 움직이기 →](/ko/groove/)
+#### [← 창조하고 탐험하라](/ko/coding/) | [비트와 함께 움직이기 →](/ko/groove/)
