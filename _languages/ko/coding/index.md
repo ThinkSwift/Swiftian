@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Think Swift."
+title: "창조하고 탐험하라."
 description: "최소화된 환경에서 인터랙티브하게 Swift를 학습하세요. 작게 시작해 크게 생각하고, 단계별로 코딩을 마스터하세요."
 keywords: "Swift, SwiftUI, 코딩, 스위프트 배우기, iOS"
 permalink: /ko/coding/
@@ -9,7 +9,7 @@ lang: ko
 
 #### [← 홈으로](/ko/)
 
-# Think Swift.
+# 창조하고 탐험하라.
 
 <p align="center">
   <img src="/assets/images/coding_panic_1024.png" alt="Coding Panic" style="width: 100%; max-width: 250px; height: auto;">
