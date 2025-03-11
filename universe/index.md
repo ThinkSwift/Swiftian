@@ -29,4 +29,4 @@ With Swiftian, you’re not just writing code—you’re building your own adven
 
 ---
 
-#### [← Create. Explore.](/coding/) | [Move with the Beat. →](/groove/)
+#### [← Create Explore](/coding/) | [Move with the Beat →](/groove/)
