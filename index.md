@@ -19,10 +19,10 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift"
 Make something new. Push boundaries.  
 The journey starts here.
 
-- [Create Explore →](/coding/)
-- [Build Your Universe →](/universe/)
-- [Move with the Beat →](/groove/)
-- [Made for Creators →](/creators/)
+- [Create. Explore. →](/coding/)
+- [Build Your Universe. →](/universe/)
+- [Move with the Beat. →](/groove/)
+- [Made for Creators. →](/creators/)
 
 ---
 <footer>
