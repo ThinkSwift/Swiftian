@@ -15,10 +15,6 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift"
   </video>
 </p>
 
-<p align="center" style="font-size: 1.5rem; font-weight: bold; margin-top: -10px;">
-  Think Swift.
-</p>
-
 Make something new. Push boundaries.  
 The journey starts here.
 
