@@ -8,31 +8,27 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift"
 
 # Swiftian
 
-<p align="center" style="position: relative; display: inline-block;">
-  <video id="logoVideo" autoplay loop muted playsinline preload="metadata" 
-         style="width: 100%; max-width: 320px; height: auto; cursor: pointer; border-radius: 8px;">
+<p align="center">
+  <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 250px; height: auto; cursor: pointer;">
     <source src="/assets/videos/logo.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <span id="soundIcon" 
-        style="position: absolute; top: 10px; right: 10px; font-size: 20px; cursor: pointer; background: rgba(0, 0, 0, 0.6); color: white; padding: 5px 8px; border-radius: 50%;">
-    🔇
-  </span>
+  <span id="soundIcon" style="position: absolute; top: 10px; right: 10px; font-size: 24px; cursor: pointer;">🔇</span>
 </p>
 
 <script>
   const video = document.getElementById('logoVideo');
   const soundIcon = document.getElementById('soundIcon');
 
-  function toggleSound() {
+  video.addEventListener('click', function() {
     video.muted = !video.muted;
-    soundIcon.textContent = video.muted ? "🔇" : "🔊";
-  }
+    soundIcon.textContent = video.muted ? "🔇" : "🔊"; // 아이콘 변경
+  });
 
-  video.addEventListener('click', toggleSound);
   soundIcon.addEventListener('click', function(event) {
     event.stopPropagation(); // 비디오 클릭 이벤트와 충돌 방지
-    toggleSound();
+    video.muted = !video.muted;
+    soundIcon.textContent = video.muted ? "🔇" : "🔊";
   });
 </script>
 
