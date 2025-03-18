@@ -9,7 +9,7 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift"
 # Swiftian
 
 <p align="center">
-  <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 250px; height: auto; cursor: pointer;">
+  <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 320px; height: auto; cursor: pointer;">
     <source src="/assets/videos/logo.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -22,11 +22,11 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift"
 
   video.addEventListener('click', function() {
     video.muted = !video.muted;
-    soundIcon.textContent = video.muted ? "🔇" : "🔊"; // 아이콘 변경
+    soundIcon.textContent = video.muted ? "🔇" : "🔊"; 
   });
 
   soundIcon.addEventListener('click', function(event) {
-    event.stopPropagation(); // 비디오 클릭 이벤트와 충돌 방지
+    event.stopPropagation(); 
     video.muted = !video.muted;
     soundIcon.textContent = video.muted ? "🔇" : "🔊";
   });
