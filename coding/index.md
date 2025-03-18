@@ -10,7 +10,7 @@ keywords: "Swift, coding, SwiftUI, learn Swift, mobile development"
 # Create. Explore.
 
 <p align="center">
-  <img src="/assets/images/coding_panic_1024.png" alt="Coding Panic" style="width: 100%; max-width: 250px; height: auto;">
+  <img src="/assets/images/coding_panic.gif" alt="Coding Panic" style="width: 100%; max-width: 250px; height: auto;">
 </p>
 
 ### Start Small, Think Big.
