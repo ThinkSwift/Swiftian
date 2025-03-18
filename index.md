@@ -9,7 +9,7 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift"
 # Swiftian
 
 <p align="center">
-  <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 320px; height: auto; cursor: pointer;">
+  <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 480px; height: auto; cursor: pointer;">
     <source src="/assets/videos/logo.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
