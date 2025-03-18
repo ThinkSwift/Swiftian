@@ -9,7 +9,10 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift"
 # Swiftian
 
 <p align="center">
-  <img src="/assets/images/swiftian_logo_1024.png" alt="Swiftian" style="width: 100%; max-width: 180px; height: auto;">
+  <video autoplay loop muted playsinline style="width: 100%; max-width: 250px; height: auto;">
+    <source src="/assets/videos/logo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </p>
 
 <p align="center" style="font-size: 1.5rem; font-weight: bold; margin-top: -10px;">
