@@ -10,12 +10,28 @@ lang: ko
 # 스위프티안
 
 <p align="center">
-  <img src="/assets/images/swiftian_logo_1024.png" alt="Swiftian" style="width: 100%; max-width: 180px; height: auto;">
+  <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">
+    <source src="/assets/videos/logo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <span id="soundIcon" style="position: absolute; top: 10px; right: 10px; font-size: 24px; cursor: pointer;">🔇</span>
 </p>
 
-<p align="center" style="font-size: 1.5rem; font-weight: bold; margin-top: -10px;">
-  Think Swift.
-</p>
+<script>
+  const video = document.getElementById('logoVideo');
+  const soundIcon = document.getElementById('soundIcon');
+
+  video.addEventListener('click', function() {
+    video.muted = !video.muted;
+    soundIcon.textContent = video.muted ? "🔇" : "🔊"; 
+  });
+
+  soundIcon.addEventListener('click', function(event) {
+    event.stopPropagation(); 
+    video.muted = !video.muted;
+    soundIcon.textContent = video.muted ? "🔇" : "🔊";
+  });
+</script>
 
 새로운 것을 만들어보세요.  
 한계를 뛰어넘는 여정이 여기에서 시작됩니다.
