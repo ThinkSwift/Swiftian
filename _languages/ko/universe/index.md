@@ -12,7 +12,7 @@ lang: ko
 # 나만의 우주 만들기.
 
 <p align="center">
-  <img src="/assets/images/titan_sketch_800.jpg" alt="Titan Sketch" style="width: 100%; max-width: 250px; height: auto;">
+  <img src="/assets/images/titan_sketch.gif" alt="Titan Sketch" style="width: 100%; max-width: 250px; height: auto;">
 </p>
 
 ### 왜 코딩은 재미없어야 할까?

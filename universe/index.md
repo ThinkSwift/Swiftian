@@ -10,7 +10,7 @@ keywords: "Mars Rebels, storytelling, creative coding, Swift"
 # Build Your Universe.
 
 <p align="center">
-  <img src="/assets/images/titan_sketch_800.jpg" alt="Titan Sketch" style="width: 100%; max-width: 250px; height: auto;">
+  <img src="/assets/images/titan_sketch.gif" alt="Titan Sketch" style="width: 100%; max-width: 250px; height: auto;">
 </p>
 
 ### Why Isn’t Learning Fun?

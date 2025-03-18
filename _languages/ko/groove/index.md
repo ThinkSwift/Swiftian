@@ -12,7 +12,7 @@ lang: ko
 # 비트와 함께 움직이기.
 
 <p align="center">
-  <img src="/assets/images/swiftian_groove.png" alt="Swiftian Groove" style="width: 100%; max-width: 250px; height: auto;">
+  <img src="/assets/images/swiftian_groove.gif" alt="Swiftian Groove" style="width: 100%; max-width: 250px; height: auto;">
 </p>
 
 ### 리듬이 창의력을 만듭니다.
