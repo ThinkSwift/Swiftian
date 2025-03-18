@@ -12,7 +12,7 @@ lang: ko
 # 창조하고 탐험하라.
 
 <p align="center">
-  <img src="/assets/images/coding_panic_1024.png" alt="Coding Panic" style="width: 100%; max-width: 250px; height: auto;">
+  <img src="/assets/images/coding_panic.gif" alt="Coding Panic" style="width: 100%; max-width: 250px; height: auto;">
 </p>
 
 ### 작게 시작하고 크게 생각하세요.
