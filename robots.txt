@@ -3,7 +3,6 @@ Allow: /
 Allow: /favicon.ico
 Allow: /favicon.png
 
-Disallow: /assets/
 Disallow: /privacy/
 
 Sitemap: https://swiftian.com/sitemap.xml
