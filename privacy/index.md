@@ -21,11 +21,7 @@ We do not store, process, or transmit personal data to any external servers.
 ## 2. Third-Party Services
 - Our apps do not integrate with external services that collect personal information.
 
-## 3. Contact
-If you have any questions or concerns about this Privacy Policy,  
-please contact us at [hello@swiftian.com](mailto:hello@swiftian.com).
-
-## 4. Changes to This Policy
+## 3. Changes to This Policy
 We may update or modify this Privacy Policy at any time.  
 Please review this page periodically. Any significant changes will be clearly indicated.
 
