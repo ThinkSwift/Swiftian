@@ -1,4 +1,4 @@
-```markdown
+
 ---
 layout: default
 title: "思考 Swift。"
@@ -45,4 +45,4 @@ keywords: "斯威夫天, Swift, SwiftUI, iOS, 创意编程, 学习 Swift"
 <footer>
   <small><a href="/privacy/">隐私政策</a></small>
 </footer>
-```
+
