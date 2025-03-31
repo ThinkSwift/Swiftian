@@ -3,8 +3,8 @@ layout: default
 title: "스위프티안 - Swiftian 공식 사이트"
 description: "스위프티안은 창의적인 코딩 프로젝트와 스토리텔링을 통해 Swift를 배우는 인터랙티브 학습 플랫폼입니다."
 keywords: "스위프티안, Swiftian, 스위프트, Swift, iOS, 코딩, 프로그래밍, 창의적 코딩"
-permalink: /ko/
-lang: ko
+permalink: /zh-hans/
+lang: zh-hans
 ---
 
 # 스위프티안
