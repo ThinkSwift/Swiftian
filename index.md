@@ -43,12 +43,12 @@ The journey starts here.
 ---
 
 <footer>
-  <small>
-    <a href="/privacy/">Privacy Policy</a>
-    <span id="languageToggle" style="cursor: pointer; margin-left: 10px;">🌐</span>
-  </small>
-  <div id="languageList" style="display: none; margin-top: 10px; font-size: 0.9em;">
-    <ul style="list-style: none; padding: 0;">
+ <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+    <small><a href="/privacy/">Privacy Policy</a></small>
+    <span id="languageToggle" style="cursor: pointer; font-size: 1.2em;">🌐</span>
+  </div>
+  <div id="languageList" style="display: none; margin-top: 20px; font-size: 0.9em;">
+    <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 4px;">
       <li><a href="/ar/">🇸🇦 ar - مرحبا</a></li>
       <li><a href="/ca/">🇪🇸 ca - Hola</a></li>
       <li><a href="/zh-hans/">🇨🇳 zh-hans - 你好</a></li>

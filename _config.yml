@@ -8,23 +8,23 @@ author: "Swiftian Team"
 plugins:
   - jekyll-sitemap
 
-#collections:
-#  languages:
-#    output: true
-#    permalink: /:path/
+collections:
+  languages:
+    output: true
+    permalink: /:path/
 
-#defaults:
-#  - scope:
-#      path: "_languages"
-#    values:
-#      sitemap: true
-#      author: "Swiftian Team"
-#  - scope:
-#      path: ""
-#    values:
-#      sitemap: true
-# - scope:
-#      type: languages
-#    values:
-#      sitemap: true
-#      layout: default
+defaults:
+  - scope:
+      path: "_languages"
+    values:
+      sitemap: true
+      author: "Swiftian Team"
+  - scope:
+      path: ""
+    values:
+      sitemap: true
+  - scope:
+      type: languages
+    values:
+      sitemap: true
+      layout: default
