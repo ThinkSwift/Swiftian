@@ -30,10 +30,3 @@ The journey starts here.
     <span id="languageToggle" style="cursor: pointer; font-size: 1.2em;">🌐</span>
   </div>
 </footer>
-
-<script>
-  document.getElementById('languageToggle').addEventListener('click', function () {
-    const list = document.getElementById('languageList');
-    list.style.display = list.style.display === 'none' ? 'block' : 'none';
-  });
-</script>
