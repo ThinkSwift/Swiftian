@@ -1,11 +1,9 @@
-
 ---
 layout: default
 title: "思考 Swift。"
 permalink: /zh-hans/
 description: "创造新事物。突破界限。斯威夫天是一个为创意学习 Swift 而精心策划的互动平台。"
 keywords: "斯威夫天, Swift, SwiftUI, iOS, 创意编程, 学习 Swift"
-
 ---
 
 # 斯威夫天
