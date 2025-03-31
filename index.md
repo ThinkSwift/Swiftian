@@ -6,7 +6,7 @@ keywords: "Swiftian, Swift, coding, iOS, creative coding, learn Swift"
 permalink: /
 ---
 
-# Swiftian2
+# Swiftian
 
 <p align="center">
   <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">
@@ -32,6 +32,7 @@ permalink: /
   });
 </script>
 
+#
 Make something new. Push boundaries.  
 The journey starts here.
 
