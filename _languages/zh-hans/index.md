@@ -1,3 +1,4 @@
+
 ---
 layout: default
 title: "思考 Swift。"
