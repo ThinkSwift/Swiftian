@@ -5,7 +5,7 @@ description: "Make something new. Push boundaries. Swiftian is a curated, intera
 permalink: /
 ---
 
-# Swiftian
+# Swiftian3
 
 <p align="center">
   <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">
