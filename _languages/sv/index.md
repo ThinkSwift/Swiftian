@@ -1,10 +1,9 @@
-```markdown
 ---
 layout: default
-title: "Tänk Swift."
+title: "Think Swift."
+description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
+keywords: "Swiftian, Swift, coding, iOS, creative coding, learn Swift"
 permalink: /
-description: "Skapa något nytt. Pressa gränser. Swiftian är en kuraterad, interaktiv plattform för att lära sig Swift på ett kreativt sätt."
-keywords: "Swiftian, Swift, SwiftUI, iOS, kreativ kodning, lär dig Swift"
 ---
 
 # Swiftian
@@ -12,7 +11,7 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, kreativ kodning, lär dig Swift"
 <p align="center">
   <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">
     <source src="/assets/videos/logo.mp4" type="video/mp4">
-    Din webbläsare stöder inte videotaggen.
+    Your browser does not support the video tag.
   </video>
   <span id="soundIcon" style="position: absolute; top: 10px; right: 10px; font-size: 24px; cursor: pointer;">🔇</span>
 </p>
@@ -33,16 +32,15 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, kreativ kodning, lär dig Swift"
   });
 </script>
 
-Skapa något nytt. Pressa gränser.  
-Resan börjar här.
+Make something new. Push boundaries.  
+The journey starts here.
 
-- [Skapa Utforska →](/coding/)
-- [Bygg ditt Universum →](/universe/)
-- [Rör dig med Takten →](/groove/)
-- [Skapat för Skapare →](/creators/)
+- [Create. Explore. →](/coding/)
+- [Build Your Universe →](/universe/)
+- [Move with the Beat →](/groove/)
+- [Made for Creators →](/creators/)
 
 ---
 <footer>
-  <small><a href="/privacy/">Integritetspolicy</a></small>
+  <small><a href="/privacy/">Privacy Policy</a></small>
 </footer>
-```

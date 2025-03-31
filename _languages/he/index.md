@@ -1,12 +1,9 @@
-Certainly! Below is the markdown content translated into Hebrew while preserving the markdown structure:
-
-```markdown
 ---
 layout: default
-title: "תחשוב סוויפט."
+title: "Think Swift."
+description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
+keywords: "Swiftian, Swift, coding, iOS, creative coding, learn Swift"
 permalink: /
-description: "תיצור משהו חדש. תדחוף גבולות. Swiftian היא פלטפורמה אינטראקטיבית ומעוצבת ללמידת סוויפט בצורה יצירתית."
-keywords: "Swiftian, סוויפט, SwiftUI, iOS, קידוד יצירתי, ללמוד סוויפט"
 ---
 
 # Swiftian
@@ -14,7 +11,7 @@ keywords: "Swiftian, סוויפט, SwiftUI, iOS, קידוד יצירתי, ללמ
 <p align="center">
   <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">
     <source src="/assets/videos/logo.mp4" type="video/mp4">
-    הדפדפן שלך אינו תומך בתג הווידאו.
+    Your browser does not support the video tag.
   </video>
   <span id="soundIcon" style="position: absolute; top: 10px; right: 10px; font-size: 24px; cursor: pointer;">🔇</span>
 </p>
@@ -35,18 +32,15 @@ keywords: "Swiftian, סוויפט, SwiftUI, iOS, קידוד יצירתי, ללמ
   });
 </script>
 
-תיצור משהו חדש. תדחוף גבולות.  
-המסע מתחיל כאן.
+Make something new. Push boundaries.  
+The journey starts here.
 
-- [צור חקור →](/coding/)
-- [בנה את היקום שלך →](/universe/)
-- [זוז עם הקצב →](/groove/)
-- [נוצר עבור יוצרים →](/creators/)
+- [Create. Explore. →](/coding/)
+- [Build Your Universe →](/universe/)
+- [Move with the Beat →](/groove/)
+- [Made for Creators →](/creators/)
 
 ---
 <footer>
-  <small><a href="/privacy/">מדיניות פרטיות</a></small>
+  <small><a href="/privacy/">Privacy Policy</a></small>
 </footer>
-```
-
-Note: The word "Swiftian" was left unchanged as per your instruction, but if it was intended to be replaced or translated differently, please let me know!

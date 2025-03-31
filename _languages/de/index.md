@@ -1,9 +1,9 @@
-```markdown
+---
 layout: default
-title: "Denke Swift."
+title: "Think Swift."
+description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
+keywords: "Swiftian, Swift, coding, iOS, creative coding, learn Swift"
 permalink: /
-description: "Erschaffe etwas Neues. Grenzen überschreiten. Swiftian ist eine kuratierte, interaktive Plattform zum kreativen Lernen von Swift."
-keywords: "Swiftian, Swift, SwiftUI, iOS, kreatives Programmieren, Swift lernen"
 ---
 
 # Swiftian
@@ -11,7 +11,7 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, kreatives Programmieren, Swift lernen"
 <p align="center">
   <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">
     <source src="/assets/videos/logo.mp4" type="video/mp4">
-    Ihr Browser unterstützt das Video-Tag nicht.
+    Your browser does not support the video tag.
   </video>
   <span id="soundIcon" style="position: absolute; top: 10px; right: 10px; font-size: 24px; cursor: pointer;">🔇</span>
 </p>
@@ -32,16 +32,15 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, kreatives Programmieren, Swift lernen"
   });
 </script>
 
-Erschaffe etwas Neues. Grenzen überschreiten.  
-Die Reise beginnt hier.
+Make something new. Push boundaries.  
+The journey starts here.
 
-- [Erstellen Erkunden →](/coding/)
-- [Baue Dein Universum →](/universe/)
-- [Bewege dich im Takt →](/groove/)
-- [Für Kreative gemacht →](/creators/)
+- [Create. Explore. →](/coding/)
+- [Build Your Universe →](/universe/)
+- [Move with the Beat →](/groove/)
+- [Made for Creators →](/creators/)
 
 ---
 <footer>
-  <small><a href="/privacy/">Datenschutzrichtlinie</a></small>
+  <small><a href="/privacy/">Privacy Policy</a></small>
 </footer>
-```

@@ -1,12 +1,9 @@
-Certainly! Below is the translated content into C# syntax while preserving the markdown structure and replacing all occurrences of 'Swiftian' with 'Swiftian' (which remains unchanged as per your instructions):
-
-```markdown
 ---
 layout: default
 title: "Think Swift."
-permalink: /
 description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
-keywords: "Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift"
+keywords: "Swiftian, Swift, coding, iOS, creative coding, learn Swift"
+permalink: /
 ---
 
 # Swiftian
@@ -20,8 +17,8 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift"
 </p>
 
 <script>
-  var video = document.getElementById('logoVideo');
-  var soundIcon = document.getElementById('soundIcon');
+  const video = document.getElementById('logoVideo');
+  const soundIcon = document.getElementById('soundIcon');
 
   video.addEventListener('click', function() {
     video.muted = !video.muted;
@@ -38,7 +35,7 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift"
 Make something new. Push boundaries.  
 The journey starts here.
 
-- [Create Explore →](/coding/)
+- [Create. Explore. →](/coding/)
 - [Build Your Universe →](/universe/)
 - [Move with the Beat →](/groove/)
 - [Made for Creators →](/creators/)
@@ -47,6 +44,3 @@ The journey starts here.
 <footer>
   <small><a href="/privacy/">Privacy Policy</a></small>
 </footer>
-```
-
-Note: The translation retains the original markdown structure, and the occurrences of 'Swiftian' remain unchanged as they were identical. The script section has been slightly adapted to resemble C# style, keeping in mind that JavaScript is used for web interactions.

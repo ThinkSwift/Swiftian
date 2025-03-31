@@ -1,10 +1,9 @@
-```markdown
 ---
 layout: default
 title: "Think Swift."
-permalink: /
 description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
-keywords: "Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift"
+keywords: "Swiftian, Swift, coding, iOS, creative coding, learn Swift"
+permalink: /
 ---
 
 # Swiftian
@@ -33,16 +32,15 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, creative coding, learn Swift"
   });
 </script>
 
-Tee jotain uutta. Riko rajoja.  
-Matka alkaa täältä.
+Make something new. Push boundaries.  
+The journey starts here.
 
-- [Luo Tutki →](/coding/)
-- [Rakenna Universumisi →](/universe/)
-- [Liiku Biitin Kanssa →](/groove/)
-- [Tehty Luojille →](/creators/)
+- [Create. Explore. →](/coding/)
+- [Build Your Universe →](/universe/)
+- [Move with the Beat →](/groove/)
+- [Made for Creators →](/creators/)
 
 ---
 <footer>
-  <small><a href="/privacy/">Tietosuojakäytäntö</a></small>
+  <small><a href="/privacy/">Privacy Policy</a></small>
 </footer>
-```

@@ -1,10 +1,9 @@
-```markdown
 ---
 layout: default
-title: "Gondolkodj Swift módra."
+title: "Think Swift."
+description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
+keywords: "Swiftian, Swift, coding, iOS, creative coding, learn Swift"
 permalink: /
-description: "Alkoss valami újat. Lépj át határokat. A Swiftian egy gondosan összeállított, interaktív platform a Swift kreatív tanulásához."
-keywords: "Swiftian, Swift, SwiftUI, iOS, kreatív kódolás, tanulj Swiftet"
 ---
 
 # Swiftian
@@ -12,7 +11,7 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, kreatív kódolás, tanulj Swiftet"
 <p align="center">
   <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">
     <source src="/assets/videos/logo.mp4" type="video/mp4">
-    A böngésződ nem támogatja a videó tag-et.
+    Your browser does not support the video tag.
   </video>
   <span id="soundIcon" style="position: absolute; top: 10px; right: 10px; font-size: 24px; cursor: pointer;">🔇</span>
 </p>
@@ -33,16 +32,15 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, kreatív kódolás, tanulj Swiftet"
   });
 </script>
 
-Alkoss valami újat. Lépj át határokat.  
-Az utazás itt kezdődik.
+Make something new. Push boundaries.  
+The journey starts here.
 
-- [Alkoss Fedezz fel →](/coding/)
-- [Építsd meg az Univerzumod →](/universe/)
-- [Mozogj a Ritmussal →](/groove/)
-- [Alkotóknak készült →](/creators/)
+- [Create. Explore. →](/coding/)
+- [Build Your Universe →](/universe/)
+- [Move with the Beat →](/groove/)
+- [Made for Creators →](/creators/)
 
 ---
 <footer>
-  <small><a href="/privacy/">Adatvédelmi irányelvek</a></small>
+  <small><a href="/privacy/">Privacy Policy</a></small>
 </footer>
-```

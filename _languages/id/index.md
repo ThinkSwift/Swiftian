@@ -1,12 +1,9 @@
-Sure, here is the translated markdown content in Indonesian, with the markdown structure preserved:
-
-```markdown
 ---
 layout: default
 title: "Think Swift."
+description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
+keywords: "Swiftian, Swift, coding, iOS, creative coding, learn Swift"
 permalink: /
-description: "Buat sesuatu yang baru. Dorong batasan. Swiftian adalah platform interaktif yang dikurasi untuk belajar Swift secara kreatif."
-keywords: "Swiftian, Swift, SwiftUI, iOS, pemrograman kreatif, belajar Swift"
 ---
 
 # Swiftian
@@ -14,7 +11,7 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, pemrograman kreatif, belajar Swift"
 <p align="center">
   <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">
     <source src="/assets/videos/logo.mp4" type="video/mp4">
-    Browser Anda tidak mendukung tag video.
+    Your browser does not support the video tag.
   </video>
   <span id="soundIcon" style="position: absolute; top: 10px; right: 10px; font-size: 24px; cursor: pointer;">🔇</span>
 </p>
@@ -35,16 +32,15 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, pemrograman kreatif, belajar Swift"
   });
 </script>
 
-Buat sesuatu yang baru. Dorong batasan.  
-Perjalanan dimulai di sini.
+Make something new. Push boundaries.  
+The journey starts here.
 
-- [Buat Jelajahi →](/coding/)
-- [Bangun Semestamu →](/universe/)
-- [Bergerak dengan Irama →](/groove/)
-- [Dibuat untuk Kreator →](/creators/)
+- [Create. Explore. →](/coding/)
+- [Build Your Universe →](/universe/)
+- [Move with the Beat →](/groove/)
+- [Made for Creators →](/creators/)
 
 ---
 <footer>
-  <small><a href="/privacy/">Kebijakan Privasi</a></small>
+  <small><a href="/privacy/">Privacy Policy</a></small>
 </footer>
-```

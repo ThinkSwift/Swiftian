@@ -1,12 +1,9 @@
-Here's the markdown content translated into Romanian, while preserving the markdown structure:
-
-```markdown
 ---
 layout: default
-title: "Gândește Swift."
+title: "Think Swift."
+description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
+keywords: "Swiftian, Swift, coding, iOS, creative coding, learn Swift"
 permalink: /
-description: "Creează ceva nou. Împinge limitele. Swiftian este o platformă curată și interactivă pentru a învăța Swift creativ."
-keywords: "Swiftian, Swift, SwiftUI, iOS, codare creativă, învață Swift"
 ---
 
 # Swiftian
@@ -14,7 +11,7 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, codare creativă, învață Swift"
 <p align="center">
   <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">
     <source src="/assets/videos/logo.mp4" type="video/mp4">
-    Browserul tău nu suportă eticheta video.
+    Your browser does not support the video tag.
   </video>
   <span id="soundIcon" style="position: absolute; top: 10px; right: 10px; font-size: 24px; cursor: pointer;">🔇</span>
 </p>
@@ -35,16 +32,15 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, codare creativă, învață Swift"
   });
 </script>
 
-Creează ceva nou. Împinge limitele.  
-Călătoria începe aici.
+Make something new. Push boundaries.  
+The journey starts here.
 
-- [Creează Explorează →](/coding/)
-- [Construiește-ți Universul →](/universe/)
-- [Mișcă-te pe Ritm →](/groove/)
-- [Creat pentru Creatori →](/creators/)
+- [Create. Explore. →](/coding/)
+- [Build Your Universe →](/universe/)
+- [Move with the Beat →](/groove/)
+- [Made for Creators →](/creators/)
 
 ---
 <footer>
-  <small><a href="/privacy/">Politica de Confidențialitate</a></small>
+  <small><a href="/privacy/">Privacy Policy</a></small>
 </footer>
-```

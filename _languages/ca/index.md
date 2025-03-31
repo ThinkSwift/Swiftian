@@ -1,10 +1,9 @@
-```markdown
 ---
 layout: default
-title: "Pensa en Swift."
+title: "Think Swift."
+description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
+keywords: "Swiftian, Swift, coding, iOS, creative coding, learn Swift"
 permalink: /
-description: "Crea alguna cosa nova. Trenca límits. Swiftian és una plataforma interactiva i curada per aprendre Swift de manera creativa."
-keywords: "Swiftian, Swift, SwiftUI, iOS, programació creativa, aprendre Swift"
 ---
 
 # Swiftian
@@ -12,7 +11,7 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, programació creativa, aprendre Swift"
 <p align="center">
   <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">
     <source src="/assets/videos/logo.mp4" type="video/mp4">
-    El teu navegador no suporta l'etiqueta de vídeo.
+    Your browser does not support the video tag.
   </video>
   <span id="soundIcon" style="position: absolute; top: 10px; right: 10px; font-size: 24px; cursor: pointer;">🔇</span>
 </p>
@@ -33,16 +32,15 @@ keywords: "Swiftian, Swift, SwiftUI, iOS, programació creativa, aprendre Swift"
   });
 </script>
 
-Crea alguna cosa nova. Trenca límits.  
-El viatge comença aquí.
+Make something new. Push boundaries.  
+The journey starts here.
 
-- [Crea Explora →](/coding/)
-- [Construeix el teu Univers →](/universe/)
-- [Mou-te amb el Ritme →](/groove/)
-- [Fet per a Creadors →](/creators/)
+- [Create. Explore. →](/coding/)
+- [Build Your Universe →](/universe/)
+- [Move with the Beat →](/groove/)
+- [Made for Creators →](/creators/)
 
 ---
 <footer>
-  <small><a href="/privacy/">Política de Privacitat</a></small>
+  <small><a href="/privacy/">Privacy Policy</a></small>
 </footer>
-```
