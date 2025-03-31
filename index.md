@@ -7,12 +7,7 @@ permalink: /
 
 # Swiftian3
 
-<p align="center">
-  <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">
-    <source src="/assets/videos/logo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</p>
+
 
 Make something new. Push boundaries.  
 The journey starts here.
