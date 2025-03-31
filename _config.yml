@@ -8,10 +8,10 @@ author: "Swiftian Team"
 plugins:
   - jekyll-sitemap
 
-collections:
-  languages:
-    output: true
-    permalink: /:path/
+#collections:
+#  languages:
+#    output: true
+#    permalink: /:path/
 
 #defaults:
 #  - scope:
