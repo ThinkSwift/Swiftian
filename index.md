@@ -32,7 +32,7 @@ permalink: /
   });
 </script>
 
-#
+# 
 Make something new. Push boundaries.  
 The journey starts here.
 
