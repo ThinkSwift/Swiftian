@@ -42,6 +42,53 @@ lang: ko
 - [창작자들을 위한 공간 →](/ko/creators/)
 
 ---
+
 <footer>
-  <small><a href="/ko/privacy/">개인정보 보호정책</a></small>
+ <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+    <small><a href="/privacy/">Privacy Policy</a></small>
+    <span id="languageToggle" style="cursor: pointer; font-size: 1.2em;">🌐</span>
+  </div>
+  <div id="languageList" style="display: none; margin-top: 20px; font-size: 0.9em;">
+    <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 4px;">
+      <li><a href="/ar/">🇸🇦 ar - مرحبا</a></li>
+      <li><a href="/ca/">🇪🇸 ca - Hola</a></li>
+      <li><a href="/zh-hans/">🇨🇳 zh-hans - 你好</a></li>
+      <li><a href="/zh-hant/">🇹🇼 zh-hant - 你好</a></li>
+      <li><a href="/hr/">🇭🇷 hr - Bok</a></li>
+      <li><a href="/cs/">🇨🇿 cs - Ahoj</a></li>
+      <li><a href="/da/">🇩🇰 da - Hej</a></li>
+      <li><a href="/nl/">🇳🇱 nl - Hallo</a></li>
+      <li><a href="/fi/">🇫🇮 fi - Hei</a></li>
+      <li><a href="/fr/">🇫🇷 fr - Bonjour</a></li>
+      <li><a href="/de/">🇩🇪 de - Hallo</a></li>
+      <li><a href="/el/">🇬🇷 el - Γεια</a></li>
+      <li><a href="/he/">🇮🇱 he - שלום</a></li>
+      <li><a href="/hi/">🇮🇳 hi - नमस्ते</a></li>
+      <li><a href="/hu/">🇭🇺 hu - Helló</a></li>
+      <li><a href="/id/">🇮🇩 id - Halo</a></li>
+      <li><a href="/it/">🇮🇹 it - Ciao</a></li>
+      <li><a href="/ja/">🇯🇵 ja - こんにちは</a></li>
+      <li><a href="/ko/">🇰🇷 ko - 안녕하세요</a></li>
+      <li><a href="/ms/">🇲🇾 ms - Hai</a></li>
+      <li><a href="/no/">🇳🇴 no - Hei</a></li>
+      <li><a href="/pl/">🇵🇱 pl - Cześć</a></li>
+      <li><a href="/pt/">🇵🇹 pt - Olá</a></li>
+      <li><a href="/ro/">🇷🇴 ro - Salut</a></li>
+      <li><a href="/ru/">🇷🇺 ru - Привет</a></li>
+      <li><a href="/sk/">🇸🇰 sk - Ahoj</a></li>
+      <li><a href="/es/">🇪🇸 es - Hola</a></li>
+      <li><a href="/sv/">🇸🇪 sv - Hej</a></li>
+      <li><a href="/th/">🇹🇭 th - สวัสดี</a></li>
+      <li><a href="/tr/">🇹🇷 tr - Merhaba</a></li>
+      <li><a href="/uk/">🇺🇦 uk - Привіт</a></li>
+      <li><a href="/vi/">🇻🇳 vi - Xin chào</a></li>
+    </ul>
+  </div>
 </footer>
+
+<script>
+  document.getElementById('languageToggle').addEventListener('click', function () {
+    const list = document.getElementById('languageList');
+    list.style.display = list.style.display === 'none' ? 'block' : 'none';
+  });
+</script>
