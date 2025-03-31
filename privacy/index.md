@@ -25,4 +25,6 @@ We do not store, process, or transmit personal data to any external servers.
 We may update or modify this Privacy Policy at any time.  
 Please review this page periodically. Any significant changes will be clearly indicated.
 
+---
+
 **Effective Date:** February 24, 2025
