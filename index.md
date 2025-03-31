@@ -2,7 +2,6 @@
 layout: default
 title: "Think Swift."
 description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
-keywords: "Swiftian, Swift, coding, iOS, creative coding, learn Swift"
 permalink: /
 ---
 
@@ -13,24 +12,7 @@ permalink: /
     <source src="/assets/videos/logo.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <span id="soundIcon" style="position: absolute; top: 10px; right: 10px; font-size: 24px; cursor: pointer;">🔇</span>
 </p>
-
-<script>
-  const video = document.getElementById('logoVideo');
-  const soundIcon = document.getElementById('soundIcon');
-
-  video.addEventListener('click', function() {
-    video.muted = !video.muted;
-    soundIcon.textContent = video.muted ? "🔇" : "🔊"; 
-  });
-
-  soundIcon.addEventListener('click', function(event) {
-    event.stopPropagation(); 
-    video.muted = !video.muted;
-    soundIcon.textContent = video.muted ? "🔇" : "🔊";
-  });
-</script>
 
 Make something new. Push boundaries.  
 The journey starts here.
@@ -43,7 +25,7 @@ The journey starts here.
 ---
 
 <footer>
- <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
     <small><a href="/privacy/">Privacy Policy</a></small>
     <span id="languageToggle" style="cursor: pointer; font-size: 1.2em;">🌐</span>
   </div>
