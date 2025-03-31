@@ -1,17 +1,18 @@
 ---
 layout: default
-title: "思考 Swift。"
-permalink: /zh-hans/
-description: "创造新事物。突破界限。斯威夫天是一个为创意学习 Swift 而精心策划的互动平台。"
-keywords: "斯威夫天, Swift, SwiftUI, iOS, 创意编程, 学习 Swift"
+title: "스위프티안 - Swiftian 공식 사이트"
+description: "스위프티안은 창의적인 코딩 프로젝트와 스토리텔링을 통해 Swift를 배우는 인터랙티브 학습 플랫폼입니다."
+keywords: "스위프티안, Swiftian, 스위프트, Swift, iOS, 코딩, 프로그래밍, 창의적 코딩"
+permalink: /ko/
+lang: ko
 ---
 
-# 斯威夫天
+# 스위프티안
 
 <p align="center">
   <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">
     <source src="/assets/videos/logo.mp4" type="video/mp4">
-    您的浏览器不支持视频标签。
+    Your browser does not support the video tag.
   </video>
   <span id="soundIcon" style="position: absolute; top: 10px; right: 10px; font-size: 24px; cursor: pointer;">🔇</span>
 </p>
@@ -32,16 +33,15 @@ keywords: "斯威夫天, Swift, SwiftUI, iOS, 创意编程, 学习 Swift"
   });
 </script>
 
-创造新事物。突破界限。  
-旅程从这里开始。
+새로운 것을 만들어보세요.  
+한계를 뛰어넘는 여정이 여기에서 시작됩니다.
 
-- [创造 探索 →](/coding/)
-- [构建你的宇宙 →](/universe/)
-- [随节拍移动 →](/groove/)
-- [为创作者而生 →](/creators/)
+- [창조하고 탐험하라 →](/ko/coding/)
+- [나만의 우주 만들기 →](/ko/universe/)
+- [비트와 함께 움직이기 →](/ko/groove/)
+- [창작자들을 위한 공간 →](/ko/creators/)
 
 ---
 <footer>
-  <small><a href="/privacy/">隐私政策</a></small>
+  <small><a href="/ko/privacy/">개인정보 보호정책</a></small>
 </footer>
-
