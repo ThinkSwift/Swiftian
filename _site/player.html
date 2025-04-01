@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiftian Groove Player</title>
+    <style>
+        body {
+            background: transparent;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<audio id="background-music">
+    <source src="/assets/music/Swiftian Groove.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const music = document.getElementById("background-music");
+
+    // Restore playback state
+    if (localStorage.getItem("isPlaying") === "true") {
+        music.play();
+    }
+
+    music.onplay = () => {
+        localStorage.setItem("isPlaying", "true");
+        parent.postMessage("playing", "*");
+    };
+
+    music.onpause = () => {
+        localStorage.setItem("isPlaying", "false");
+        parent.postMessage("paused", "*");
+    };
+
+    // Ensure manual looping (bypasses browser restrictions)
+    music.onended = () => {
+        music.currentTime = 0;
+        music.play();
+    };
+
+    // Receive messages from main page
+    window.addEventListener("message", function(event) {
+        if (event.data === "play") music.play();
+        if (event.data === "pause") music.pause();
+    });
+});
+</script>
+
+</body>
+</html>
