@@ -3,6 +3,7 @@ layout: default
 title: "Build Your Universe."
 description: "Discover coding through immersive storytelling. Mars Rebels, our sci-fi narrative, makes coding engaging, interactive, and enjoyable."
 keywords: "Mars Rebels, storytelling, creative coding, Swift"
+lang: en
 ---
 
 #### [← Back to Home](/)

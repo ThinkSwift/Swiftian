@@ -3,6 +3,7 @@ layout: default
 title: "Move with the Beat."
 description: "Curated music designed specifically for coding productivity and creative focus. Enhance your workflow with rhythm."
 keywords: "coding music, productivity, creativity, music, focus"
+lang: en
 ---
 
 #### [← Back to Home](/)

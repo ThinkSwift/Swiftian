@@ -2,11 +2,12 @@
 layout: default
 title: "Think Swift."
 description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
+keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
 lang: cs
 permalink: /cs/
 ---
 
-# Swiftian: en
+# Swiftian
 
 <p align="center">
   <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">

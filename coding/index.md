@@ -2,7 +2,8 @@
 layout: default
 title: "Create. Explore."
 description: "Learn Swift through curated, interactive lessons. Start small, think big, and master coding step by step."
-keywords: "Swift, coding, coding, learn Swift, mobile development"
+keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
+lang: en
 ---
 
 #### [← Back to Home](/)

@@ -3,6 +3,7 @@ layout: default
 title: "Made for Creators."
 description: "Swiftian is a community-focused platform built for creators to grow, share, and innovate together."
 keywords: "Swiftian, creators, coding community, collaboration"
+lang: en
 ---
 
 #### [← Back to Home](/)
