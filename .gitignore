@@ -24,3 +24,4 @@ vendor/
 # macOS
 Icon?
 .DS_Store
+_site/
