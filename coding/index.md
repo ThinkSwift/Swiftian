@@ -7,7 +7,7 @@ keywords: "Swift, coding, coding, learn Swift, mobile development"
 
 #### [← Back to Home](/)
 
-# Create. Explore.
+# Create. Explore.2
 
 <p align="center">
   <img src="/assets/images/coding_panic.gif" alt="Coding Panic" style="width: 100%; max-width: 250px; height: auto;">
