@@ -4,7 +4,7 @@ title: "Think Swift."
 description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
 ---
 
-# Swiftian3
+# Swiftian
 
 <p align="center">
   <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">
