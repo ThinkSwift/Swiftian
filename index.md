@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Think Swift."
-permalink: /
 description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
 ---
 
