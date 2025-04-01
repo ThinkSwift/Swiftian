@@ -7,8 +7,6 @@ description: "Make something new. Push boundaries. Swiftian is a curated, intera
 
 # Swiftian3
 
-
-
 Make something new. Push boundaries.  
 The journey starts here.
 
@@ -22,6 +20,5 @@ The journey starts here.
 <footer>
   <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
     <small><a href="/privacy/">Privacy Policy</a></small>
-    <span id="languageToggle" style="cursor: pointer; font-size: 1.2em;">🌐</span>
   </div>
 </footer>
