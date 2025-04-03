@@ -8,25 +8,31 @@ lang: ko
 permalink: /ko/groove/
 ---
 
-#### [← Back to Home](/)
+#### [← 홈 돌아가기](/)
 
-# Move with the Beat.
+# 비트에 맞춰 움직이세요.
 
 <p align="center">
   <img src="/assets/images/swiftian_groove.gif" alt="Swiftian Groove" style="width: 100%; max-width: 250px; height: auto;">
 </p>
 
-### Rhythm Fuels Creativity.
-Good music boosts productivity, sharpens focus, and enhances creativity. Swiftian incorporates carefully curated soundscapes that synchronize perfectly with your coding rhythm.
+### 리듬은 창의력의 연료입니다.
+좋은 음악은 생산성을 높이고, 집중력을 끌어올리며, 창의력을 자극합니다.
+Swiftian은 코딩 리듬에 완벽하게 어울리는 정제된 사운드스케이프를 함께 제공합니다.
 
-### A Playlist Designed for Creation.
-Our music isn't random—it's crafted to inspire. With each new project and story, you'll find new beats, tunes, and rhythms, tailored specifically for your creative journey.
+### 창작을 위해 설계된 플레이리스트
+우리가 제공하는 음악은 단순한 배경음이 아닙니다.
+각 프로젝트와 이야기마다 새로운 비트, 멜로디, 리듬이 함께하며
+여러분의 창작 여정을 영감으로 가득 채웁니다.
 
-### Music in the DNA of Swiftian.
-Sound is essential to creative coding, just like DNA to life. Our growing collection of original tracks and soundscapes ensures you'll always have something fresh to move your creativity forward.
+### Swiftian의 DNA 속에 담긴 음악
+창의적인 코딩에 있어 사운드는 생명에 있어서 DNA처럼 본질적인 요소입니다.
+Swiftian은 자체 제작한 트랙과 사운드스케이프를 계속해서 확장해 나가며,
+항상 새로운 리듬이 여러분의 창의성을 북돋을 수 있도록 준비하고 있습니다.
 
-### Continuously Expanding.
-Expect regular updates as we add more soundscapes, rhythms, and beats designed exclusively to power your coding experience.
+### 계속 확장되는 세계
+우리는 코딩 경험을 더욱 풍부하게 만들기 위해
+새로운 사운드스케이프와 리듬, 비트를 정기적으로 업데이트할 예정입니다.
 
 <p align="center">
   <video controls style="width: 100%; max-width: 250px;">
@@ -37,4 +43,4 @@ Expect regular updates as we add more soundscapes, rhythms, and beats designed e
 
 ---
 
-#### [← Build Your Universe](/universe/) | [Made for Creators →](/creators/)
+#### [← 당신만의 세계를 만들어보세요](/universe/) | [창작자를 위한 공간입니다 →](/creators/)
