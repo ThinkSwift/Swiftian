@@ -3,6 +3,7 @@ layout: default
 title: "Create. Explore."
 description: "Learn Swift through curated, interactive lessons. Start small, think big, and master coding step by step."
 keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
+lang: en
 lang: ko
 permalink: /ko/coding/
 ---
@@ -28,5 +29,6 @@ Currently optimized for iOS, Swiftian’s minimalist design brings coding direct
   <img src="/assets/images/swiftian_logo_180.png" alt="Swiftian: Learn to Code" style="width: 100%; max-width: 80px; height: auto;">
 </p>
 
+---
 
 #### [Build Your Universe →](/universe/)

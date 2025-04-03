@@ -3,6 +3,7 @@ layout: default
 title: "Move with the Beat."
 description: "Curated music designed specifically for coding productivity and creative focus. Enhance your workflow with rhythm."
 keywords: "coding music, productivity, creativity, music, focus"
+lang: en
 lang: da
 permalink: /da/groove/
 ---
@@ -34,5 +35,6 @@ Expect regular updates as we add more soundscapes, rhythms, and beats designed e
   </video>
 </p>
 
+---
 
 #### [← Build Your Universe](/universe/) | [Made for Creators →](/creators/)

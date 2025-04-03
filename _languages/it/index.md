@@ -3,6 +3,7 @@ layout: default
 title: "Think Swift."
 description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
 keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
+lang: en
 lang: it
 permalink: /it/
 ---
@@ -25,6 +26,7 @@ The journey starts here.
 - [Move with the Beat →](/groove/)
 - [Made for Creators →](/creators/)
 
+---
 
 <footer>
  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
@@ -74,5 +76,13 @@ The journey starts here.
   document.getElementById('languageToggle').addEventListener('click', function () {
     const list = document.getElementById('languageList');
     list.style.display = list.style.display === 'none' ? 'block' : 'none';
+  });
+
+  const logoVideo = document.getElementById('logoVideo');
+  const soundIcon = document.getElementById('soundIcon');
+
+  soundIcon.addEventListener('click', function () {
+    logoVideo.muted = !logoVideo.muted;
+    soundIcon.textContent = logoVideo.muted ? '🔇' : '🔊';
   });
 </script>

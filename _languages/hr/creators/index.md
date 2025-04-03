@@ -3,6 +3,7 @@ layout: default
 title: "Made for Creators."
 description: "Swiftian is a community-focused platform built for creators to grow, share, and innovate together."
 keywords: "Swiftian, creators, coding community, collaboration"
+lang: en
 lang: hr
 permalink: /hr/creators/
 ---
@@ -29,5 +30,6 @@ Stay tuned for future updates, new projects, and more ways to be involved. Swift
   <img src="/assets/images/iFlipbook.gif" alt="iFlipbook" style="width: 100%; max-width: 180px; height: auto;">
 </p>
 
+---
 
 #### [← Move with the Beat](/groove/) 

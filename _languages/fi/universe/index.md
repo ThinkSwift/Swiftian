@@ -3,6 +3,7 @@ layout: default
 title: "Build Your Universe."
 description: "Discover coding through immersive storytelling. Mars Rebels, our sci-fi narrative, makes coding engaging, interactive, and enjoyable."
 keywords: "Mars Rebels, storytelling, creative coding, Swift"
+lang: en
 lang: fi
 permalink: /fi/universe/
 ---
@@ -29,5 +30,6 @@ You’ll have access to handpicked assets, characters, and interactive scenarios
 We integrate storytelling deeply into your learning experience.  
 With Swiftian, you’re not just writing code—you’re building your own adventure.
 
+---
 
 #### [← Create Explore](/coding/) | [Move with the Beat →](/groove/)
