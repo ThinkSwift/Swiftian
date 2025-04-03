@@ -75,4 +75,12 @@ The journey starts here.
     const list = document.getElementById('languageList');
     list.style.display = list.style.display === 'none' ? 'block' : 'none';
   });
+
+  const logoVideo = document.getElementById('logoVideo');
+  const soundIcon = document.getElementById('soundIcon');
+
+  soundIcon.addEventListener('click', function () {
+    logoVideo.muted = !logoVideo.muted;
+    soundIcon.textContent = logoVideo.muted ? '🔇' : '🔊';
+  });
 </script>
