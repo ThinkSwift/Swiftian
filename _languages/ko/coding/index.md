@@ -8,9 +8,9 @@ lang: ko
 permalink: /ko/coding/
 ---
 
-#### [← 홈 돌아가기](/)
+#### [← 홈 돌아가기](/ko/)
 
-# 창조하고, 탐험하세요
+# 창조하고, 탐험하세요.
 
 <p align="center">
   <img src="/assets/images/coding_panic.gif" alt="Coding Panic" style="width: 100%; max-width: 250px; height: auto;">
@@ -38,4 +38,4 @@ Swiftian은 현재 iOS에 최적화되어 있으며,
 
 ---
 
-#### [당신만의 세계를 만들어보세요 →](/universe/)
+#### [당신만의 세계를 만들어보세요 →](/ko/universe/)

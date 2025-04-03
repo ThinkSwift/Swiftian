@@ -8,9 +8,9 @@ lang: ko
 permalink: /ko/universe/
 ---
 
-#### [← 홈 돌아가기](/)
+#### [← 홈 돌아가기](/ko/)
 
-# Build Your Universe.
+# B당신만의 세계를 만들어보세요.
 
 <p align="center">
   <img src="/assets/images/titan_sketch.gif" alt="Titan Sketch" style="width: 100%; max-width: 250px; height: auto;">
@@ -36,4 +36,4 @@ Swiftian에서 여러분은 단순히 코드를 작성하는 것이 아니라,
 
 ---
 
-#### [← 창조하고, 탐험하세요](/coding/) | [비트에 맞춰 움직이세요 →](/groove/)
+#### [← 창조하고, 탐험하세요](/ko/coding/) | [비트에 맞춰 움직이세요 →](/ko/groove/)
