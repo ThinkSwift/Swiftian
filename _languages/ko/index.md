@@ -6,9 +6,14 @@ keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
 lang: ko
 permalink: /ko/
 ---
+
 {% assign lang = page.lang | default: "en" %}
+{% if lang == "en" or lang == nil %}
+  {% assign prefix = "" %}
+{% else %}
+  {% assign prefix = "/" | append: lang %}
+{% endif %}
 {% assign nav = site.data.navigation[lang] %}
-{% assign prefix = lang == "en" or lang == nil ? "" : "/" | append: lang %}
 
 # Swiftian
 
