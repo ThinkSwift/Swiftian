@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "Privacy Policy"
-permalink: /privacy/
+lang: ko
+permalink: /ko/privacy/
 robots: noindex, nofollow
 description: "Swiftian Privacy Policy page."
 ---

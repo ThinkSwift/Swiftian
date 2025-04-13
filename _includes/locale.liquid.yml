@@ -1,0 +1,11 @@
+{% assign lang = page.lang | default: "en" %}
+{% assign nav = site.data.navigation[lang] %}
+{% assign meta = nav %}
+
+{% if lang == "en" or lang == nil %}
+  {% assign prefix = "" %}
+  {% assign homePath = "/" %}
+{% else %}
+  {% assign prefix = "/" | append: lang %}
+  {% assign homePath = prefix | append: "/" %}
+{% endif %}
