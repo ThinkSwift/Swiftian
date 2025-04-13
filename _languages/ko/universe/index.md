@@ -10,7 +10,7 @@ permalink: /ko/universe/
 
 #### [← 홈 돌아가기](/ko/)
 
-# B당신만의 세계를 만들어보세요.
+# 당신만의 세계를 만들어보세요.
 
 <p align="center">
   <img src="/assets/images/titan_sketch.gif" alt="Titan Sketch" style="width: 100%; max-width: 250px; height: auto;">
