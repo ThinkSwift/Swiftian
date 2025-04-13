@@ -7,8 +7,11 @@ lang: en
 lang: ko
 permalink: /ko/
 ---
+{% assign lang = page.lang | default: "en" %}
+{% assign nav = site.data.navigation[lang] %}
+{% assign prefix = lang == "en" or lang == nil ? "" : "/" | append: lang %}
 
-# 스위프티안
+# Swiftian
 
 <p align="center">
   <video id="logoVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">
@@ -18,19 +21,19 @@ permalink: /ko/
   <span id="soundIcon" style="position: absolute; top: 10px; right: 10px; font-size: 24px; cursor: pointer;">🔇</span>
 </p>
 
-새로운 걸 만들어보세요. 경계를 넘어보세요.
-여정은 여기서 시작됩니다.
+{{ nav.tagline1 }}  
+{{ nav.tagline2 }}
 
-- [창조하고, 탐험하세요 →](/ko/coding/)
-- [당신만의 세계를 만들어보세요 →](/ko/universe/)
-- [비트에 맞춰 움직이세요 →](/ko/groove/)
-- [창작자를 위한 공간입니다 →](/ko/creators/)
+- [{{ nav.coding }} →]({{ prefix }}/coding/)
+- [{{ nav.universe }} →]({{ prefix }}/universe/)
+- [{{ nav.groove }} →]({{ prefix }}/groove/)
+- [{{ nav.creators }} →]({{ prefix }}/creators/)
 
 ---
 
 <footer>
  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-    <small><a href="/privacy/">Privacy Policy</a></small>
+    <small><a href="{{ prefix }}/privacy/">{{ nav.privacy }}</a></small>
     <span id="languageToggle" style="cursor: pointer; font-size: 1.2em;">🌐</span>
   </div>
   <div id="languageList" style="display: none; margin-top: 20px; font-size: 0.9em;">

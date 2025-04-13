@@ -5,6 +5,9 @@ description: "Make something new. Push boundaries. Swiftian is a curated, intera
 keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
 lang: en
 ---
+{% assign lang = page.lang | default: "en" %}
+{% assign nav = site.data.navigation[lang] %}
+{% assign prefix = lang == "en" or lang == nil ? "" : "/" | append: lang %}
 
 # Swiftian
 
@@ -16,19 +19,19 @@ lang: en
   <span id="soundIcon" style="position: absolute; top: 10px; right: 10px; font-size: 24px; cursor: pointer;">🔇</span>
 </p>
 
-Make something new. Push boundaries.  
-The journey starts here.
+{{ nav.tagline1 }}  
+{{ nav.tagline2 }}
 
-- [Create. Explore. →](/coding/)
-- [Build Your Universe →](/universe/)
-- [Move with the Beat →](/groove/)
-- [Made for Creators →](/creators/)
+- [{{ nav.coding }} →]({{ prefix }}/coding/)
+- [{{ nav.universe }} →]({{ prefix }}/universe/)
+- [{{ nav.groove }} →]({{ prefix }}/groove/)
+- [{{ nav.creators }} →]({{ prefix }}/creators/)
 
 ---
 
 <footer>
  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-    <small><a href="/privacy/">Privacy Policy</a></small>
+    <small><a href="{{ prefix }}/privacy/">{{ nav.privacy }}</a></small>
     <span id="languageToggle" style="cursor: pointer; font-size: 1.2em;">🌐</span>
   </div>
   <div id="languageList" style="display: none; margin-top: 20px; font-size: 0.9em;">
