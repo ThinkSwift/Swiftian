@@ -1,0 +1,18 @@
+<p align="center">
+  <video id="{{ include.id | default: 'pageVideo' }}" autoplay loop muted playsinline preload="metadata" style="{{ include.style | default: 'width: 100%; max-width: 640px; height: auto; cursor: pointer;' }}">
+    <source src="{{ include.src }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <span id="{{ include.soundIconId | default: 'soundIcon' }}" style="position: absolute; top: 10px; right: 10px; font-size: 24px; cursor: pointer;">🔇</span>
+</p>
+
+<script>
+  const video = document.getElementById('{{ include.id | default: "pageVideo" }}');
+  const soundIcon = document.getElementById('{{ include.soundIconId | default: "soundIcon" }}');
+  if (video && soundIcon) {
+    soundIcon.addEventListener('click', function () {
+      video.muted = !video.muted;
+      soundIcon.textContent = video.muted ? '🔇' : '🔊';
+    });
+  }
+</script>
