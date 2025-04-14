@@ -1,6 +1,7 @@
 ---
 layout: default
 lang: en
+permalink: /
 title: "{{ meta.title }}"
 description: "{{ meta.description }}"
 keywords: "{{ meta.keywords }}"
