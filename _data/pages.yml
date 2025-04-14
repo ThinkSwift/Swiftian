@@ -1,0 +1,94 @@
+home:
+  en:
+    title: Swiftian
+    text: 'Make something new. Push boundaries.
+
+      The journey starts here.'
+coding:
+  en:
+    title: Create. Explore.
+    sections:
+    - heading: Start Small, Think Big.
+      text: Learning to code often feels overwhelming—huge screens, endless windows,
+        too much space. Swiftian simplifies it all. A minimalist, curated coding environment
+        that lets you start small and dream big.
+    - heading: Curated, Structured, Effective.
+      text: Swiftian isn't just another platform—it's meticulously built to guide
+        you through Swift fundamentals, step by step. Each lesson builds upon the
+        last, designed specifically for clarity and hands-on practice.
+    - heading: Made for Mobile First.
+      text: Currently optimized for iOS, Swiftian’s minimalist design brings coding
+        directly to your fingertips. In the future, we’ll explore new directions—whether
+        it’s different languages, platforms, or creative tools—to help your skills
+        grow wherever you go.
+universe:
+  en:
+    title: Build Your Universe.
+    sections:
+    - heading: Why Isn’t Learning Fun?
+      text: Coding shouldn't feel like work. Yet, it often does—because we lack stories
+        that capture our imagination.
+    - heading: Learning Through Immersion.
+      text: 'Mars Rebels is our solution: a curated sci-fi universe designed specifically
+        to make your coding journey immersive and enjoyable. Every lesson you complete
+        unlocks new parts of this exciting story.'
+    - heading: Curated for Creativity.
+      text: You’ll have access to handpicked assets, characters, and interactive scenarios
+        designed to enhance your coding skills while you build something uniquely
+        yours. Your creativity, empowered.
+    - heading: More Than Just Lessons.
+      text: We integrate storytelling deeply into your learning experience. With Swiftian,
+        you’re not just writing code—you’re building your own adventure.
+groove:
+  en:
+    title: Move with the Beat.
+    sections:
+    - heading: Rhythm Fuels Creativity.
+      text: Good music boosts productivity, sharpens focus, and enhances creativity.
+        Swiftian incorporates carefully curated soundscapes that synchronize perfectly
+        with your coding rhythm.
+    - heading: A Playlist Designed for Creation.
+      text: Our music isn't random—it's crafted to inspire. With each new project
+        and story, you'll find new beats, tunes, and rhythms, tailored specifically
+        for your creative journey.
+    - heading: Music in the DNA of Swiftian.
+      text: Sound is essential to creative coding, just like DNA to life. Our growing
+        collection of original tracks and soundscapes ensures you'll always have something
+        fresh to move your creativity forward.
+    - heading: Continuously Expanding.
+      text: Expect regular updates as we add more soundscapes, rhythms, and beats
+        designed exclusively to power your coding experience.
+creators:
+  en:
+    title: Made for Creators.
+    sections:
+    - heading: A Platform Built on Collaboration.
+      text: Swiftian thrives when ideas flow freely. We’re creating a community that
+        fosters collaboration between coders, artists, designers, and storytellers.
+    - heading: Your Ideas Shape Swiftian.
+      text: Our platform is dynamic—evolving through your contributions. Whether it's
+        a creative asset, a new story, or fresh ideas, your creativity helps shape
+        our shared ecosystem.
+    - heading: Built for Growth.
+      text: We don't just teach coding; we build relationships. We invite creators
+        from all disciplines to connect, collaborate, and collectively push Swiftian
+        forward.
+    - heading: More to Come.
+      text: This is only the beginning. Stay tuned for future updates, new projects,
+        and more ways to be involved. Swiftian is yours to grow.
+privacy:
+  en:
+    title: Privacy Policy
+    sections:
+    - heading: 1. No Data Collection
+      bullets:
+      - No user registration or login is required.
+      - We do not track location or store unique device identifiers.
+      - We do not use cookies or analytics tools to gather personal data.
+    - heading: 2. Third-Party Services
+      bullets:
+      - Our apps do not integrate with external services that collect personal information.
+    - heading: 3. Changes to This Policy
+      text: We may update or modify this Privacy Policy at any time. Please review
+        this page periodically. Any significant changes will be clearly indicated.
+    effective_date: February 24, 2025
