@@ -6,24 +6,34 @@ title: "Create. Explore."
 description: "Learn Swift through curated, interactive lessons. Start small, think big, and master coding step by step."
 keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
 ---
+
 {% include locale.liquid %}
 {% assign content = site.data.pages.coding[lang] %}
+{% assign media = site.data.media.coding %}
+
+#### [← {{ nav.home }}]({{ prefix }}/)
 
 # {{ content.title }}
 
-<p align="center">
-  <img src="/assets/images/coding_panic.gif" alt="Coding Panic" style="width: 100%; max-width: 250px; height: auto;">
-</p>
+{% include media.html
+  type=media.header.type
+  src=media.header.src
+  alt=media.header.alt
+  max=media.header.max
+%}
 
 {% for section in content.sections %}
 ### {{ section.heading }}
 {{ section.text }}
 {% endfor %}
 
-<p align="center">
-  <img src="/assets/images/swiftian_logo_180.png" alt="Swiftian: Learn to Code" style="width: 100%; max-width: 80px; height: auto;">
-</p>
+{% include media.html
+  type=media.logo.type
+  src=media.logo.src
+  alt=media.logo.alt
+  max=media.logo.max
+%}
 
 ---
 
-#### [Build Your Universe →](/universe/)
+#### [{{ nav.universe }} →]({{ prefix }}/universe/)

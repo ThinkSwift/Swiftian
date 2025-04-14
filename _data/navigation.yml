@@ -1,10 +1,4 @@
 en:
-  meta:
-    title: "Think Swift."
-    description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
-    keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
-  tagline1: "Make something new. Push boundaries."
-  tagline2: "The journey starts here."
   coding: "Create. Explore."
   universe: "Build Your Universe"
   groove: "Move with the Beat"
@@ -14,12 +8,6 @@ en:
   effective_date: "Effective Date: February 24, 2025"
 
 ko:
-  meta:
-    title: "Think Swift."
-    description: "새로운 걸 만들어보세요. 경계를 넘어보세요. Swiftian은 창의적으로 Swift를 배울 수 있는 플랫폼입니다."
-    keywords: "스위프티안, Swift, 코딩, Swift 배우기, 앱 개발"
-  tagline1: "새로운 걸 만들어보세요. 경계를 넘어보세요."
-  tagline2: "여정은 여기서 시작됩니다."
   coding: "창조하고, 탐험하세요"
   universe: "당신만의 세계를 만들어보세요"
   groove: "비트에 맞춰 움직이세요"

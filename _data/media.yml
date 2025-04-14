@@ -1,0 +1,18 @@
+coding:
+  header:
+    type: "image"
+    src: "/assets/images/coding_panic.gif"
+    alt: "Coding Panic"
+    max: 250
+  logo:
+    type: "image"
+    src: "/assets/images/swiftian_logo_180.png"
+    alt: "Swiftian: Learn to Code"
+    max: 80
+
+universe:
+  header:
+    type: "image"
+    src: "/assets/images/mars_scene.jpg"
+    alt: "Mars Scene"
+    max: 300

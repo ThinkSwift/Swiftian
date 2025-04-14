@@ -1,0 +1,18 @@
+{% if include.type == "image" %}
+  <p align="center">
+    <img src="{{ include.src }}"
+         alt="{{ include.alt | default: '' }}"
+         style="width: 100%; max-width: {{ include.max }}px; height: auto;">
+  </p>
+{% elsif include.type == "video" %}
+  <p align="center">
+    <video
+      {% if include.controls %}controls{% endif %}
+      {% if include.muted %}muted{% endif %}
+      autoplay loop playsinline preload="metadata"
+      style="width: 100%; max-width: {{ include.max }}px; height: auto;">
+      <source src="{{ include.src }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </p>
+{% endif %}

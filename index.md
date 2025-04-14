@@ -2,9 +2,9 @@
 layout: default
 lang: en
 permalink: /
-title: "{{ meta.title }}"
-description: "{{ meta.description }}"
-keywords: "{{ meta.keywords }}"
+title: "Think Swift."
+description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
+keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
 ---
 {% include locale.liquid %}
 {% assign content = site.data.pages.home[lang] %}
