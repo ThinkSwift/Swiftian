@@ -11,7 +11,7 @@ keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
 {% assign content = site.data.pages[lang].coding %}
 {% assign media = site.data.media.coding %}
 
-#### [{{ arrow_left }} {{ nav.home }}]({{ prefix }}/)
+#### [← {{ nav.home }}]({{ prefix }}/)
 
 # {{ content.title }}
 
@@ -36,4 +36,4 @@ keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
 
 ---
 
-#### [{{ nav.universe }} {{ arrow_right }}]({{ prefix }}/universe/)
+#### [{{ nav.universe }} →]({{ prefix }}/universe/)

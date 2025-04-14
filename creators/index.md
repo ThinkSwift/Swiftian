@@ -11,7 +11,7 @@ keywords: "Swiftian, creators, coding community, collaboration"
 {% assign content = site.data.pages[lang].creators %}
 {% assign media = site.data.media.creators %}
 
-#### [{{ arrow_left }} {{ nav.groove }}]({{ prefix }}/groove/)
+#### [← {{ nav.groove }}]({{ prefix }}/groove/)
 
 # {{ content.title }}
 
@@ -30,4 +30,4 @@ keywords: "Swiftian, creators, coding community, collaboration"
 
 ---
 
-#### [{{ arrow_left }} {{ nav.groove }}]({{ prefix }}/groove/)
+#### [← {{ nav.groove }}]({{ prefix }}/groove/)

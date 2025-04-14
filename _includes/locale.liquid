@@ -9,7 +9,3 @@
   {% assign prefix = "/" | append: lang %}
   {% assign homePath = prefix | append: "/" %}
 {% endif %}
-
-{% assign is_rtl = lang == "ar" or lang == "he" %}
-{% assign arrow_right = is_rtl | default: false | if true then "←" else "→" %}
-{% assign arrow_left  = is_rtl | default: false | if true then "→" else "←" %}

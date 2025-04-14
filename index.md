@@ -15,10 +15,10 @@ keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
 
 {{ content.text | newline_to_br }}
 
-- [{{ nav.coding }} {{ arrow_right }}]({{ prefix }}/coding/)
-- [{{ nav.universe }} {{ arrow_right }}]({{ prefix }}/universe/)
-- [{{ nav.groove }} {{ arrow_right }}]({{ prefix }}/groove/)
-- [{{ nav.creators }} {{ arrow_right }}]({{ prefix }}/creators/)
+- [{{ nav.coding }} →]({{ prefix }}/coding/)
+- [{{ nav.universe }} →]({{ prefix }}/universe/)
+- [{{ nav.groove }} →]({{ prefix }}/groove/)
+- [{{ nav.creators }} →]({{ prefix }}/creators/)
 
 ---
 {% include footer.html %}
