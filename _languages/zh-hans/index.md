@@ -3,7 +3,6 @@ layout: default
 title: "Think Swift."
 description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
 keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
-lang: en
 lang: zh-hans
 permalink: /zh-hans/
 ---
