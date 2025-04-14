@@ -13,6 +13,25 @@ coding:
 universe:
   header:
     type: "image"
-    src: "/assets/images/mars_scene.jpg"
-    alt: "Mars Scene"
-    max: 300
+    src: "/assets/images/titan_sketch.gif"
+    alt: "Titan Sketch"
+    max: 250
+
+groove:
+  header:
+    type: "image"
+    src: "/assets/images/swiftian_groove.gif"
+    alt: "Swiftian Groove"
+    max: 250
+  preview:
+    type: "video"
+    src: "/assets/videos/swiftian_groove_720.mp4"
+    max: 250
+    controls: true
+
+creators:
+  logo:
+    type: "image"
+    src: "/assets/images/iFlipbook.gif"
+    alt: "iFlipbook"
+    max: 180

@@ -1,38 +1,40 @@
 ---
 layout: default
+lang: en
+permalink: /groove/
 title: "Move with the Beat."
 description: "Curated music designed specifically for coding productivity and creative focus. Enhance your workflow with rhythm."
 keywords: "coding music, productivity, creativity, music, focus"
-lang: en
 ---
 
-#### [← Back to Home](/)
+{% include locale.liquid %}
+{% assign content = site.data.pages.groove[lang] %}
+{% assign media = site.data.media.groove %}
 
-# Move with the Beat.
+#### [← {{ nav.universe }}]({{ prefix }}/universe/)
 
-<p align="center">
-  <img src="/assets/images/swiftian_groove.gif" alt="Swiftian Groove" style="width: 100%; max-width: 250px; height: auto;">
-</p>
+# {{ content.title }}
 
-### Rhythm Fuels Creativity.
-Good music boosts productivity, sharpens focus, and enhances creativity. Swiftian incorporates carefully curated soundscapes that synchronize perfectly with your coding rhythm.
+{% include media.html
+  type=media.header.type
+  src=media.header.src
+  alt=media.header.alt
+  max=media.header.max
+%}
 
-### A Playlist Designed for Creation.
-Our music isn't random—it's crafted to inspire. With each new project and story, you'll find new beats, tunes, and rhythms, tailored specifically for your creative journey.
+{% for section in content.sections %}
+### {{ section.heading }}
+{{ section.text }}
 
-### Music in the DNA of Swiftian.
-Sound is essential to creative coding, just like DNA to life. Our growing collection of original tracks and soundscapes ensures you'll always have something fresh to move your creativity forward.
+{% endfor %}
 
-### Continuously Expanding.
-Expect regular updates as we add more soundscapes, rhythms, and beats designed exclusively to power your coding experience.
-
-<p align="center">
-  <video controls style="width: 100%; max-width: 250px;">
-    <source src="/assets/videos/swiftian_groove_720.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</p>
+{% include media.html
+  type=media.preview.type
+  src=media.preview.src
+  max=media.preview.max
+  controls=media.preview.controls
+%}
 
 ---
 
-#### [← Build Your Universe](/universe/) | [Made for Creators →](/creators/)
+#### [← {{ nav.universe }}]({{ prefix }}/universe/) | [{{ nav.creators }} →]({{ prefix }}/creators/)
