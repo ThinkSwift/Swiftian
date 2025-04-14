@@ -16,18 +16,13 @@
 </footer>
 
 <script>
-  document.getElementById('languageToggle').addEventListener('click', function () {
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById('languageToggle');
     const list = document.getElementById('languageList');
-    list.style.display = list.style.display === 'none' ? 'block' : 'none';
+    if (toggle && list) {
+      toggle.addEventListener('click', function () {
+        list.style.display = list.style.display === 'none' ? 'block' : 'none';
+      });
+    }
   });
-
-  const logoVideo = document.getElementById('logoVideo');
-  const soundIcon = document.getElementById('soundIcon');
-
-  if (logoVideo && soundIcon) {
-    soundIcon.addEventListener('click', function () {
-      logoVideo.muted = !logoVideo.muted;
-      soundIcon.textContent = logoVideo.muted ? '🔇' : '🔊';
-    });
-  }
 </script>

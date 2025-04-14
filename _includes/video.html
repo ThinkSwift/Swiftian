@@ -7,12 +7,14 @@
 </p>
 
 <script>
-  const video = document.getElementById('{{ include.id | default: "pageVideo" }}');
-  const soundIcon = document.getElementById('{{ include.soundIconId | default: "soundIcon" }}');
-  if (video && soundIcon) {
-    soundIcon.addEventListener('click', function () {
-      video.muted = !video.muted;
-      soundIcon.textContent = video.muted ? '🔇' : '🔊';
-    });
-  }
+  document.addEventListener("DOMContentLoaded", function () {
+    const video = document.getElementById('{{ include.id | default: "pageVideo" }}');
+    const soundIcon = document.getElementById('{{ include.soundIconId | default: "soundIcon" }}');
+    if (video && soundIcon) {
+      soundIcon.addEventListener('click', function () {
+        video.muted = !video.muted;
+        soundIcon.textContent = video.muted ? '🔇' : '🔊';
+      });
+    }
+  });
 </script>
