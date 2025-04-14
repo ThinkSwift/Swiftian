@@ -7,7 +7,7 @@ description: "Make something new. Push boundaries. Swiftian is a curated, intera
 keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
 ---
 {% include locale.liquid %}
-{% assign content = site.data.pages.home[lang] %}
+{% assign content = site.data.pages[lang].home %}
 
 # {{ content.title }}
 
