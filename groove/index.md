@@ -8,7 +8,7 @@ keywords: "coding music, productivity, creativity, music, focus"
 ---
 
 {% include locale.liquid %}
-{% assign content = site.data.pages.groove[lang] %}
+{% assign content = site.data.pages[lang].groove %}
 {% assign media = site.data.media.groove %}
 
 #### [← {{ nav.universe }}]({{ prefix }}/universe/)

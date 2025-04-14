@@ -8,7 +8,7 @@ keywords: "Swiftian, creators, coding community, collaboration"
 ---
 
 {% include locale.liquid %}
-{% assign content = site.data.pages.creators[lang] %}
+{% assign content = site.data.pages[lang].creators %}
 {% assign media = site.data.media.creators %}
 
 #### [← {{ nav.groove }}]({{ prefix }}/groove/)

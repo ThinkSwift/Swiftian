@@ -8,7 +8,7 @@ keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
 ---
 
 {% include locale.liquid %}
-{% assign content = site.data.pages.coding[lang] %}
+{% assign content = site.data.pages[lang].coding %}
 {% assign media = site.data.media.coding %}
 
 #### [← {{ nav.home }}]({{ prefix }}/)

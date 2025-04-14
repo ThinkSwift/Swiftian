@@ -8,7 +8,7 @@ description: "Swiftian Privacy Policy page."
 ---
 
 {% include locale.liquid %}
-{% assign content = site.data.pages.privacy[lang] %}
+{% assign content = site.data.pages[lang].privacy %}
 
 #### [← {{ nav.home }}]({{ homePath }})
 
