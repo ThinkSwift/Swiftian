@@ -1,0 +1,25 @@
+root:
+  title: "Think Swift."
+  description: "Swiftian ile yaratıcı programlama yolculuğuna başlayın — Swift öğrenmek için etkileşimli ve özenle hazırlanmış bir platform."
+  keywords: "Swiftian, Swift, programlama öğrenme, mobil geliştirme, Swift öğren"
+
+coding:
+  title: "Yarat. Keşfet."
+  description: "Etkileşimli ve yapılandırılmış derslerle Swift öğrenin. Küçük adımlarla başlayın, büyük düşünün ve becerilerinizi adım adım geliştirin."
+  keywords: "Swift, Swiftian, Swift öğrenme, programlama kursu, kodlama"
+
+universe:
+  title: "Kendi evrenini inşa et."
+  description: "Sürükleyici hikaye anlatımıyla programlamayı keşfedin. Bilim kurgu hikayemiz Mars Rebels, öğrenmeyi eğlenceli ve etkileşimli hale getiriyor."
+  keywords: "Mars Rebels, hikaye anlatımı, yaratıcı kodlama, Swift"
+
+groove:
+  title: "Ritme ayak uydur."
+  description: "Kodlama sırasında odaklanma ve yaratıcılığı artırmak için özenle seçilmiş müzikler. Verimliliğinizi ritimle artırın."
+  keywords: "kodlama müziği, verimlilik, yaratıcılık, odaklanma, Swiftian"
+
+creators:
+  title: "Yaratıcılar için tasarlandı."
+  description: "Swiftian, yaratıcıların birlikte öğrenip, paylaşabileceği ve yenilikler üretebileceği topluluk odaklı bir platformdur."
+  keywords: "Swiftian, yaratıcılar, programlama topluluğu, işbirliği"
+

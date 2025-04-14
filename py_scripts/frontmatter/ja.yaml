@@ -1,0 +1,25 @@
+root:
+  title: "Think Swift."
+  description: "Swiftian で創造的なプログラミングの旅を始めよう。Swift を効率よく学べるインタラクティブで厳選されたプラットフォームです。"
+  keywords: "Swiftian, Swift, プログラミング学習, モバイル開発, Swift を学ぶ"
+
+coding:
+  title: "創造しよう。探求しよう。"
+  description: "構造的で対話的なレッスンを通じて Swift を学びます。小さく始めて、大きく考え、一歩ずつスキルを高めましょう。"
+  keywords: "Swift, Swiftian, Swift 学習, プログラミング講座, コーディング"
+
+universe:
+  title: "自分だけの世界を作ろう。"
+  description: "没入感のあるストーリーテリングでプログラミングを学ぼう。SF 物語 Mars Rebels が、学習を楽しく、インタラクティブにします。"
+  keywords: "Mars Rebels, ストーリーテリング, クリエイティブコーディング, Swift"
+
+groove:
+  title: "リズムに乗って動こう。"
+  description: "コーディング中の集中力と創造力を高めるために選ばれた音楽。仕事の流れをリズムで最適化しましょう。"
+  keywords: "プログラミング音楽, 生産性, 創造性, 集中力, Swiftian"
+
+creators:
+  title: "クリエイターのために。"
+  description: "Swiftian は、学び・共有・共に成長することを目指すクリエイターのためのコミュニティ型プラットフォームです。"
+  keywords: "Swiftian, クリエイター, コーディングコミュニティ, 協働"
+

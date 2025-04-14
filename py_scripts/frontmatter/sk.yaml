@@ -1,0 +1,25 @@
+root:
+  title: "Think Swift."
+  description: "Začni svoju kreatívnu cestu programovaním so Swiftian – interaktívnou a starostlivo navrhnutou platformou na učenie sa jazyka Swift."
+  keywords: "Swiftian, Swift, nauč sa programovať, vývoj mobilných aplikácií, učenie Swift"
+
+coding:
+  title: "Tvor. Objavuj."
+  description: "Nauč sa Swift pomocou interaktívnych a štruktúrovaných lekcií. Začni jednoducho, mysli vo veľkom a rozvíjaj sa krok za krokom."
+  keywords: "Swift, Swiftian, učenie Swift, programovací kurz, kódovanie"
+
+universe:
+  title: "Vytvor si vlastný vesmír."
+  description: "Objav programovanie cez pútavé rozprávanie príbehov. Naša sci-fi séria Mars Rebels robí učenie zábavným a interaktívnym."
+  keywords: "Mars Rebels, rozprávanie príbehov, kreatívne programovanie, Swift"
+
+groove:
+  title: "Hýb sa v rytme."
+  description: "Starostlivo vybraná hudba na podporu sústredenia a kreativity počas programovania. Zlepši si produktivitu pomocou rytmu."
+  keywords: "hudba na programovanie, produktivita, kreativita, sústredenie, Swiftian"
+
+creators:
+  title: "Pre tvorcov."
+  description: "Swiftian je platforma založená na komunite, ktorá podporuje tvorcov pri učení, zdieľaní a spoločných inováciách."
+  keywords: "Swiftian, tvorcovia, komunita programátorov, spolupráca"
+

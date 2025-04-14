@@ -1,0 +1,25 @@
+root:
+  title: "Think Swift."
+  description: "Începe-ți călătoria creativă în programare cu Swiftian — o platformă interactivă și atent concepută pentru a învăța Swift eficient."
+  keywords: "Swiftian, Swift, învață programare, dezvoltare mobilă, învață Swift"
+
+coding:
+  title: "Creează. Explorează."
+  description: "Învață Swift prin lecții interactive și bine structurate. Începe de la bază, gândește la scară mare și dezvoltă-ți abilitățile pas cu pas."
+  keywords: "Swift, Swiftian, curs de programare, învățare Swift, codare"
+
+universe:
+  title: "Construiește-ți propriul univers."
+  description: "Descoperă programarea prin povești captivante. Povestea noastră SF, Mars Rebels, face învățarea mai distractivă și interactivă."
+  keywords: "Mars Rebels, storytelling, programare creativă, Swift"
+
+groove:
+  title: "Mișcă-te pe ritm."
+  description: "Muzică selectată special pentru a îmbunătăți concentrarea și creativitatea în timpul programării. Optimizează-ți fluxul cu ritm."
+  keywords: "muzică pentru programare, productivitate, creativitate, concentrare, Swiftian"
+
+creators:
+  title: "Creat pentru creatori."
+  description: "Swiftian este o platformă orientată spre comunitate unde creatorii pot învăța, colabora și inova împreună."
+  keywords: "Swiftian, creatori, comunitate de programatori, colaborare"
+

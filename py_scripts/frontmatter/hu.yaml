@@ -1,0 +1,25 @@
+root:
+  title: "Think Swift."
+  description: "Kezdd el kreatív programozási utazásodat a Swiftian-nel – egy interaktív, gondosan összeállított platform a Swift nyelv elsajátításához."
+  keywords: "Swiftian, Swift, programozás tanulás, mobilfejlesztés, Swift nyelv"
+
+coding:
+  title: "Alkoss. Fedezz fel."
+  description: "Tanulj meg Swiftet interaktív, jól felépített leckéken keresztül. Kezdj kicsiben, gondolkodj nagyban, fejlődj lépésről lépésre."
+  keywords: "Swift, Swiftian, Swift tanulás, programozási kurzus, kódolás"
+
+universe:
+  title: "Építsd fel a saját univerzumod."
+  description: "Ismerd meg a programozást lebilincselő történeteken keresztül. A sci-fi történetünk, a Mars Rebels, szórakoztatóvá és élvezetessé teszi a tanulást."
+  keywords: "Mars Rebels, történetmesélés, kreatív programozás, Swift"
+
+groove:
+  title: "Mozogj a ritmusra."
+  description: "Válogatott zene, amely segíti a koncentrációt és a kreativitást programozás közben. Növeld a produktivitásodat ritmussal."
+  keywords: "programozási zene, koncentráció, kreativitás, hatékonyság, Swiftian"
+
+creators:
+  title: "Alkotóknak készült."
+  description: "A Swiftian egy közösségi platform, amely lehetőséget ad az alkotóknak a tanulásra, megosztásra és az együttműködésre."
+  keywords: "Swiftian, alkotók, programozói közösség, együttműködés"
+

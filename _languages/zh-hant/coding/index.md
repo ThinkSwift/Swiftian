@@ -1,34 +1,40 @@
 ---
 layout: default
-title: "Create. Explore."
-description: "Learn Swift through curated, interactive lessons. Start small, think big, and master coding step by step."
-keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
-lang: en
 lang: zh-hant
 permalink: /zh-hant/coding/
+title: "創造。探索。"
+description: "透過精心設計的互動課程學習 Swift。從簡單開始，逐步掌握程式設計技能，實現你的大計劃。"
+keywords: "Swift, Swiftian, 學習 Swift, 程式課程, iOS 開發"
 ---
 
-#### [← Back to Home](/)
 
-# Create. Explore.
+{% include locale.liquid %}
+{% assign content = site.data.pages[lang].coding %}
+{% assign media = site.data.media.coding %}
 
-<p align="center">
-  <img src="/assets/images/coding_panic.gif" alt="Coding Panic" style="width: 100%; max-width: 250px; height: auto;">
-</p>
+#### [← {{ nav.home }}]({{ prefix }}/)
 
-### Start Small, Think Big.
-Learning to code often feels overwhelming—huge screens, endless windows, too much space. Swiftian simplifies it all. A minimalist, curated coding environment that lets you start small and dream big.
+# {{ content.title }}
 
-### Curated, Structured, Effective.
-Swiftian isn't just another platform—it's meticulously built to guide you through Swift fundamentals, step by step. Each lesson builds upon the last, designed specifically for clarity and hands-on practice.
+{% include media.html
+  type=media.header.type
+  src=media.header.src
+  alt=media.header.alt
+  max=media.header.max
+%}
 
-### Made for Mobile First.
-Currently optimized for iOS, Swiftian’s minimalist design brings coding directly to your fingertips. Soon, we’ll expand into Android, Python, and beyond, helping you take your skills wherever you go.
+{% for section in content.sections %}
+### {{ section.heading }}
+{{ section.text }}
+{% endfor %}
 
-<p align="center">
-  <img src="/assets/images/swiftian_logo_180.png" alt="Swiftian: Learn to Code" style="width: 100%; max-width: 80px; height: auto;">
-</p>
+{% include media.html
+  type=media.logo.type
+  src=media.logo.src
+  alt=media.logo.alt
+  max=media.logo.max
+%}
 
 ---
 
-#### [Build Your Universe →](/universe/)
+#### [{{ nav.universe }} →]({{ prefix }}/universe/)

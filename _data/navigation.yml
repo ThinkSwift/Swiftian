@@ -6,8 +6,134 @@ en:
   privacy: "Privacy Policy"
   home: "Back to Home"
   effective_date: "Effective Date: February 24, 2025"
+  
+  ar:
+  coding: "أنشئ. استكشف."
+  universe: "ابنِ عالمك الخاص"
+  groove: "تحرك على إيقاع الموسيقى"
+  creators: "مصمم خصيصًا للمبدعين"
+  privacy: "سياسة الخصوصية"
+  home: "العودة إلى الصفحة الرئيسية"
+  effective_date: "تاريخ السريان: 24 فبراير 2025"
 
-ko:
+zh-hans:
+  coding: "创造。探索。"
+  universe: "构建你的世界"
+  groove: "跟着节奏动起来"
+  creators: "为创作者打造"
+  privacy: "隐私政策"
+  home: "返回首页"
+  effective_date: "生效日期：2025年2月24日"
+
+zh-hant:
+  coding: "創造。探索。"
+  universe: "打造你的宇宙"
+  groove: "隨著節奏律動"
+  creators: "為創作者而設"
+  privacy: "隱私權政策"
+  home: "返回首頁"
+  effective_date: "生效日期：2025年2月24日"
+
+cs:
+  coding: "Tvoř. Objevuj."
+  universe: "Vytvoř si svůj vlastní vesmír"
+  groove: "Hýbej se v rytmu"
+  creators: "Prostor pro tvůrce"
+  privacy: "Zásady ochrany osobních údajů"
+  home: "Zpět na úvodní stránku"
+  effective_date: "Datum účinnosti: 24. února 2025"
+
+da:
+  coding: "Skab. Udforsk."
+  universe: "Byg dit eget univers"
+  groove: "Bevæg dig til rytmen"
+  creators: "Skabt til skabere"
+  privacy: "Privatlivspolitik"
+  home: "Tilbage til forsiden"
+  effective_date: "Ikrafttrædelsesdato: 24. februar 2025"
+
+nl:
+  coding: "Creëer. Ontdek."
+  universe: "Bouw je eigen universum"
+  groove: "Beweeg op de beat"
+  creators: "Gemaakt voor makers"
+  privacy: "Privacybeleid"
+  home: "Terug naar home"
+  effective_date: "Ingangsdatum: 24 februari 2025"
+
+fi:
+  coding: "Luo. Tutki."
+  universe: "Rakenna oma universumisi"
+  groove: "Liiku rytmissä"
+  creators: "Luoville tekijöille"
+  privacy: "Tietosuojakäytäntö"
+  home: "Takaisin etusivulle"
+  effective_date: "Voimaantulopäivä: 24. helmikuuta 2025"
+
+fr:
+  coding: "Créer. Explorer."
+  universe: "Construis ton univers"
+  groove: "Bouge au rythme"
+  creators: "Conçu pour les créateurs"
+  privacy: "Politique de confidentialité"
+  home: "Retour à l’accueil"
+  effective_date: "Date d'entrée en vigueur : 24 février 2025"
+
+de:
+  coding: "Kreiere. Entdecke."
+  universe: "Baue dein eigenes Universum"
+  groove: "Bewege dich im Takt"
+  creators: "Für kreative Köpfe gemacht"
+  privacy: "Datenschutzrichtlinie"
+  home: "Zurück zur Startseite"
+  effective_date: "Gültig ab: 24. Februar 2025"
+
+el:
+  coding: "Δημιούργησε. Εξερεύνησε."
+  universe: "Δημιούργησε το δικό σου σύμπαν"
+  groove: "Κινήσου με τον ρυθμό"
+  creators: "Φτιαγμένο για δημιουργούς"
+  privacy: "Πολιτική απορρήτου"
+  home: "Επιστροφή στην αρχική σελίδα"
+  effective_date: "Ημερομηνία ισχύος: 24 Φεβρουαρίου 2025"
+
+hu:
+  coding: "Alkoss. Fedezz fel."
+  universe: "Építsd meg a saját univerzumod"
+  groove: "Mozogj a ritmusra"
+  creators: "Készítőknek tervezve"
+  privacy: "Adatvédelmi irányelvek"
+  home: "Vissza a főoldalra"
+  effective_date: "Hatálybalépés dátuma: 2025. február 24."
+
+id:
+  coding: "Buat. Jelajahi."
+  universe: "Bangun duniamu sendiri"
+  groove: "Bergeraklah mengikuti irama"
+  creators: "Dibuat untuk para kreator"
+  privacy: "Kebijakan Privasi"
+  home: "Kembali ke Beranda"
+  effective_date: "Tanggal berlaku: 24 Februari 2025"
+
+it:
+  coding: "Crea. Esplora."
+  universe: "Costruisci il tuo universo"
+  groove: "Muoviti al ritmo"
+  creators: "Creato per i creatori"
+  privacy: "Informativa sulla privacy"
+  home: "Torna alla home"
+  effective_date: "Data di entrata in vigore: 24 febbraio 2025"
+
+ja:
+  coding: "創造しよう。探求しよう。"
+  universe: "自分だけの世界を作ろう"
+  groove: "リズムに乗って動こう"
+  creators: "クリエイターのために"
+  privacy: "プライバシーポリシー"
+  home: "ホームに戻る"
+  effective_date: "施行日：2025年2月24日"
+  
+  ko:
   coding: "창조하고, 탐험하세요"
   universe: "당신만의 세계를 만들어보세요"
   groove: "비트에 맞춰 움직이세요"
@@ -15,3 +141,93 @@ ko:
   privacy: "개인정보 처리방침"
   home: "홈으로 돌아가기"
   effective_date: "시행일: 2025년 2월 24일"
+
+nb:
+  coding: "Skap. Utforsk."
+  universe: "Bygg ditt eget univers"
+  groove: "Beveg deg i takt med musikken"
+  creators: "Laget for skapere"
+  privacy: "Personvernerklæring"
+  home: "Tilbake til forsiden"
+  effective_date: "Ikrafttredelsesdato: 24. februar 2025"
+
+pl:
+  coding: "Twórz. Odkrywaj."
+  universe: "Zbuduj swój własny wszechświat"
+  groove: "Ruszaj się w rytmie"
+  creators: "Stworzone dla twórców"
+  privacy: "Polityka prywatności"
+  home: "Powrót do strony głównej"
+  effective_date: "Data wejścia w życie: 24 lutego 2025"
+
+pt:
+  coding: "Crie. Explore."
+  universe: "Construa o seu próprio universo"
+  groove: "Mova-se com o ritmo"
+  creators: "Feito para criadores"
+  privacy: "Política de Privacidade"
+  home: "Voltar para a página inicial"
+  effective_date: "Data de vigência: 24 de fevereiro de 2025"
+
+ro:
+  coding: "Creează. Explorează."
+  universe: "Construiește-ți propriul univers"
+  groove: "Mișcă-te pe ritm"
+  creators: "Creat pentru creatori"
+  privacy: "Politica de confidențialitate"
+  home: "Înapoi la pagina principală"
+  effective_date: "Data intrării în vigoare: 24 februarie 2025"
+
+ru:
+  coding: "Создавай. Исследуй."
+  universe: "Построй свою собственную вселенную"
+  groove: "Двигайся в ритме"
+  creators: "Создано для создателей"
+  privacy: "Политика конфиденциальности"
+  home: "Вернуться на главную"
+  effective_date: "Дата вступления в силу: 24 февраля 2025 года"
+
+sk:
+  coding: "Tvor. Objavuj."
+  universe: "Vytvor si svoj vlastný vesmír"
+  groove: "Hýb sa do rytmu"
+  creators: "Pre tvorcov"
+  privacy: "Zásady ochrany osobných údajov"
+  home: "Späť na úvodnú stránku"
+  effective_date: "Dátum účinnosti: 24. februára 2025"
+
+es:
+  coding: "Crea. Explora."
+  universe: "Construye tu propio universo"
+  groove: "Muévete al ritmo"
+  creators: "Hecho para creadores"
+  privacy: "Política de privacidad"
+  home: "Volver al inicio"
+  effective_date: "Fecha de entrada en vigor: 24 de febrero de 2025"
+
+sv:
+  coding: "Skapa. Utforska."
+  universe: "Bygg ditt eget universum"
+  groove: "Rör dig i takt med musiken"
+  creators: "Skapad för kreatörer"
+  privacy: "Integritetspolicy"
+  home: "Tillbaka till startsidan"
+  effective_date: "Ikraftträdandedatum: 24 februari 2025"
+
+tr:
+  coding: "Yarat. Keşfet."
+  universe: "Kendi evrenini inşa et"
+  groove: "Ritme ayak uydur"
+  creators: "Yaratıcılar için tasarlandı"
+  privacy: "Gizlilik Politikası"
+  home: "Ana sayfaya dön"
+  effective_date: "Yürürlük tarihi: 24 Şubat 2025"
+
+uk:
+  coding: "Створюй. Досліджуй."
+  universe: "Створи власний всесвіт"
+  groove: "Рухайся в ритмі"
+  creators: "Створено для творців"
+  privacy: "Політика конфіденційності"
+  home: "Повернутися на головну"
+  effective_date: "Дата набрання чинності: 24 лютого 2025 року"

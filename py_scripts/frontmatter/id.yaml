@@ -1,0 +1,25 @@
+root:
+  title: "Think Swift."
+  description: "Mulai perjalanan kreatif Anda dalam dunia pemrograman bersama Swiftian — platform interaktif yang dirancang untuk belajar Swift secara efektif."
+  keywords: "Swiftian, Swift, belajar coding, pengembangan mobile, belajar Swift"
+
+coding:
+  title: "Ciptakan. Jelajahi."
+  description: "Belajar Swift lewat pelajaran interaktif dan terstruktur. Mulai dari dasar, berpikir besar, dan tingkatkan kemampuan Anda langkah demi langkah."
+  keywords: "Swift, Swiftian, belajar Swift, kursus pemrograman, coding"
+
+universe:
+  title: "Bangun alam semesta Anda sendiri."
+  description: "Pelajari coding melalui storytelling yang imersif. Kisah fiksi ilmiah Mars Rebels menjadikan pembelajaran menyenangkan dan interaktif."
+  keywords: "Mars Rebels, storytelling, coding kreatif, Swift"
+
+groove:
+  title: "Bergerak mengikuti irama."
+  description: "Musik pilihan khusus untuk meningkatkan fokus dan kreativitas saat coding. Tingkatkan produktivitas Anda dengan alunan ritme."
+  keywords: "musik coding, produktivitas, kreativitas, fokus, Swiftian"
+
+creators:
+  title: "Dibuat untuk para kreator."
+  description: "Swiftian adalah platform berbasis komunitas bagi para kreator untuk belajar, berbagi, dan berinovasi bersama."
+  keywords: "Swiftian, kreator, komunitas coding, kolaborasi"
+

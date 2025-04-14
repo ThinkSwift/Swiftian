@@ -1,0 +1,25 @@
+root:
+  title: "Think Swift."
+  description: "Commencez votre parcours créatif en programmation avec Swiftian — une plateforme interactive et soigneusement conçue pour apprendre Swift."
+  keywords: "Swiftian, Swift, apprendre à coder, développement mobile, apprendre Swift"
+
+coding:
+  title: "Créer. Explorer."
+  description: "Apprenez Swift grâce à des leçons interactives et structurées. Commencez petit, pensez grand et progressez étape par étape."
+  keywords: "Swift, Swiftian, apprendre Swift, cours de programmation, codage"
+
+universe:
+  title: "Construisez votre univers."
+  description: "Découvrez la programmation à travers des récits immersifs. Mars Rebels, notre histoire de science-fiction, rend l’apprentissage ludique et interactif."
+  keywords: "Mars Rebels, narration, codage créatif, Swift"
+
+groove:
+  title: "Bougez au rythme."
+  description: "Une sélection musicale pensée pour favoriser la concentration et la créativité lors du codage. Travaillez mieux avec le bon rythme."
+  keywords: "musique de codage, productivité, créativité, musique, Swiftian"
+
+creators:
+  title: "Conçu pour les créateurs."
+  description: "Swiftian est une plateforme centrée sur la communauté, conçue pour permettre aux créateurs d'apprendre, de partager et d'innover ensemble."
+  keywords: "Swiftian, créateurs, communauté de codage, collaboration"
+

@@ -1,35 +1,34 @@
 ---
 layout: default
-title: "Build Your Universe."
-description: "Discover coding through immersive storytelling. Mars Rebels, our sci-fi narrative, makes coding engaging, interactive, and enjoyable."
-keywords: "Mars Rebels, storytelling, creative coding, Swift"
-lang: en
 lang: pt
 permalink: /pt/universe/
+title: "Construa seu próprio universo."
+description: "Descubra a programação por meio de narrativas envolventes. Nossa história sci-fi, Mars Rebels, torna o aprendizado divertido e interativo."
+keywords: "Mars Rebels, storytelling, codificação criativa, Swift"
 ---
 
-#### [← Back to Home](/)
 
-# Build Your Universe.
+{% include locale.liquid %}
+{% assign content = site.data.pages[lang].universe %}
+{% assign media = site.data.media.universe %}
 
-<p align="center">
-  <img src="/assets/images/titan_sketch.gif" alt="Titan Sketch" style="width: 100%; max-width: 250px; height: auto;">
-</p>
+#### [← {{ nav.home }}]({{ prefix }}/)
 
-### Why Isn’t Learning Fun?
-Coding shouldn't feel like work.  
-Yet, it often does—because we lack stories that capture our imagination.
+# {{ content.title }}
 
-### Learning Through Immersion.
-Mars Rebels is our solution: a curated sci-fi universe designed specifically to make your coding journey immersive and enjoyable. Every lesson you complete unlocks new parts of this exciting story.
+{% include media.html
+  type=media.header.type
+  src=media.header.src
+  alt=media.header.alt
+  max=media.header.max
+%}
 
-### Curated for Creativity.
-You’ll have access to handpicked assets, characters, and interactive scenarios designed to enhance your coding skills while you build something uniquely yours. Your creativity, empowered.
+{% for section in content.sections %}
+### {{ section.heading }}
+{{ section.text }}
 
-### More Than Just Lessons.
-We integrate storytelling deeply into your learning experience.  
-With Swiftian, you’re not just writing code—you’re building your own adventure.
+{% endfor %}
 
 ---
 
-#### [← Create Explore](/coding/) | [Move with the Beat →](/groove/)
+#### [← {{ nav.coding }}]({{ prefix }}/coding/) | [{{ nav.groove }} →]({{ prefix }}/groove/)

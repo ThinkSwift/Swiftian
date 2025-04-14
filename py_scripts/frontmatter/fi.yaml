@@ -1,0 +1,25 @@
+root:
+  title: "Think Swift."
+  description: "Aloita luova ohjelmointimatkasi Swiftianin avulla – vuorovaikutteinen ja huolella kuratoitu alusta Swiftin oppimiseen."
+  keywords: "Swiftian, Swift, ohjelmoinnin oppiminen, mobiilikehitys, Swift opetus"
+
+coding:
+  title: "Luo. Tutki."
+  description: "Opi Swiftin perusteet vuorovaikutteisten ja rakenteellisten oppituntien avulla. Aloita pienestä ja kehity askel kerrallaan."
+  keywords: "Swift, Swiftian, Swiftin opetus, ohjelmointikurssi, koodaus"
+
+universe:
+  title: "Rakenna oma universumisi."
+  description: "Tutustu ohjelmointiin tarinankerronnan kautta. Tieteistarina Mars Rebels tekee oppimisesta hauskaa ja mukaansatempaavaa."
+  keywords: "Mars Rebels, tarinallinen oppiminen, luova koodaus, Swift"
+
+groove:
+  title: "Liiku rytmissä."
+  description: "Huolella valittu musiikki tukee keskittymistä ja luovuutta ohjelmoinnin aikana. Saavuta virtausrytmi musiikin avulla."
+  keywords: "koodausmusiikki, tuottavuus, keskittyminen, luovuus, Swiftian"
+
+creators:
+  title: "Luoville tekijöille."
+  description: "Swiftian on yhteisölähtöinen alusta, jossa luovat tekijät voivat oppia, jakaa ja innovoida yhdessä."
+  keywords: "Swiftian, luovat tekijät, koodausyhteisö, yhteistyö"
+

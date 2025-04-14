@@ -1,0 +1,25 @@
+root:
+    title: "Think Swift."
+    description: "Make something new. Push boundaries. Swiftian is a curated, interactive platform for learning Swift creatively."
+    keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
+        
+coding:
+    title: "Create. Explore."
+    description: "Learn Swift through curated, interactive lessons. Start small, think big, and master coding step by step."
+    keywords: "Swiftian, Swift, coding, learn Swift, mobile development"
+
+universe:
+    title: "Build Your Universe."
+    description: "Discover coding through immersive storytelling. Mars Rebels, our sci-fi narrative, makes coding engaging, interactive, and enjoyable."
+    keywords: "Mars Rebels, storytelling, creative coding, Swift"
+
+groove:
+    title: "Move with the Beat."
+    description: "Curated music designed specifically for coding productivity and creative focus. Enhance your workflow with rhythm."
+    keywords: "coding music, productivity, creativity, music, focus"
+
+creators:
+    title: "Made for Creators."
+    description: "Swiftian is a community-focused platform built for creators to grow, share, and innovate together."
+    keywords: "Swiftian, creators, coding community, collaboration"
+

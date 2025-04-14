@@ -1,0 +1,25 @@
+root:
+  title: "Think Swift."
+  description: "Starta din kreativa kodningsresa med Swiftian – en interaktiv och noggrant utformad plattform för att lära dig Swift effektivt."
+  keywords: "Swiftian, Swift, lära sig programmera, mobilutveckling, lära sig Swift"
+
+coding:
+  title: "Skapa. Utforska."
+  description: "Lär dig Swift genom interaktiva och strukturerade lektioner. Börja enkelt, tänk stort och utveckla dina färdigheter steg för steg."
+  keywords: "Swift, Swiftian, lära Swift, programmeringskurs, kodning"
+
+universe:
+  title: "Bygg ditt eget universum."
+  description: "Utforska programmering genom fängslande berättelser. Vår sci-fi-historia Mars Rebels gör lärandet roligt och interaktivt."
+  keywords: "Mars Rebels, berättande, kreativ kodning, Swift"
+
+groove:
+  title: "Rör dig i takt."
+  description: "Noggrant utvald musik för att främja fokus och kreativitet under kodning. Höj din produktivitet med rytm."
+  keywords: "kodmusik, produktivitet, kreativitet, fokus, Swiftian"
+
+creators:
+  title: "Skapat för skapare."
+  description: "Swiftian är en gemenskapsdriven plattform där skapare kan växa, dela och skapa innovation tillsammans."
+  keywords: "Swiftian, skapare, kodningsgemenskap, samarbete"
+

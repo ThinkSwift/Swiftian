@@ -1,0 +1,24 @@
+root:
+  title: "Think Swift."
+  description: "通过 Swiftian 踏上创意编程之旅。这是一个精选、互动的 Swift 学习平台，帮助你打破边界，创造新可能。"
+  keywords: "Swiftian, Swift, 编程学习, 移动开发, 学习 Swift"
+
+coding:
+  title: "创造。探索。"
+  description: "通过精选互动课程学习 Swift。从简单入门，逐步掌握编程技能，实现大梦想。"
+  keywords: "Swift, Swiftian, 学习 Swift, 编程课程, iOS开发"
+
+universe:
+  title: "打造你的宇宙。"
+  description: "用沉浸式故事方式学习编程。我们的科幻故事 Mars Rebels 让编程变得更有趣、更具互动性。"
+  keywords: "Mars Rebels, 编程故事, 创意编程, Swift"
+
+groove:
+  title: "跟着节奏动起来。"
+  description: "专为编程效率与创意集中打造的精选音乐，提升你的专注力与工作节奏。"
+  keywords: "编程音乐, 专注, 创造力, 音乐, Swiftian"
+
+creators:
+  title: "为创作者而生。"
+  description: "Swiftian 是一个为创作者而建的平台，鼓励共同学习、分享与创新。"
+  keywords: "Swiftian, 创作者, 编程社区, 协作"

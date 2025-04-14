@@ -1,35 +1,34 @@
 ---
 layout: default
-title: "Made for Creators."
-description: "Swiftian is a community-focused platform built for creators to grow, share, and innovate together."
-keywords: "Swiftian, creators, coding community, collaboration"
-lang: en
 lang: de
 permalink: /de/creators/
+title: "Für Kreative gemacht."
+description: "Swiftian ist eine community-orientierte Plattform, auf der Kreative gemeinsam lernen, teilen und Innovationen schaffen."
+keywords: "Swiftian, Kreative, Programmier-Community, Zusammenarbeit"
 ---
 
-#### [← Back to Home](/)
 
-# Made for Creators.
+{% include locale.liquid %}
+{% assign content = site.data.pages[lang].creators %}
+{% assign media = site.data.media.creators %}
 
-### A Platform Built on Collaboration.
-Swiftian thrives when ideas flow freely.  
-We’re creating a community that fosters collaboration between coders, artists, designers, and storytellers.
+#### [← {{ nav.groove }}]({{ prefix }}/groove/)
 
-### Your Ideas Shape Swiftian.
-Our platform is dynamic—evolving through your contributions. Whether it's a creative asset, a new story, or fresh ideas, your creativity helps shape our shared ecosystem.
+# {{ content.title }}
 
-### Built for Growth.
-We don't just teach coding; we build relationships. We invite creators from all disciplines to connect, collaborate, and collectively push Swiftian forward.
+{% for section in content.sections %}
+### {{ section.heading }}
+{{ section.text }}
 
-### More to Come.
-This is only the beginning.  
-Stay tuned for future updates, new projects, and more ways to be involved. Swiftian is yours to grow.
+{% endfor %}
 
-<p align="center">
-  <img src="/assets/images/iFlipbook.gif" alt="iFlipbook" style="width: 100%; max-width: 180px; height: auto;">
-</p>
+{% include media.html
+  type=media.logo.type
+  src=media.logo.src
+  alt=media.logo.alt
+  max=media.logo.max
+%}
 
 ---
 
-#### [← Move with the Beat](/groove/) 
+#### [← {{ nav.groove }}]({{ prefix }}/groove/)

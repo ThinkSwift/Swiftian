@@ -1,0 +1,25 @@
+root:
+  title: "Think Swift."
+  description: "Begin je creatieve programmeerreis met Swiftian – een interactieve en zorgvuldig samengestelde leeromgeving voor Swift."
+  keywords: "Swiftian, Swift, leren programmeren, mobiele ontwikkeling, Swift leren"
+
+coding:
+  title: "Creëer. Ontdek."
+  description: "Leer Swift via interactieve, gestructureerde lessen. Begin klein, denk groots en ontwikkel je codeervaardigheden stap voor stap."
+  keywords: "Swift, Swiftian, Swift leren, programmeercursus, coderen"
+
+universe:
+  title: "Bouw je eigen universum."
+  description: "Ontdek programmeren via meeslepende verhalen. Mars Rebels, ons sci-fi avontuur, maakt leren leuk en interactief."
+  keywords: "Mars Rebels, verhalen vertellen, creatieve codering, Swift"
+
+groove:
+  title: "Beweeg op het ritme."
+  description: "Speciaal geselecteerde muziek voor focus en creativiteit tijdens het programmeren. Verhoog je productiviteit met ritme."
+  keywords: "programmeermuziek, productiviteit, focus, creativiteit, Swiftian"
+
+creators:
+  title: "Gemaakt voor makers."
+  description: "Swiftian is een community-gericht platform waar makers kunnen groeien, delen en samen innoveren."
+  keywords: "Swiftian, makers, programmeergemeenschap, samenwerking"
+
