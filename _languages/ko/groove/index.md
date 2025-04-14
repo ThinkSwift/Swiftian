@@ -12,7 +12,7 @@ keywords: "코딩 음악, 생산성, 창의력, 집중, Swiftian"
 {% assign content = site.data.pages[lang].groove %}
 {% assign media = site.data.media.groove %}
 
-#### [← {{ nav.universe }}]({{ prefix }}/universe/)
+#### [← {{ nav.home }}]({{ prefix }}/)
 
 # {{ content.title }}
 

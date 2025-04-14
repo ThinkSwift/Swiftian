@@ -12,7 +12,7 @@ keywords: "编程音乐, 专注, 创造力, 音乐, Swiftian"
 {% assign content = site.data.pages[lang].groove %}
 {% assign media = site.data.media.groove %}
 
-#### [← {{ nav.universe }}]({{ prefix }}/universe/)
+#### [← {{ nav.home }}]({{ prefix }}/)
 
 # {{ content.title }}
 

@@ -12,7 +12,7 @@ keywords: "Swiftian, 창작자, 프로그래밍 커뮤니티, 협업"
 {% assign content = site.data.pages[lang].creators %}
 {% assign media = site.data.media.creators %}
 
-#### [← {{ nav.groove }}]({{ prefix }}/groove/)
+#### [← {{ nav.home }}]({{ prefix }}/)
 
 # {{ content.title }}
 

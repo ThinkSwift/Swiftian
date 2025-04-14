@@ -12,7 +12,7 @@ keywords: "程式音樂, 專注, 創造力, 音樂, Swiftian"
 {% assign content = site.data.pages[lang].groove %}
 {% assign media = site.data.media.groove %}
 
-#### [← {{ nav.universe }}]({{ prefix }}/universe/)
+#### [← {{ nav.home }}]({{ prefix }}/)
 
 # {{ content.title }}
 

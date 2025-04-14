@@ -12,7 +12,7 @@ keywords: "プログラミング音楽, 生産性, 創造性, 集中力, Swiftia
 {% assign content = site.data.pages[lang].groove %}
 {% assign media = site.data.media.groove %}
 
-#### [← {{ nav.universe }}]({{ prefix }}/universe/)
+#### [← {{ nav.home }}]({{ prefix }}/)
 
 # {{ content.title }}
 

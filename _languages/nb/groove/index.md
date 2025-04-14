@@ -12,7 +12,7 @@ keywords: "kodemusikk, produktivitet, kreativitet, fokus, Swiftian"
 {% assign content = site.data.pages[lang].groove %}
 {% assign media = site.data.media.groove %}
 
-#### [← {{ nav.universe }}]({{ prefix }}/universe/)
+#### [← {{ nav.home }}]({{ prefix }}/)
 
 # {{ content.title }}
 
