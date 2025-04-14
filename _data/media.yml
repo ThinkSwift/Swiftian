@@ -28,6 +28,9 @@ groove:
     src: "/assets/videos/swiftian_groove_720.mp4"
     max: 250
     controls: true
+    autoplay: false
+    loop: false
+    muted: false
 
 creators:
   logo:
