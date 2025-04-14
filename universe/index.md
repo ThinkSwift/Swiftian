@@ -11,7 +11,7 @@ keywords: "Mars Rebels, storytelling, creative coding, Swift"
 {% assign content = site.data.pages[lang].universe %}
 {% assign media = site.data.media.universe %}
 
-#### [← {{ nav.home }}]({{ prefix }}/)
+#### [{{ arrow_left }} {{ nav.home }}]({{ prefix }}/)
 
 # {{ content.title }}
 
@@ -30,4 +30,4 @@ keywords: "Mars Rebels, storytelling, creative coding, Swift"
 
 ---
 
-#### [← {{ nav.coding }}]({{ prefix }}/coding/) | [{{ nav.groove }} →]({{ prefix }}/groove/)
+#### [{{ arrow_left }} {{ nav.coding }}]({{ prefix }}/coding/) | [{{ nav.groove }} {{ arrow_right }}]({{ prefix }}/groove/)

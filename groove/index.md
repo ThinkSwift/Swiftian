@@ -11,7 +11,7 @@ keywords: "coding music, productivity, creativity, music, focus"
 {% assign content = site.data.pages[lang].groove %}
 {% assign media = site.data.media.groove %}
 
-#### [← {{ nav.universe }}]({{ prefix }}/universe/)
+#### [{{ arrow_left }} {{ nav.universe }}]({{ prefix }}/universe/)
 
 # {{ content.title }}
 
@@ -37,4 +37,4 @@ keywords: "coding music, productivity, creativity, music, focus"
 
 ---
 
-#### [← {{ nav.universe }}]({{ prefix }}/universe/) | [{{ nav.creators }} →]({{ prefix }}/creators/)
+#### [{{ arrow_left }} {{ nav.universe }}]({{ prefix }}/universe/) | [{{ nav.creators }} {{ arrow_right }}]({{ prefix }}/creators/)
