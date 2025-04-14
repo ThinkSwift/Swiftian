@@ -1,0 +1,94 @@
+home:
+  title: Swiftian
+  text: |
+    Lav noget nyt. Flyt grænserne.
+    Rejsen starter her.
+coding:
+  title: Skab. Udforsk.
+  sections:
+  - heading: Start i det små, tænk stort.
+    text: |
+      At lære at kode føles ofte overvældende - store skærme, endeløse vinduer, for meget plads.
+      Swiftian forenkler det hele. Et minimalistisk, kurateret kodningsmiljø, der lader dig starte i det små og drømme stort.
+  - heading: Kurateret, struktureret, effektiv.
+    text: |
+      Swiftian er ikke bare endnu en platform - den er omhyggeligt bygget til at guide dig gennem Swifts grundprincipper, trin for trin.
+      Hver lektion bygger videre på den forrige og er specielt designet til at skabe klarhed og praktisk øvelse.
+  - heading: Lavet til Mobile First.
+    text: |
+      Swiftians minimalistiske design, der i øjeblikket er optimeret til iOS, bringer kodning direkte til fingerspidserne.
+      I fremtiden vil vi udforske nye retninger - hvad enten det er forskellige sprog, platforme eller kreative værktøjer - for at hjælpe dine færdigheder med at vokse, uanset hvor du er.
+universe:
+  title: Byg dit univers.
+  sections:
+  - heading: Hvorfor er det ikke sjovt at lære?
+    text: |
+      Kodning bør ikke føles som arbejde.
+      Alligevel sker det ofte - fordi vi mangler historier, der fanger vores fantasi.
+  - heading: Læring gennem fordybelse.
+    text: |
+      Mars Rebels er vores løsning: et kurateret sci-fi-univers, der er designet specielt til at gøre din kodningsrejse fordybende og fornøjelig.
+      Hver lektion, du gennemfører, låser op for nye dele af denne spændende historie.
+  - heading: Kurateret for kreativitet.
+    text: |
+      Du får adgang til håndplukkede aktiver, figurer og interaktive scenarier, der er designet til at forbedre dine kodningsfærdigheder, mens du bygger noget, der er unikt for dig.
+      Din kreativitet, styrket.
+  - heading: Mere end bare lektioner.
+    text: |
+      Vi integrerer historiefortælling dybt i din læringsoplevelse.
+      Med Swiftian skriver du ikke bare kode - du bygger dit eget eventyr.
+groove:
+  title: Bevæg dig i takt med rytmen.
+  sections:
+  - heading: Rytme fremmer kreativiteten.
+    text: |
+      God musik øger produktiviteten, skærper fokus og forbedrer kreativiteten.
+      Swiftian indeholder omhyggeligt kuraterede lydlandskaber, der synkroniseres perfekt med din kodningsrytme.
+  - heading: En playliste designet til skabelse.
+    text: |
+      Vores musik er ikke tilfældig - den er skabt til at inspirere.
+      Med hvert nyt projekt og hver ny historie finder du nye beats, melodier og rytmer, der er skræddersyet specifikt til din kreative rejse.
+  - heading: Musik i Swiftians DNA.
+    text: |
+      Lyd er afgørende for kreativ kodning, ligesom DNA er det for livet.
+      Vores voksende samling af originale numre og lydlandskaber sikrer, at du altid har noget nyt, der kan bringe din kreativitet videre.
+  - heading: Kontinuerlig udvidelse.
+    text: Forvent regelmæssige opdateringer, når vi tilføjer flere lydlandskaber,
+      rytmer og beats, der udelukkende er designet til at styrke din kodningsoplevelse.
+creators:
+  title: Lavet til skabere.
+  sections:
+  - heading: En platform bygget på samarbejde.
+    text: |
+      Swiftian trives, når ideerne flyder frit.
+      Vi skaber et fællesskab, der fremmer samarbejdet mellem kodere, kunstnere, designere og historiefortællere.
+  - heading: Dine ideer former Swiftian.
+    text: |
+      Vores platform er dynamisk - den udvikler sig gennem dine bidrag.
+      Uanset om det er et kreativt aktiv, en ny historie eller friske ideer, er din kreativitet med til at forme vores fælles økosystem.
+  - heading: Bygget til vækst.
+    text: |
+      Vi underviser ikke bare i kodning; vi opbygger relationer.
+      Vi inviterer skabere fra alle discipliner til at forbinde, samarbejde og kollektivt skubbe Swiftian fremad.
+  - heading: Der er mere på vej.
+    text: |
+      Dette er kun begyndelsen.
+      Hold øje med fremtidige opdateringer, nye projekter og flere måder at blive involveret på. Swiftian er din til at vokse.
+privacy:
+  title: Politik for beskyttelse af personlige oplysninger
+  sections:
+  - heading: 1. Ingen dataindsamling
+    bullets:
+    - Der kræves ingen brugerregistrering eller login.
+    - Vi sporer ikke placering eller gemmer unikke enhedsidentifikatorer.
+    - Vi bruger ikke cookies eller analyseværktøjer til at indsamle personlige data.
+  - heading: 2. Tredjeparts tjenester
+    bullets:
+    - Vores apps integreres ikke med eksterne tjenester, der indsamler personlige
+      oplysninger.
+  - heading: 3. Ændringer af denne politik
+    text: |
+      Vi kan til enhver tid opdatere eller ændre denne privatlivspolitik.
+      Gennemgå venligst denne side med jævne mellemrum.
+      Alle væsentlige ændringer vil blive tydeligt angivet.
+  effective_date: 24. februar 2025

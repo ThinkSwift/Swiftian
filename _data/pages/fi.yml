@@ -1,0 +1,93 @@
+home:
+  title: Swiftian
+  text: |
+    Tee jotain uutta. Työnnä rajoja.
+    Matka alkaa täältä.
+coding:
+  title: Luo. Tutki.
+  sections:
+  - heading: Aloita pienestä, ajattele isosti.
+    text: |
+      Koodaamisen opettelu tuntuu usein ylivoimaiselta - valtavat näytöt, loputtomat ikkunat, liikaa tilaa.
+      Swiftian yksinkertaistaa kaiken. Minimalistinen, kuratoitu koodausympäristö, jonka avulla voit aloittaa pienestä ja unelmoida suuresta.
+  - heading: Kuratoitu, jäsennelty, tehokas.
+    text: |
+      Swiftian ei ole pelkkä alusta - se on rakennettu huolellisesti opastamaan sinua Swiftin perusteissa askel askeleelta.
+      Jokainen oppitunti perustuu edelliseen, ja se on suunniteltu erityisesti selkeyden ja käytännön harjoittelun vuoksi.
+  - heading: Made for Mobile First.
+    text: |
+      Swiftian on tällä hetkellä optimoitu iOS:lle, ja sen minimalistinen muotoilu tuo koodauksen suoraan käden ulottuville.
+      Tulevaisuudessa tutkimme uusia suuntia - olipa kyse sitten eri kielistä, alustoista tai luovista työkaluista - ja autamme sinua kasvattamaan taitojasi, minne ikinä menetkin.
+universe:
+  title: Rakenna maailmankaikkeutesi.
+  sections:
+  - heading: Miksi oppiminen ei ole hauskaa?
+    text: |
+      Koodaamisen ei pitäisi tuntua työltä.
+      Silti se on usein niin - koska meiltä puuttuvat tarinat, jotka vangitsevat mielikuvituksemme.
+  - heading: Oppiminen uppoutumisen kautta.
+    text: |
+      Mars Rebels on meidän ratkaisumme: kuratoitu scifi-universumi, joka on suunniteltu erityisesti tekemään koodausmatkastasi mukaansatempaavan ja nautinnollisen.
+      Jokainen suorittamasi oppitunti avaa uusia osia tästä jännittävästä tarinasta.
+  - heading: Kuratoitu luovuutta varten.
+    text: |
+      Saat käyttöösi valikoituja resursseja, hahmoja ja interaktiivisia skenaarioita, jotka on suunniteltu parantamaan koodaustaitojasi samalla kun rakennat jotain ainutlaatuista.
+      Luovuutesi, voimaantuneena.
+  - heading: Enemmän kuin vain oppitunteja.
+    text: |
+      Sisällytämme tarinankerronnan syvälle oppimiskokemukseesi.
+      Swiftianissa et vain kirjoita koodia, vaan rakennat oman seikkailusi.
+groove:
+  title: Liiku tahdissa.
+  sections:
+  - heading: Rytmi ruokkii luovuutta.
+    text: |
+      Hyvä musiikki lisää tuottavuutta, terävöittää keskittymistä ja lisää luovuutta.
+      Swiftian sisältää huolellisesti kuratoituja äänimaisemia, jotka synkronoituvat täydellisesti koodausrytmisi kanssa.
+  - heading: Luomiseen suunniteltu soittolista.
+    text: |
+      Musiikkimme ei ole sattumanvaraista - se on suunniteltu inspiroimaan.
+      Jokaisen uuden projektin ja tarinan myötä löydät uusia biittejä, säveliä ja rytmejä, jotka on räätälöity juuri sinun luovalle matkallesi.
+  - heading: Musiikki Swiftian DNA:ssa.
+    text: |
+      Ääni on olennainen osa luovaa koodausta, aivan kuten DNA:ta elämässä.
+      Kasvava kokoelma alkuperäisiä kappaleita ja äänimaisemia takaa, että sinulla on aina jotain tuoretta, joka vie luovuuttasi eteenpäin.
+  - heading: Jatkuvasti laajeneva.
+    text: Odota säännöllisiä päivityksiä, kun lisäämme lisää äänimaisemia, rytmejä
+      ja biittejä, jotka on suunniteltu yksinomaan koodauskokemuksesi tehostamiseen.
+creators:
+  title: Tehty luojille.
+  sections:
+  - heading: Yhteistyöhön perustuva alusta.
+    text: |
+      Swiftian kukoistaa, kun ideat virtaavat vapaasti.
+      Luomme yhteisön, joka edistää koodareiden, taiteilijoiden, suunnittelijoiden ja tarinankertojien yhteistyötä.
+  - heading: Ideasi muokkaavat Swiftiä.
+    text: |
+      Alustamme on dynaaminen - se kehittyy sinun panoksesi ansiosta.
+      Olipa kyse sitten luovasta hyödykkeestä, uudesta tarinasta tai tuoreista ideoista, luovuutesi auttaa muokkaamaan yhteistä ekosysteemiämme.
+  - heading: Rakennettu kasvua varten.
+    text: |
+      Emme vain opeta koodausta, vaan rakennamme suhteita.
+      Kutsumme kaikkien alojen luovan työn tekijöitä ottamaan yhteyttä, tekemään yhteistyötä ja viemään Swiftiania yhdessä eteenpäin.
+  - heading: Lisää tulossa.
+    text: |
+      Tämä on vasta alkua.
+      Pysy kuulolla tulevista päivityksistä, uusista projekteista ja uusista tavoista osallistua. Swiftian on sinun kasvatettavissasi.
+privacy:
+  title: Tietosuojakäytäntö
+  sections:
+  - heading: 1. Ei tiedonkeruuta
+    bullets:
+    - Käyttäjän rekisteröintiä tai kirjautumista ei tarvita.
+    - Emme seuraa sijaintia tai tallenna yksilöllisiä laitetunnisteita.
+    - Emme käytä evästeitä tai analytiikkatyökaluja henkilötietojen keräämiseen.
+  - heading: 2. Kolmannen osapuolen palvelut
+    bullets:
+    - Sovelluksemme eivät integroidu ulkoisiin palveluihin, jotka keräävät henkilötietoja.
+  - heading: 3. Muutokset tähän käytäntöön
+    text: |
+      Voimme päivittää tai muuttaa tätä tietosuojakäytäntöä milloin tahansa.
+      Tarkista tämä sivu säännöllisesti.
+      Kaikki merkittävät muutokset ilmoitetaan selvästi.
+  effective_date: helmikuu 24, 2025

@@ -1,0 +1,93 @@
+home:
+  title: Swiftian
+  text: |
+    Yeni bir şeyler yapın. Sınırları zorlayın.
+    Yolculuk burada başlıyor.
+coding:
+  title: Yaratın. Keşfedin.
+  sections:
+  - heading: Küçük Başla, Büyük Düşün.
+    text: |
+      Kod yazmayı öğrenmek genellikle bunaltıcı gelir - büyük ekranlar, sonsuz pencereler, çok fazla alan.
+      Swiftian her şeyi basitleştirir. Küçük başlayıp büyük hayaller kurmanızı sağlayan minimalist, seçilmiş bir kodlama ortamı.
+  - heading: Küratörlü, Yapılandırılmış, Etkili.
+    text: |
+      Swiftian sadece başka bir platform değildir; Swift'in temellerini adım adım öğrenmeniz için titizlikle tasarlanmıştır.
+      Her ders bir öncekinin üzerine inşa edilir, özellikle netlik ve uygulamalı pratik için tasarlanmıştır.
+  - heading: Önce Mobil için Üretildi.
+    text: |
+      Şu anda iOS için optimize edilmiş olan Swiftian'ın minimalist tasarımı, kodlamayı doğrudan parmaklarınızın ucuna getiriyor.
+      Gelecekte, gittiğiniz her yerde becerilerinizin gelişmesine yardımcı olmak için farklı diller, platformlar veya yaratıcı araçlar gibi yeni yönler keşfedeceğiz.
+universe:
+  title: Evreninizi İnşa Edin.
+  sections:
+  - heading: Öğrenmek Neden Eğlenceli Değil?
+    text: |
+      Kodlama iş gibi hissettirmemeli.
+      Yine de çoğu zaman öyle oluyor - çünkü hayal gücümüzü yakalayacak hikayelerden yoksunuz.
+  - heading: Daldırma Yoluyla Öğrenme.
+    text: |
+      Mars Rebels bizim çözümümüz: kodlama yolculuğunuzu sürükleyici ve keyifli hale getirmek için özel olarak tasarlanmış bir bilim kurgu evreni.
+      Tamamladığınız her ders, bu heyecan verici hikayenin yeni bölümlerinin kilidini açar.
+  - heading: Yaratıcılık için Küratörlük.
+    text: |
+      Kendinize özgü bir şey inşa ederken kodlama becerilerinizi geliştirmek için tasarlanmış özenle seçilmiş varlıklara, karakterlere ve etkileşimli senaryolara erişebileceksiniz.
+      Güçlendirilmiş yaratıcılığınız.
+  - heading: Derslerden Daha Fazlası.
+    text: |
+      Hikaye anlatımını öğrenme deneyiminize derinlemesine entegre ediyoruz.
+      Swiftian ile sadece kod yazmakla kalmıyor, kendi maceranızı inşa ediyorsunuz.
+groove:
+  title: Ritimle hareket edin.
+  sections:
+  - heading: Ritim Yaratıcılığı Besler.
+    text: |
+      İyi müzik üretkenliği artırır, odaklanmayı keskinleştirir ve yaratıcılığı geliştirir.
+      Swiftian, kodlama ritminizle mükemmel bir şekilde senkronize olan özenle seçilmiş ses manzaraları içerir.
+  - heading: Yaratım için Tasarlanmış Bir Çalma Listesi.
+    text: |
+      Müziğimiz rastgele değildir; ilham vermek için hazırlanmıştır.
+      Her yeni proje ve hikayede, yaratıcı yolculuğunuz için özel olarak tasarlanmış yeni ritimler, melodiler ve melodiler bulacaksınız.
+  - heading: Swiftian'ın DNA'sında müzik var.
+    text: |
+      Ses, tıpkı DNA'nın yaşam için olduğu gibi, yaratıcı kodlama için de gereklidir.
+      Orijinal parçalar ve ses manzaralarından oluşan ve giderek büyüyen koleksiyonumuz, yaratıcılığınızı ileriye taşımak için her zaman yeni bir şeyler bulmanızı sağlar.
+  - heading: Sürekli Genişliyor.
+    text: Kodlama deneyiminizi güçlendirmek için özel olarak tasarlanmış daha fazla
+      ses manzarası, ritim ve ritim ekledikçe düzenli güncellemeler bekleyin.
+creators:
+  title: Yaratıcılar için üretildi.
+  sections:
+  - heading: İşbirliği Üzerine Kurulu Bir Platform.
+    text: |
+      Swiftian, fikirler özgürce aktığı zaman gelişir.
+      Kodlayıcılar, sanatçılar, tasarımcılar ve hikaye anlatıcıları arasında işbirliğini teşvik eden bir topluluk oluşturuyoruz.
+  - heading: Fikirleriniz Swiftian'ı Şekillendirir.
+    text: |
+      Platformumuz dinamiktir - sizin katkılarınızla gelişir.
+      İster yaratıcı bir varlık, ister yeni bir hikaye veya yeni fikirler olsun, yaratıcılığınız ortak ekosistemimizi şekillendirmeye yardımcı olur.
+  - heading: Büyüme için tasarlandı.
+    text: |
+      Biz sadece kodlama öğretmiyoruz; ilişkiler kuruyoruz.
+      Tüm disiplinlerden yaratıcıları bağlantı kurmaya, işbirliği yapmaya ve Swiftian'ı kolektif olarak ileriye taşımaya davet ediyoruz.
+  - heading: Daha fazlası gelecek.
+    text: |
+      Bu sadece başlangıç.
+      Gelecekteki güncellemeler, yeni projeler ve dahil olmanın daha fazla yolu için bizi izlemeye devam edin. Swiftian büyümek için sizindir.
+privacy:
+  title: Gizlilik Politikası
+  sections:
+  - heading: 1. Veri Toplama Yok
+    bullets:
+    - Kullanıcı kaydı veya oturum açma gerekmez.
+    - Konumu takip etmiyoruz veya benzersiz cihaz tanımlayıcılarını saklamıyoruz.
+    - Kişisel verileri toplamak için çerezler veya analiz araçları kullanmıyoruz.
+  - heading: 2. Üçüncü Taraf Hizmetleri
+    bullets:
+    - Uygulamalarımız kişisel bilgi toplayan harici hizmetlerle entegre değildir.
+  - heading: 3. Bu Politikadaki Değişiklikler
+    text: |
+      Bu Gizlilik Politikasını istediğimiz zaman güncelleyebilir veya değiştirebiliriz.
+      Lütfen bu sayfayı periyodik olarak gözden geçirin.
+      Herhangi bir önemli değişiklik açıkça belirtilecektir.
+  effective_date: 24 Şubat 2025

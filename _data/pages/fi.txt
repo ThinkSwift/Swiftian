@@ -1,0 +1,63 @@
+Swiftian
+Tee jotain uutta. Työnnä rajoja.
+Matka alkaa täältä.
+Luo. Tutki.
+Aloita pienestä, ajattele isosti.
+Koodaamisen opettelu tuntuu usein ylivoimaiselta - valtavat näytöt, loputtomat ikkunat, liikaa tilaa.
+Swiftian yksinkertaistaa kaiken. Minimalistinen, kuratoitu koodausympäristö, jonka avulla voit aloittaa pienestä ja unelmoida suuresta.
+Kuratoitu, jäsennelty, tehokas.
+Swiftian ei ole pelkkä alusta - se on rakennettu huolellisesti opastamaan sinua Swiftin perusteissa askel askeleelta.
+Jokainen oppitunti perustuu edelliseen, ja se on suunniteltu erityisesti selkeyden ja käytännön harjoittelun vuoksi.
+Made for Mobile First.
+Swiftian on tällä hetkellä optimoitu iOS:lle, ja sen minimalistinen muotoilu tuo koodauksen suoraan käden ulottuville.
+Tulevaisuudessa tutkimme uusia suuntia - olipa kyse sitten eri kielistä, alustoista tai luovista työkaluista - ja autamme sinua kasvattamaan taitojasi, minne ikinä menetkin.
+Rakenna maailmankaikkeutesi.
+Miksi oppiminen ei ole hauskaa?
+Koodaamisen ei pitäisi tuntua työltä.
+Silti se on usein niin - koska meiltä puuttuvat tarinat, jotka vangitsevat mielikuvituksemme.
+Oppiminen uppoutumisen kautta.
+Mars Rebels on meidän ratkaisumme: kuratoitu scifi-universumi, joka on suunniteltu erityisesti tekemään koodausmatkastasi mukaansatempaavan ja nautinnollisen.
+Jokainen suorittamasi oppitunti avaa uusia osia tästä jännittävästä tarinasta.
+Kuratoitu luovuutta varten.
+Saat käyttöösi valikoituja resursseja, hahmoja ja interaktiivisia skenaarioita, jotka on suunniteltu parantamaan koodaustaitojasi samalla kun rakennat jotain ainutlaatuista.
+Luovuutesi, voimaantuneena.
+Enemmän kuin vain oppitunteja.
+Sisällytämme tarinankerronnan syvälle oppimiskokemukseesi.
+Swiftianissa et vain kirjoita koodia, vaan rakennat oman seikkailusi.
+Liiku tahdissa.
+Rytmi ruokkii luovuutta.
+Hyvä musiikki lisää tuottavuutta, terävöittää keskittymistä ja lisää luovuutta.
+Swiftian sisältää huolellisesti kuratoituja äänimaisemia, jotka synkronoituvat täydellisesti koodausrytmisi kanssa.
+Luomiseen suunniteltu soittolista.
+Musiikkimme ei ole sattumanvaraista - se on suunniteltu inspiroimaan.
+Jokaisen uuden projektin ja tarinan myötä löydät uusia biittejä, säveliä ja rytmejä, jotka on räätälöity juuri sinun luovalle matkallesi.
+Musiikki Swiftian DNA:ssa.
+Ääni on olennainen osa luovaa koodausta, aivan kuten DNA:ta elämässä.
+Kasvava kokoelma alkuperäisiä kappaleita ja äänimaisemia takaa, että sinulla on aina jotain tuoretta, joka vie luovuuttasi eteenpäin.
+Jatkuvasti laajeneva.
+Odota säännöllisiä päivityksiä, kun lisäämme lisää äänimaisemia, rytmejä ja biittejä, jotka on suunniteltu yksinomaan koodauskokemuksesi tehostamiseen.
+Tehty luojille.
+Yhteistyöhön perustuva alusta.
+Swiftian kukoistaa, kun ideat virtaavat vapaasti.
+Luomme yhteisön, joka edistää koodareiden, taiteilijoiden, suunnittelijoiden ja tarinankertojien yhteistyötä.
+Ideasi muokkaavat Swiftiä.
+Alustamme on dynaaminen - se kehittyy sinun panoksesi ansiosta.
+Olipa kyse sitten luovasta hyödykkeestä, uudesta tarinasta tai tuoreista ideoista, luovuutesi auttaa muokkaamaan yhteistä ekosysteemiämme.
+Rakennettu kasvua varten.
+Emme vain opeta koodausta, vaan rakennamme suhteita.
+Kutsumme kaikkien alojen luovan työn tekijöitä ottamaan yhteyttä, tekemään yhteistyötä ja viemään Swiftiania yhdessä eteenpäin.
+Lisää tulossa.
+Tämä on vasta alkua.
+Pysy kuulolla tulevista päivityksistä, uusista projekteista ja uusista tavoista osallistua. Swiftian on sinun kasvatettavissasi.
+Tietosuojakäytäntö
+1. Ei tiedonkeruuta
+Käyttäjän rekisteröintiä tai kirjautumista ei tarvita.
+Emme seuraa sijaintia tai tallenna yksilöllisiä laitetunnisteita.
+Emme käytä evästeitä tai analytiikkatyökaluja henkilötietojen keräämiseen.
+2. Kolmannen osapuolen palvelut
+Sovelluksemme eivät integroidu ulkoisiin palveluihin, jotka keräävät henkilötietoja.
+3. Muutokset tähän käytäntöön
+Voimme päivittää tai muuttaa tätä tietosuojakäytäntöä milloin tahansa.
+Tarkista tämä sivu säännöllisesti.
+Kaikki merkittävät muutokset ilmoitetaan selvästi.
+helmikuu 24, 2025

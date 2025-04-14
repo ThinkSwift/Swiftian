@@ -1,0 +1,95 @@
+home:
+  title: Swiftiano
+  text: |
+    Creare qualcosa di nuovo. Spingersi oltre i limiti.
+    Il viaggio inizia qui.
+coding:
+  title: Creare. Esplorare.
+  sections:
+  - heading: Iniziare in piccolo, pensare in grande.
+    text: |
+      Imparare a codificare spesso dà l'impressione di essere opprimente: schermi enormi, finestre infinite, troppo spazio.
+      Swiftian semplifica tutto. Un ambiente di codifica minimalista e curato che consente di iniziare in piccolo e sognare in grande.
+  - heading: Curato, strutturato, efficace.
+    text: |
+      Swiftian non è una piattaforma come le altre: è costruita con cura per guidarvi passo dopo passo attraverso i fondamenti di Swift.
+      Ogni lezione si basa sulla precedente, progettata specificamente per la chiarezza e la pratica.
+  - heading: Realizzato per il Mobile First.
+    text: |
+      Attualmente ottimizzato per iOS, il design minimalista di Swiftian porta la codifica direttamente a portata di mano.
+      In futuro, esploreremo nuove direzioni - che si tratti di lingue, piattaforme o strumenti creativi diversi - per aiutare le vostre competenze a crescere ovunque andiate.
+universe:
+  title: Costruite il vostro universo.
+  sections:
+  - heading: Perché l'apprendimento non è divertente?
+    text: |
+      Il coding non dovrebbe sembrare un lavoro.
+      Eppure, spesso è così, perché ci mancano storie che catturino la nostra immaginazione.
+  - heading: Apprendere attraverso l'immersione.
+    text: |
+      Mars Rebels è la nostra soluzione: un universo fantascientifico curato e progettato appositamente per rendere il vostro viaggio nel coding coinvolgente e divertente.
+      Ogni lezione completata sblocca nuove parti di questa storia emozionante.
+  - heading: Curato per la creatività.
+    text: |
+      Avrete accesso a risorse, personaggi e scenari interattivi selezionati per migliorare le vostre capacità di codifica e costruire qualcosa di unico.
+      La vostra creatività, potenziata.
+  - heading: Più che lezioni.
+    text: |
+      Integriamo profondamente la narrazione nella vostra esperienza di apprendimento.
+      Con Swiftian non si scrive solo codice, ma si costruisce la propria avventura.
+groove:
+  title: Muoversi con il ritmo.
+  sections:
+  - heading: Il ritmo alimenta la creatività.
+    text: |
+      La buona musica aumenta la produttività, la concentrazione e la creatività.
+      Swiftian incorpora paesaggi sonori accuratamente curati che si sincronizzano perfettamente con il ritmo di codifica.
+  - heading: Una playlist pensata per la creazione.
+    text: |
+      La nostra musica non è casuale: è fatta per ispirare.
+      Con ogni nuovo progetto e storia, troverete nuovi battiti, melodie e ritmi, fatti su misura per il vostro viaggio creativo.
+  - heading: La musica nel DNA di Swiftian.
+    text: |
+      Il suono è essenziale per la codifica creativa, proprio come il DNA per la vita.
+      La nostra crescente collezione di brani e paesaggi sonori originali vi garantisce sempre qualcosa di fresco per far progredire la vostra creatività.
+  - heading: In continua espansione.
+    text: Aspettatevi aggiornamenti regolari, man mano che aggiungiamo altri paesaggi
+      sonori, ritmi e battiti progettati esclusivamente per alimentare la vostra esperienza
+      di codifica.
+creators:
+  title: Fatto per i creatori.
+  sections:
+  - heading: Una piattaforma costruita sulla collaborazione.
+    text: |
+      Swiftian prospera quando le idee fluiscono liberamente.
+      Stiamo creando una comunità che favorisce la collaborazione tra coder, artisti, designer e narratori.
+  - heading: Le vostre idee danno forma a Swiftian.
+    text: |
+      La nostra piattaforma è dinamica: si evolve grazie ai vostri contributi.
+      Che si tratti di una risorsa creativa, di una nuova storia o di idee nuove, la vostra creatività contribuisce a plasmare il nostro ecosistema condiviso.
+  - heading: Costruito per la crescita.
+    text: |
+      Non ci limitiamo a insegnare il coding, ma costruiamo relazioni.
+      Invitiamo i creatori di tutte le discipline a connettersi, collaborare e spingere collettivamente Swiftian in avanti.
+  - heading: Altre cose da fare.
+    text: |
+      Questo è solo l'inizio.
+      Rimanete sintonizzati per i futuri aggiornamenti, i nuovi progetti e altri modi per essere coinvolti. Swiftian è vostro per crescere.
+privacy:
+  title: Informativa sulla privacy
+  sections:
+  - heading: 1. Nessuna raccolta di dati
+    bullets:
+    - Non è richiesta la registrazione o il login dell'utente.
+    - Non tracciamo la posizione né memorizziamo identificatori unici del dispositivo.
+    - Non utilizziamo cookie o strumenti di analisi per raccogliere dati personali.
+  - heading: 2. Servizi di terze parti
+    bullets:
+    - Le nostre app non si integrano con servizi esterni che raccolgono informazioni
+      personali.
+  - heading: 3. Modifiche a questa politica
+    text: |
+      Possiamo aggiornare o modificare la presente Informativa sulla privacy in qualsiasi momento.
+      Si prega di rivedere periodicamente questa pagina.
+      Eventuali modifiche significative saranno chiaramente indicate.
+  effective_date: 24 febbraio 2025

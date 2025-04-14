@@ -1,0 +1,95 @@
+home:
+  title: Swiftian
+  text: |
+    Buatlah sesuatu yang baru. Dobrak batasan.
+    Perjalanan dimulai di sini.
+coding:
+  title: Membuat. Jelajahi.
+  sections:
+  - heading: Mulai dari yang Kecil, Berpikirlah yang Besar.
+    text: |
+      Belajar coding sering kali terasa membebani-layar yang besar, jendela yang tak ada habisnya, ruang yang terlalu luas.
+      Swiftian menyederhanakan semuanya. Lingkungan pengkodean minimalis dan terkurasi yang memungkinkan Anda memulai dari yang kecil dan bermimpi besar.
+  - heading: Dikurasi, Terstruktur, Efektif.
+    text: |
+      Swiftian bukan sekadar platform biasa- platform ini dibuat dengan cermat untuk memandu Anda melalui dasar-dasar Swift, langkah demi langkah.
+      Setiap pelajaran dibangun di atas pelajaran sebelumnya, dirancang khusus untuk kejelasan dan praktik langsung.
+  - heading: Dibuat untuk Mobile First.
+    text: |
+      Saat ini dioptimalkan untuk iOS, desain minimalis Swiftian membawa pengkodean langsung ke ujung jari Anda.
+      Di masa mendatang, kami akan mengeksplorasi arah baru-apakah itu bahasa, platform, atau alat kreatif yang berbeda-untuk membantu keterampilan Anda berkembang ke mana pun Anda pergi.
+universe:
+  title: Bangun Alam Semesta Anda.
+  sections:
+  - heading: Mengapa Belajar Tidak Menyenangkan?
+    text: |
+      Pengkodean seharusnya tidak terasa seperti pekerjaan.
+      Namun, hal itu sering terjadi-karena kita tidak memiliki cerita yang menarik imajinasi kita.
+  - heading: Belajar Melalui Pencelupan.
+    text: |
+      Mars Rebels adalah solusi kami: alam semesta fiksi ilmiah yang dirancang khusus untuk membuat perjalanan koding Anda menjadi lebih imersif dan menyenangkan.
+      Setiap pelajaran yang Anda selesaikan akan membuka bagian baru dari cerita yang menarik ini.
+  - heading: Dikurasi untuk Kreativitas.
+    text: |
+      Anda akan memiliki akses ke aset, karakter, dan skenario interaktif yang dipilih sendiri yang dirancang untuk meningkatkan keterampilan coding Anda saat Anda membangun sesuatu yang unik.
+      Kreativitas Anda, diberdayakan.
+  - heading: Lebih dari Sekedar Pelajaran.
+    text: |
+      Kami mengintegrasikan cerita secara mendalam ke dalam pengalaman belajar Anda.
+      Dengan Swiftian, Anda tidak hanya menulis kode-Anda membangun petualangan Anda sendiri.
+groove:
+  title: Bergerak mengikuti irama.
+  sections:
+  - heading: Irama Memicu Kreativitas.
+    text: |
+      Musik yang bagus meningkatkan produktivitas, mempertajam fokus, dan meningkatkan kreativitas.
+      Swiftian menggabungkan lanskap suara yang dipilih dengan cermat yang disinkronkan secara sempurna dengan ritme pengkodean Anda.
+  - heading: Daftar Putar yang Dirancang untuk Berkreasi.
+    text: |
+      Musik kami tidak sembarangan - musik kami dibuat untuk menginspirasi.
+      Dengan setiap proyek dan cerita baru, Anda akan menemukan ketukan, nada, dan ritme baru, yang dirancang khusus untuk perjalanan kreatif Anda.
+  - heading: Musik dalam DNA Swiftian.
+    text: |
+      Suara sangat penting untuk pengkodean kreatif, seperti halnya DNA untuk kehidupan.
+      Koleksi lagu dan soundscape orisinal kami yang terus bertambah memastikan Anda akan selalu memiliki sesuatu yang segar untuk memajukan kreativitas Anda.
+  - heading: Terus Berkembang.
+    text: Nantikan pembaruan rutin saat kami menambahkan lebih banyak soundscape,
+      ritme, dan ketukan yang dirancang khusus untuk mendukung pengalaman pengkodean
+      Anda.
+creators:
+  title: Dibuat untuk para kreator.
+  sections:
+  - heading: Sebuah Platform yang Dibangun di atas Kolaborasi.
+    text: |
+      Swiftian berkembang pesat ketika ide-ide mengalir dengan bebas.
+      Kami menciptakan komunitas yang mendorong kolaborasi antara pembuat kode, seniman, desainer, dan pendongeng.
+  - heading: Ide Anda Membentuk Swiftian.
+    text: |
+      Platform kami berkembang secara dinamis melalui kontribusi Anda.
+      Baik itu aset kreatif, cerita baru, atau ide segar, kreativitas Anda membantu membentuk ekosistem kita bersama.
+  - heading: Dibangun untuk Pertumbuhan.
+    text: |
+      Kami tidak hanya mengajarkan coding; kami membangun hubungan.
+      Kami mengundang para kreator dari semua disiplin ilmu untuk terhubung, berkolaborasi, dan secara kolektif mendorong Swiftian ke depan.
+  - heading: Lebih banyak lagi yang akan datang.
+    text: |
+      Ini baru permulaan.
+      Nantikan pembaruan di masa mendatang, proyek-proyek baru, dan lebih banyak cara untuk terlibat. Swiftian adalah milik Anda untuk berkembang.
+privacy:
+  title: Kebijakan Privasi
+  sections:
+  - heading: 1. Tidak ada Pengumpulan Data
+    bullets:
+    - Tidak perlu registrasi atau login pengguna.
+    - Kami tidak melacak lokasi atau menyimpan pengidentifikasi perangkat yang unik.
+    - Kami tidak menggunakan cookie atau alat analisis untuk mengumpulkan data pribadi.
+  - heading: 2. Layanan Pihak Ketiga
+    bullets:
+    - Aplikasi kami tidak terintegrasi dengan layanan eksternal yang mengumpulkan
+      informasi pribadi.
+  - heading: 3. Perubahan pada Kebijakan Ini
+    text: |
+      Kami dapat memperbarui atau mengubah Kebijakan Privasi ini kapan saja.
+      Silakan tinjau halaman ini secara berkala.
+      Setiap perubahan signifikan akan ditunjukkan dengan jelas.
+  effective_date: 24 Februari 2025
