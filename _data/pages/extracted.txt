@@ -1,0 +1,63 @@
+Swiftian
+Make something new. Push boundaries.
+The journey starts here.
+Create. Explore.
+Start Small, Think Big.
+Learning to code often feels overwhelming—huge screens, endless windows, too much space.
+Swiftian simplifies it all. A minimalist, curated coding environment that lets you start small and dream big.
+Curated, Structured, Effective.
+Swiftian isn't just another platform—it's meticulously built to guide you through Swift fundamentals, step by step.
+Each lesson builds upon the last, designed specifically for clarity and hands-on practice.
+Made for Mobile First.
+Currently optimized for iOS, Swiftian’s minimalist design brings coding directly to your fingertips.
+In the future, we’ll explore new directions—whether it’s different languages, platforms, or creative tools—to help your skills grow wherever you go.
+Build Your Universe.
+Why Isn’t Learning Fun?
+Coding shouldn't feel like work.
+Yet, it often does—because we lack stories that capture our imagination.
+Learning Through Immersion.
+Mars Rebels is our solution: a curated sci-fi universe designed specifically to make your coding journey immersive and enjoyable.
+Every lesson you complete unlocks new parts of this exciting story.
+Curated for Creativity.
+You’ll have access to handpicked assets, characters, and interactive scenarios designed to enhance your coding skills while you build something uniquely yours.
+Your creativity, empowered.
+More Than Just Lessons.
+We integrate storytelling deeply into your learning experience.
+With Swiftian, you’re not just writing code—you’re building your own adventure.
+Move with the Beat.
+Rhythm Fuels Creativity.
+Good music boosts productivity, sharpens focus, and enhances creativity.
+Swiftian incorporates carefully curated soundscapes that synchronize perfectly with your coding rhythm.
+A Playlist Designed for Creation.
+Our music isn't random—it's crafted to inspire.
+With each new project and story, you'll find new beats, tunes, and rhythms, tailored specifically for your creative journey.
+Music in the DNA of Swiftian.
+Sound is essential to creative coding, just like DNA to life.
+Our growing collection of original tracks and soundscapes ensures you'll always have something fresh to move your creativity forward.
+Continuously Expanding.
+Expect regular updates as we add more soundscapes, rhythms, and beats designed exclusively to power your coding experience.
+Made for Creators.
+A Platform Built on Collaboration.
+Swiftian thrives when ideas flow freely.
+We’re creating a community that fosters collaboration between coders, artists, designers, and storytellers.
+Your Ideas Shape Swiftian.
+Our platform is dynamic—evolving through your contributions.
+Whether it's a creative asset, a new story, or fresh ideas, your creativity helps shape our shared ecosystem.
+Built for Growth.
+We don't just teach coding; we build relationships.
+We invite creators from all disciplines to connect, collaborate, and collectively push Swiftian forward.
+More to Come.
+This is only the beginning.
+Stay tuned for future updates, new projects, and more ways to be involved. Swiftian is yours to grow.
+Privacy Policy
+1. No Data Collection
+No user registration or login is required.
+We do not track location or store unique device identifiers.
+We do not use cookies or analytics tools to gather personal data.
+2. Third-Party Services
+Our apps do not integrate with external services that collect personal information.
+3. Changes to This Policy
+We may update or modify this Privacy Policy at any time.
+Please review this page periodically.
+Any significant changes will be clearly indicated.
+February 24, 2025
