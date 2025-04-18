@@ -16,8 +16,21 @@ description: "Swiftian Privacy Policy page."
 
 {% for section in content.sections %}
 ### {{ section.heading }}
+
+{% if section.text %}
 {{ section.text | markdownify }}
+{% endif %}
+
+{% if section.bullets %}
+<ul>
+  {% for bullet in section.bullets %}
+    <li>{{ bullet }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+
 {% endfor %}
+
 
 ---
 
