@@ -10,12 +10,15 @@ description: "Swiftian Privacy Policy page."
 {% include locale.liquid %}
 {% assign content = site.data.pages[lang].privacy %}
 
-#### [← {{ nav.home }}]({{ homePath }})
+#### [← {{ nav.home }}]({{ prefix }}/)
 
 # {{ content.title }}
 
-{{ content.body | markdownify }}
+{% for section in content.sections %}
+### {{ section.heading }}
+{{ section.text | markdownify }}
+{% endfor %}
 
 ---
 
-**{{ nav.effective_date }}**
+**Effective Date: {{ content.effective_date }}**
