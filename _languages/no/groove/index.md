@@ -3,38 +3,46 @@ layout: default
 title: "Move with the Beat."
 description: "Curated music designed specifically for coding productivity and creative focus. Enhance your workflow with rhythm."
 keywords: "coding music, productivity, creativity, music, focus"
-lang: en
 lang: no
 permalink: /no/groove/
 ---
 
-#### [← Back to Home](/)
 
-# Move with the Beat.
+{% include locale.liquid %}
+{% assign content = site.data.pages[lang].groove %}
+{% assign media = site.data.media.groove %}
 
-<p align="center">
-  <img src="/assets/images/swiftian_groove.gif" alt="Swiftian Groove" style="width: 100%; max-width: 250px; height: auto;">
-</p>
+#### [← {{ nav.home }}]({{ prefix }}/)
 
-### Rhythm Fuels Creativity.
-Good music boosts productivity, sharpens focus, and enhances creativity. Swiftian incorporates carefully curated soundscapes that synchronize perfectly with your coding rhythm.
+# {{ content.title }}
 
-### A Playlist Designed for Creation.
-Our music isn't random—it's crafted to inspire. With each new project and story, you'll find new beats, tunes, and rhythms, tailored specifically for your creative journey.
+{% if content.spotify_id %}
+<iframe
+  data-testid="embed-iframe"
+  style="border-radius:12px"
+  src="https://open.spotify.com/embed/album/{{ content.spotify_id }}?utm_source=generator&theme=0"
+  width="100%"
+  height="352"
+  frameBorder="0"
+  allowfullscreen=""
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+  loading="lazy">
+</iframe>
+{% endif %}
 
-### Music in the DNA of Swiftian.
-Sound is essential to creative coding, just like DNA to life. Our growing collection of original tracks and soundscapes ensures you'll always have something fresh to move your creativity forward.
+{% for section in content.sections %}
+### {{ section.heading }}
+{{ section.text }}
 
-### Continuously Expanding.
-Expect regular updates as we add more soundscapes, rhythms, and beats designed exclusively to power your coding experience.
+{% endfor %}
 
-<p align="center">
-  <video controls style="width: 100%; max-width: 250px;">
-    <source src="/assets/videos/swiftian_groove_720.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</p>
+{% include media.html
+  type=media.preview.type
+  src=media.preview.src
+  max=media.preview.max
+  controls=media.preview.controls
+%}
 
 ---
 
-#### [← Build Your Universe](/universe/) | [Made for Creators →](/creators/)
+#### [← {{ nav.universe }}]({{ prefix }}/universe/) | [{{ nav.creators }} →]({{ prefix }}/creators/)

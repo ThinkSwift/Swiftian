@@ -39,6 +39,7 @@ universe:
       Med Swiftian skriver du inte bara kod - du bygger ditt eget äventyr.
 groove:
   title: Rör dig i takt med rytmen.
+  spotify_id: "1R16fshIfz4chEWedPrUak"
   sections:
   - heading: Rytm främjar kreativiteten.
     text: |

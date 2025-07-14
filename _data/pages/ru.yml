@@ -39,6 +39,7 @@ universe:
       С Swiftian вы не просто пишете код - вы создаете свое собственное приключение.
 groove:
   title: Двигайтесь под ритм.
+  spotify_id: "1R16fshIfz4chEWedPrUak"
   sections:
   - heading: Ритм стимулирует творчество.
     text: |

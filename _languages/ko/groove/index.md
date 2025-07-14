@@ -2,7 +2,7 @@
 layout: default
 lang: ko
 permalink: /ko/groove/
-title: "비트에 맞춰 움직이세요."
+title: "일상의 리듬을 즐기세요."
 description: "코딩 중 집중력과 창의력을 높여주는 엄선된 음악. 리듬을 통해 더욱 몰입도 높은 작업 환경을 경험하세요."
 keywords: "코딩 음악, 생산성, 창의력, 집중, Swiftian"
 ---

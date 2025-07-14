@@ -39,6 +39,7 @@ universe:
       Avec Swiftian, vous ne vous contentez pas d'écrire du code, vous construisez votre propre aventure.
 groove:
   title: Bougez au rythme de la musique.
+  spotify_id: "1R16fshIfz4chEWedPrUak"
   sections:
   - heading: Le rythme alimente la créativité.
     text: |
