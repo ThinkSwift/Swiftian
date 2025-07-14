@@ -18,11 +18,6 @@ universe:
     max: 250
 
 groove:
-  header:
-    type: "image"
-    src: "/assets/images/swiftian_groove.gif"
-    alt: "Swiftian Groove"
-    max: 250
   preview:
     type: "video"
     src: "/assets/videos/swiftian_groove_720.mp4"
