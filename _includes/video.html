@@ -33,7 +33,7 @@
     {src: "/assets/videos/logo.mp4", aspect: "16/9", vertical: false}
   ];
   let currentVideo = 0;
-  let isPlaying = false;
+  let playMode = false; // false: 멈춤/대기모드, true: 플레이모드 (화살표 이동에도 유지)
 
   // 요소 참조
   const video = document.getElementById("pageVideo");
@@ -55,13 +55,17 @@
   }
   window.addEventListener("resize", adjustVideoSize);
 
-  // 비디오/슬라이드 초기화
+  // 비디오/슬라이드 초기화 및 상태 적용
   function updateVideo() {
     videoSource.src = videoList[currentVideo].src;
     video.style.aspectRatio = videoList[currentVideo].aspect;
     video.load();
     adjustVideoSize();
-    pauseAndMuteVideo();
+    if (playMode) {
+      playVideoWithSound();
+    } else {
+      pauseAndMuteVideo();
+    }
   }
 
   // 재생(소리ON)
@@ -69,14 +73,12 @@
     video.muted = false;
     video.play().catch(() => {});
     playBtn.style.display = "none";
-    isPlaying = true;
   }
   // 일시정지(소리OFF, 버튼 보임)
   function pauseAndMuteVideo() {
     video.pause();
     video.muted = true;
     playBtn.style.display = "";
-    isPlaying = false;
   }
 
   // 화살표
@@ -89,21 +91,23 @@
     updateVideo();
   });
 
-  // 플레이 버튼
+  // 플레이 버튼: 이제 "플레이모드"가 되어 화살표로 넘겨도 계속 자동재생!
   playBtn.addEventListener("click", function() {
+    playMode = true;
     playVideoWithSound();
   });
 
-  // 영상 클릭시 일시정지
+  // 영상 클릭시 플레이모드 해제(멈춤+음소거+버튼 표시)
   video.addEventListener("click", function() {
-    if (isPlaying && playBtn.style.display === "none") {
+    if (playMode && playBtn.style.display === "none") {
+      playMode = false;
       pauseAndMuteVideo();
     }
   });
 
   // 루프
   video.addEventListener("ended", function() {
-    if (isPlaying) {
+    if (playMode) {
       video.currentTime = 0;
       video.play().catch(() => {});
     }
@@ -111,6 +115,7 @@
 
   // 최초 로딩
   document.addEventListener("DOMContentLoaded", function() {
+    playMode = false;
     updateVideo();
   });
 </script>
