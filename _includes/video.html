@@ -1,19 +1,31 @@
 <p align="center" style="position: relative;">
-  <!-- Video slider: displays videos with left/right arrow navigation, adapts size for aspect ratio -->
+  <!-- Video slider: displays videos with left/right arrow navigation, responsive sizing -->
   <video id="pageVideo"
     controls
     muted
     loop
     playsinline
     preload="metadata"
-    style="width: auto; max-width: 100vw; max-height: 70vh; aspect-ratio: auto; background: #000; cursor: pointer; display: block; margin: auto;">
+    style="
+      width: 100vw;
+      max-width: 420px;
+      max-height: 70vh;
+      object-fit: contain;
+      aspect-ratio: auto;
+      background: #000;
+      cursor: pointer;
+      display: block;
+      margin: auto;
+      border-radius: 1em;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    ">
     <source id="videoSource" src="/assets/videos/chillfriends.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <!-- Left arrow button for previous video -->
-  <button id="videoPrevBtn" type="button" aria-label="Previous Video" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 2rem; background: rgba(255,255,255,0.6); border: none; border-radius: 50%; cursor: pointer; z-index: 1;">&#8592;</button>
+  <button id="videoPrevBtn" type="button" aria-label="Previous Video" style="position: absolute; left: 4px; top: 50%; transform: translateY(-50%); font-size: 2rem; background: rgba(255,255,255,0.7); border: none; border-radius: 50%; cursor: pointer; z-index: 1; width: 2.2em; height: 2.2em; display: flex; align-items: center; justify-content: center;">&#8592;</button>
   <!-- Right arrow button for next video -->
-  <button id="videoNextBtn" type="button" aria-label="Next Video" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 2rem; background: rgba(255,255,255,0.6); border: none; border-radius: 50%; cursor: pointer; z-index: 1;">&#8594;</button>
+  <button id="videoNextBtn" type="button" aria-label="Next Video" style="position: absolute; right: 4px; top: 50%; transform: translateY(-50%); font-size: 2rem; background: rgba(255,255,255,0.7); border: none; border-radius: 50%; cursor: pointer; z-index: 1; width: 2.2em; height: 2.2em; display: flex; align-items: center; justify-content: center;">&#8594;</button>
 </p>
 
 <script>
@@ -56,9 +68,9 @@
     updateVideo();
   });
 
-  // Toggle play/pause on video click
+  // Toggle play/pause on video click (outside of controls)
   video.addEventListener("click", function(e) {
-    // Prevent the controls bar click from toggling
+    // Prevent controls bar click from toggling
     if (e.target === video) {
       if (video.paused) {
         video.play();
@@ -72,4 +84,18 @@
   document.addEventListener("DOMContentLoaded", function() {
     updateVideo();
   });
+
+  // Responsive resizing for both desktop and mobile
+  function adjustVideoSize() {
+    // You can adjust maxWidth and maxHeight here if you want different breakpoints
+    if (window.innerWidth < 500) {
+      video.style.maxWidth = "94vw";
+      video.style.maxHeight = "38vh";
+    } else {
+      video.style.maxWidth = "420px";
+      video.style.maxHeight = "70vh";
+    }
+  }
+  window.addEventListener("resize", adjustVideoSize);
+  document.addEventListener("DOMContentLoaded", adjustVideoSize);
 </script>
