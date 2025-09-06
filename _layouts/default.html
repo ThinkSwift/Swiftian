@@ -70,14 +70,36 @@
     "slogan": "Think Swift. Be Swiftian."
   }
   </script>
-  
+
+  <script>
+  (function() {
+    var supportedLangs = ['en','ar','cs','da','de','el','es','fi','fr','hu','id','it','ja','ko','nl','no','pl','pt','ro','ru','sk','sv','tr','uk','zh-hans','zh-hant'];
+    var defaultLang = 'en';
+    if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
+      var userLangs = navigator.languages || [navigator.language];
+      var redirectLang = defaultLang;
+      for (var i = 0; i < userLangs.length; i++) {
+        var code = userLangs[i].toLowerCase().split('-')[0];
+        if (code === 'zh') {
+          if (userLangs[i].toLowerCase().includes('hans')) code = 'zh-hans';
+          else if (userLangs[i].toLowerCase().includes('hant')) code = 'zh-hant';
+        }
+        if (supportedLangs.includes(code)) {
+          redirectLang = code;
+          break;
+        }
+      }
+      if (redirectLang !== defaultLang) {
+        window.location.replace('/' + redirectLang + '/');
+      }
+    }
+  })();
+  </script>
+
   <style>
-    /* Default font setting */
     body {
       font-family: "Noto Sans", "Arial", sans-serif;
     }
-
-    /* Light mode styling */
     body {
       background-color: #ffffff;
       color: #000000;
@@ -85,8 +107,6 @@
     a {
       color: #007bff;
     }
-
-    /* Dark mode styling */
     @media (prefers-color-scheme: dark) {
       body {
         background-color: #121212;
@@ -96,11 +116,9 @@
         color: #bb86fc;
       }
     }
-
-    /* Container styling for page content */
     .content-container {
       max-width: 900px;
-      margin: 0 auto;  /* Center the content */
+      margin: 0 auto;
       padding: 1rem;
       {% if page.lang == 'ar' or page.lang == 'he' or page.lang == 'ur' %}
         direction: rtl;
