@@ -22,9 +22,9 @@
     <source id="videoSource" src="/assets/videos/chillfriends.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <!-- Mute/Unmute button (custom) -->
-  <button id="muteBtn" type="button" aria-label="Mute or Unmute" style="position: absolute; right: 14px; bottom: 20px; font-size: 1.6rem; background: rgba(255,255,255,0.75); border: none; border-radius: 50%; cursor: pointer; z-index: 2; width: 2.2em; height: 2.2em; display: flex; align-items: center; justify-content: center;">
-    <span id="muteIcon">&#128263;</span>
+  <!-- Play button overlay -->
+  <button id="playBtn" type="button" aria-label="Play" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 3rem; background: rgba(255,255,255,0.7); border: none; border-radius: 50%; cursor: pointer; z-index: 2; width: 2.6em; height: 2.6em; display: flex; align-items: center; justify-content: center;">
+    <span id="playIcon">&#9654;</span>
   </button>
   <!-- Left arrow button for previous video -->
   <button id="videoPrevBtn" type="button" aria-label="Previous Video" style="position: absolute; left: 4px; top: 50%; transform: translateY(-50%); font-size: 2rem; background: rgba(255,255,255,0.7); border: none; border-radius: 50%; cursor: pointer; z-index: 1; width: 2.2em; height: 2.2em; display: flex; align-items: center; justify-content: center;">&#8592;</button>
@@ -39,25 +39,48 @@
     {src: "/assets/videos/logo.mp4", aspect: "16/9"}
   ];
   let currentVideo = 0;
+  let playMode = false; // Track if user clicked play (sound on)
 
   // Get DOM elements
   const video = document.getElementById("pageVideo");
   const videoSource = document.getElementById("videoSource");
   const btnPrev = document.getElementById("videoPrevBtn");
   const btnNext = document.getElementById("videoNextBtn");
-  const muteBtn = document.getElementById("muteBtn");
-  const muteIcon = document.getElementById("muteIcon");
+  const playBtn = document.getElementById("playBtn");
+
+  // Responsive resizing for both desktop and mobile
+  function adjustVideoSize() {
+    if (window.innerWidth < 500) {
+      video.style.maxWidth = "94vw";
+      video.style.maxHeight = "38vh";
+    } else {
+      video.style.maxWidth = "420px";
+      video.style.maxHeight = "70vh";
+    }
+  }
+  window.addEventListener("resize", adjustVideoSize);
+  document.addEventListener("DOMContentLoaded", adjustVideoSize);
 
   /**
    * Set the video source and adjust its aspect ratio for the current video in the list.
+   * If playMode is true, play with sound; otherwise, keep muted and show play button overlay.
    */
   function updateVideo() {
     videoSource.src = videoList[currentVideo].src;
     video.style.aspectRatio = videoList[currentVideo].aspect;
     video.load();
-    video.muted = true; // Always start muted due to autoplay policy
-    updateMuteIcon();
-    setTimeout(() => { video.play(); }, 100); // Ensure autoplay
+
+    if (playMode) {
+      // Play with sound
+      video.muted = false;
+      video.play().catch(() => {}); // Avoid unhandled promise
+      playBtn.style.display = "none";
+    } else {
+      // Start muted, show play button
+      video.muted = true;
+      video.play().catch(() => {});
+      playBtn.style.display = "";
+    }
   }
 
   /**
@@ -76,37 +99,22 @@
     updateVideo();
   });
 
-  // Toggle mute/unmute
-  function updateMuteIcon() {
-    if (video.muted) {
-      muteIcon.innerHTML = "&#128263;"; // muted
-    } else {
-      muteIcon.innerHTML = "&#128266;"; // sound on
-    }
-  }
-  muteBtn.addEventListener("click", function(e) {
-    video.muted = !video.muted;
-    updateMuteIcon();
+  // Play button: enable playMode (sound on) for all videos
+  playBtn.addEventListener("click", function() {
+    playMode = true;
+    video.muted = false;
+    video.play().catch(() => {});
+    playBtn.style.display = "none";
   });
 
-  // Responsive resizing for both desktop and mobile
-  function adjustVideoSize() {
-    if (window.innerWidth < 500) {
-      video.style.maxWidth = "94vw";
-      video.style.maxHeight = "38vh";
-    } else {
-      video.style.maxWidth = "420px";
-      video.style.maxHeight = "70vh";
-    }
-  }
-  window.addEventListener("resize", adjustVideoSize);
-  document.addEventListener("DOMContentLoaded", adjustVideoSize);
+  // Optional: if video ends for any reason, restart (loop)
+  video.addEventListener("ended", function() {
+    video.currentTime = 0;
+    video.play();
+  });
 
   // Initialize video on page load
   document.addEventListener("DOMContentLoaded", function() {
     updateVideo();
   });
-
-  // (Optional) Prevent pause/play on click, video is always playing unless user pauses via browser context menu or devtools
-
 </script>
