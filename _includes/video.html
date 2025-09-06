@@ -1,5 +1,4 @@
 <p align="center" style="position: relative;">
-  <!-- Video slider: displays videos with left/right arrow navigation, responsive sizing -->
   <video id="pageVideo"
     loop
     playsinline
@@ -31,10 +30,10 @@
 </p>
 
 <script>
-  // Video sources to display in the slider
+  // Video sources with aspect and orientation info
   const videoList = [
-    {src: "/assets/videos/chillfriends.mp4", aspect: "9/16"},
-    {src: "/assets/videos/logo.mp4", aspect: "16/9"}
+    {src: "/assets/videos/chillfriends.mp4", aspect: "9/16", vertical: true},
+    {src: "/assets/videos/logo.mp4", aspect: "16/9", vertical: false}
   ];
   let currentVideo = 0;
   let isPlaying = false; // false: paused/muted, true: playing/unmuted
@@ -46,14 +45,17 @@
   const btnNext = document.getElementById("videoNextBtn");
   const playBtn = document.getElementById("playBtn");
 
-  // Responsive resizing for both desktop and mobile
+  // Responsive resizing for both desktop and mobile, with vertical video special handling
   function adjustVideoSize() {
+    const { vertical } = videoList[currentVideo];
     if (window.innerWidth < 500) {
-      video.style.maxWidth = "94vw";
-      video.style.maxHeight = "38vh";
+      // Mobile - vertical video even smaller
+      video.style.maxWidth = vertical ? "47vw" : "94vw";
+      video.style.maxHeight = vertical ? "19vh" : "38vh";
     } else {
-      video.style.maxWidth = "420px";
-      video.style.maxHeight = "70vh";
+      // Desktop
+      video.style.maxWidth = vertical ? "210px" : "420px";
+      video.style.maxHeight = vertical ? "35vh" : "70vh";
     }
   }
   window.addEventListener("resize", adjustVideoSize);
@@ -64,6 +66,7 @@
     videoSource.src = videoList[currentVideo].src;
     video.style.aspectRatio = videoList[currentVideo].aspect;
     video.load();
+    adjustVideoSize();
     // Maintain current state (playing or paused)
     if (isPlaying) {
       playVideoWithSound();
@@ -122,5 +125,6 @@
   // Initialize video on page load (always paused/muted)
   document.addEventListener("DOMContentLoaded", function() {
     pauseAndMuteVideo();
+    adjustVideoSize();
   });
 </script>
