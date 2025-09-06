@@ -1,6 +1,12 @@
 <p align="center" style="position: relative;">
-  <!-- Video slider: displays videos with left/right arrow navigation -->
-  <video id="pageVideo" autoplay loop muted playsinline preload="metadata" style="width: 100%; max-width: 640px; height: auto; cursor: pointer;">
+  <!-- Video slider: displays videos with left/right arrow navigation, adapts size for aspect ratio -->
+  <video id="pageVideo"
+    controls
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    style="width: auto; max-width: 100vw; max-height: 70vh; aspect-ratio: auto; background: #000; cursor: pointer; display: block; margin: auto;">
     <source id="videoSource" src="/assets/videos/chillfriends.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -13,8 +19,8 @@
 <script>
   // Video sources to display in the slider
   const videoList = [
-    "/assets/videos/chillfriends.mp4",
-    "/assets/videos/logo.mp4"
+    {src: "/assets/videos/chillfriends.mp4", aspect: "9/16"},
+    {src: "/assets/videos/logo.mp4", aspect: "16/9"}
   ];
   let currentVideo = 0;
 
@@ -25,12 +31,13 @@
   const btnNext = document.getElementById("videoNextBtn");
 
   /**
-   * Set the video source to the current video in the list.
+   * Set the video source and adjust its aspect ratio for the current video in the list.
    */
   function updateVideo() {
-    videoSource.src = videoList[currentVideo];
+    videoSource.src = videoList[currentVideo].src;
+    // Adjust aspect-ratio for best fit (if supported)
+    video.style.aspectRatio = videoList[currentVideo].aspect;
     video.load();
-    video.play();
   }
 
   /**
@@ -47,6 +54,18 @@
   btnNext.addEventListener("click", function() {
     currentVideo = (currentVideo + 1) % videoList.length;
     updateVideo();
+  });
+
+  // Toggle play/pause on video click
+  video.addEventListener("click", function(e) {
+    // Prevent the controls bar click from toggling
+    if (e.target === video) {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
   });
 
   // Initialize video on page load
