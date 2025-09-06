@@ -20,9 +20,9 @@
     <source id="videoSource" src="/assets/videos/chillfriends.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <!-- Play button overlay -->
-  <button id="playBtn" type="button" aria-label="Play" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 3rem; background: rgba(255,255,255,0.7); border: none; border-radius: 50%; cursor: pointer; z-index: 2; width: 2.6em; height: 2.6em; display: flex; align-items: center; justify-content: center;">
-    <span id="playIcon">&#9654;</span>
+  <!-- Play/Pause button overlay (always centered) -->
+  <button id="playPauseBtn" type="button" aria-label="Play or Pause" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 3rem; background: rgba(255,255,255,0.7); border: none; border-radius: 50%; cursor: pointer; z-index: 2; width: 2.6em; height: 2.6em; display: flex; align-items: center; justify-content: center;">
+    <span id="playPauseIcon">&#9654;</span>
   </button>
   <!-- Left arrow button for previous video -->
   <button id="videoPrevBtn" type="button" aria-label="Previous Video" style="position: absolute; left: 4px; top: 50%; transform: translateY(-50%); font-size: 2rem; background: rgba(255,255,255,0.7); border: none; border-radius: 50%; cursor: pointer; z-index: 1; width: 2.2em; height: 2.2em; display: flex; align-items: center; justify-content: center;">&#8592;</button>
@@ -37,14 +37,15 @@
     {src: "/assets/videos/logo.mp4", aspect: "16/9"}
   ];
   let currentVideo = 0;
-  let playMode = false; // false: stopped/muted, true: play+sound
+  let isPlaying = false; // false: paused/muted, true: playing/unmuted
 
   // Get DOM elements
   const video = document.getElementById("pageVideo");
   const videoSource = document.getElementById("videoSource");
   const btnPrev = document.getElementById("videoPrevBtn");
   const btnNext = document.getElementById("videoNextBtn");
-  const playBtn = document.getElementById("playBtn");
+  const playPauseBtn = document.getElementById("playPauseBtn");
+  const playPauseIcon = document.getElementById("playPauseIcon");
 
   // Responsive resizing for both desktop and mobile
   function adjustVideoSize() {
@@ -64,28 +65,28 @@
     videoSource.src = videoList[currentVideo].src;
     video.style.aspectRatio = videoList[currentVideo].aspect;
     video.load();
-    if (playMode) {
+    // Maintain current state (playing or paused)
+    if (isPlaying) {
       playVideoWithSound();
     } else {
-      stopAndMuteVideo();
+      pauseAndMuteVideo();
     }
   }
 
-  // Start video with sound (hide play button)
+  // Play video with sound (change icon to pause)
   function playVideoWithSound() {
     video.muted = false;
     video.play().catch(() => {});
-    playBtn.style.display = "none";
-    playMode = true;
+    playPauseIcon.innerHTML = "&#10073;&#10073;"; // Pause symbol
+    isPlaying = true;
   }
 
-  // Stop and mute video (show play button)
-  function stopAndMuteVideo() {
+  // Pause and mute video (change icon to play)
+  function pauseAndMuteVideo() {
     video.pause();
-    video.currentTime = 0;
     video.muted = true;
-    playBtn.style.display = "";
-    playMode = false;
+    playPauseIcon.innerHTML = "&#9654;"; // Play symbol
+    isPlaying = false;
   }
 
   // Arrow navigation
@@ -98,29 +99,37 @@
     updateVideo();
   });
 
-  // Play button: play with sound
-  playBtn.addEventListener("click", function() {
-    playVideoWithSound();
-  });
-
-  // Clicking video pauses and mutes, shows play button
-  video.addEventListener("click", function(e) {
-    // Ignore click if playBtn is visible (so only video area clicks count)
-    if (playMode && playBtn.style.display === "none") {
-      stopAndMuteVideo();
+  // Play/Pause button: toggle state
+  playPauseBtn.addEventListener("click", function() {
+    if (isPlaying) {
+      pauseAndMuteVideo();
+    } else {
+      playVideoWithSound();
     }
   });
 
-  // Initialize video on page load (always stopped/muted)
-  document.addEventListener("DOMContentLoaded", function() {
-    stopAndMuteVideo();
+  // Clicking video toggles play/pause
+  video.addEventListener("click", function(e) {
+    // Only toggle if not clicking the play/pause button itself
+    if (e.target === video) {
+      if (isPlaying) {
+        pauseAndMuteVideo();
+      } else {
+        playVideoWithSound();
+      }
+    }
   });
 
-  // If video ends, loop if in playMode
+  // Keep looping if in play mode
   video.addEventListener("ended", function() {
-    if (playMode) {
+    if (isPlaying) {
       video.currentTime = 0;
       video.play().catch(() => {});
     }
+  });
+
+  // Initialize video on page load (always paused/muted)
+  document.addEventListener("DOMContentLoaded", function() {
+    pauseAndMuteVideo();
   });
 </script>
