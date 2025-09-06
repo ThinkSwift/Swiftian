@@ -20,9 +20,9 @@
     <source id="videoSource" src="/assets/videos/chillfriends.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <!-- Play/Pause button overlay (always centered) -->
-  <button id="playPauseBtn" type="button" aria-label="Play or Pause" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 3rem; background: rgba(255,255,255,0.7); border: none; border-radius: 50%; cursor: pointer; z-index: 2; width: 2.6em; height: 2.6em; display: flex; align-items: center; justify-content: center;">
-    <span id="playPauseIcon">&#9654;</span>
+  <!-- Play button overlay (only visible when video is paused/muted) -->
+  <button id="playBtn" type="button" aria-label="Play" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 3rem; background: rgba(255,255,255,0.7); border: none; border-radius: 50%; cursor: pointer; z-index: 2; width: 2.6em; height: 2.6em; display: flex; align-items: center; justify-content: center;">
+    <span id="playIcon">&#9654;</span>
   </button>
   <!-- Left arrow button for previous video -->
   <button id="videoPrevBtn" type="button" aria-label="Previous Video" style="position: absolute; left: 4px; top: 50%; transform: translateY(-50%); font-size: 2rem; background: rgba(255,255,255,0.7); border: none; border-radius: 50%; cursor: pointer; z-index: 1; width: 2.2em; height: 2.2em; display: flex; align-items: center; justify-content: center;">&#8592;</button>
@@ -44,8 +44,7 @@
   const videoSource = document.getElementById("videoSource");
   const btnPrev = document.getElementById("videoPrevBtn");
   const btnNext = document.getElementById("videoNextBtn");
-  const playPauseBtn = document.getElementById("playPauseBtn");
-  const playPauseIcon = document.getElementById("playPauseIcon");
+  const playBtn = document.getElementById("playBtn");
 
   // Responsive resizing for both desktop and mobile
   function adjustVideoSize() {
@@ -73,19 +72,19 @@
     }
   }
 
-  // Play video with sound (change icon to pause)
+  // Play video with sound (hide play button)
   function playVideoWithSound() {
     video.muted = false;
     video.play().catch(() => {});
-    playPauseIcon.innerHTML = "&#10073;&#10073;"; // Pause symbol
+    playBtn.style.display = "none";
     isPlaying = true;
   }
 
-  // Pause and mute video (change icon to play)
+  // Pause and mute video (show play button)
   function pauseAndMuteVideo() {
     video.pause();
     video.muted = true;
-    playPauseIcon.innerHTML = "&#9654;"; // Play symbol
+    playBtn.style.display = "";
     isPlaying = false;
   }
 
@@ -99,24 +98,16 @@
     updateVideo();
   });
 
-  // Play/Pause button: toggle state
-  playPauseBtn.addEventListener("click", function() {
-    if (isPlaying) {
-      pauseAndMuteVideo();
-    } else {
-      playVideoWithSound();
-    }
+  // Play button: play with sound
+  playBtn.addEventListener("click", function() {
+    playVideoWithSound();
   });
 
-  // Clicking video toggles play/pause
+  // Clicking video pauses and mutes, shows play button
   video.addEventListener("click", function(e) {
-    // Only toggle if not clicking the play/pause button itself
-    if (e.target === video) {
-      if (isPlaying) {
-        pauseAndMuteVideo();
-      } else {
-        playVideoWithSound();
-      }
+    // Only toggle if not clicking the playBtn itself
+    if (isPlaying && playBtn.style.display === "none") {
+      pauseAndMuteVideo();
     }
   });
 
