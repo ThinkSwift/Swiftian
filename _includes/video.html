@@ -1,8 +1,6 @@
 <p align="center" style="position: relative;">
   <!-- Video slider: displays videos with left/right arrow navigation, responsive sizing -->
   <video id="pageVideo"
-    autoplay
-    muted
     loop
     playsinline
     preload="metadata"
@@ -11,13 +9,13 @@
       max-width: 420px;
       max-height: 70vh;
       object-fit: contain;
-      aspect-ratio: auto;
       background: #000;
       cursor: pointer;
       display: block;
       margin: auto;
       border-radius: 1em;
       box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+      aspect-ratio: auto;
     ">
     <source id="videoSource" src="/assets/videos/chillfriends.mp4" type="video/mp4">
     Your browser does not support the video tag.
@@ -39,7 +37,7 @@
     {src: "/assets/videos/logo.mp4", aspect: "16/9"}
   ];
   let currentVideo = 0;
-  let playMode = false; // Track if user clicked play (sound on)
+  let playMode = false; // false: stopped/muted, true: play+sound
 
   // Get DOM elements
   const video = document.getElementById("pageVideo");
@@ -61,60 +59,68 @@
   window.addEventListener("resize", adjustVideoSize);
   document.addEventListener("DOMContentLoaded", adjustVideoSize);
 
-  /**
-   * Set the video source and adjust its aspect ratio for the current video in the list.
-   * If playMode is true, play with sound; otherwise, keep muted and show play button overlay.
-   */
+  // Set video src and aspect ratio, and enforce playMode (for both arrow navigation and state changes)
   function updateVideo() {
     videoSource.src = videoList[currentVideo].src;
     video.style.aspectRatio = videoList[currentVideo].aspect;
     video.load();
-
     if (playMode) {
-      // Play with sound
-      video.muted = false;
-      video.play().catch(() => {}); // Avoid unhandled promise
-      playBtn.style.display = "none";
+      playVideoWithSound();
     } else {
-      // Start muted, show play button
-      video.muted = true;
-      video.play().catch(() => {});
-      playBtn.style.display = "";
+      stopAndMuteVideo();
     }
   }
 
-  /**
-   * Show the previous video in the list.
-   */
+  // Start video with sound (hide play button)
+  function playVideoWithSound() {
+    video.muted = false;
+    video.play().catch(() => {});
+    playBtn.style.display = "none";
+    playMode = true;
+  }
+
+  // Stop and mute video (show play button)
+  function stopAndMuteVideo() {
+    video.pause();
+    video.currentTime = 0;
+    video.muted = true;
+    playBtn.style.display = "";
+    playMode = false;
+  }
+
+  // Arrow navigation
   btnPrev.addEventListener("click", function() {
     currentVideo = (currentVideo - 1 + videoList.length) % videoList.length;
     updateVideo();
   });
-
-  /**
-   * Show the next video in the list.
-   */
   btnNext.addEventListener("click", function() {
     currentVideo = (currentVideo + 1) % videoList.length;
     updateVideo();
   });
 
-  // Play button: enable playMode (sound on) for all videos
+  // Play button: play with sound
   playBtn.addEventListener("click", function() {
-    playMode = true;
-    video.muted = false;
-    video.play().catch(() => {});
-    playBtn.style.display = "none";
+    playVideoWithSound();
   });
 
-  // Optional: if video ends for any reason, restart (loop)
-  video.addEventListener("ended", function() {
-    video.currentTime = 0;
-    video.play();
+  // Clicking video pauses and mutes, shows play button
+  video.addEventListener("click", function(e) {
+    // Ignore click if playBtn is visible (so only video area clicks count)
+    if (playMode && playBtn.style.display === "none") {
+      stopAndMuteVideo();
+    }
   });
 
-  // Initialize video on page load
+  // Initialize video on page load (always stopped/muted)
   document.addEventListener("DOMContentLoaded", function() {
-    updateVideo();
+    stopAndMuteVideo();
+  });
+
+  // If video ends, loop if in playMode
+  video.addEventListener("ended", function() {
+    if (playMode) {
+      video.currentTime = 0;
+      video.play().catch(() => {});
+    }
   });
 </script>
