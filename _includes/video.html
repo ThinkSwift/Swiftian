@@ -14,37 +14,28 @@
       box-shadow: 0 4px 20px rgba(0,0,0,0.12);
       aspect-ratio: auto;
     ">
-    <source id="videoSource" src="/assets/videos/chillfriends.mp4" type="video/mp4">
+    <source id="videoSource" src="/assets/videos/Chillfriends_E06.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <button id="playBtn" type="button" aria-label="Play"
     style="position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 3rem; background: rgba(255,255,255,0.7); border: none; border-radius: 50%; cursor: pointer; z-index: 2; width: 2.6em; height: 2.6em; display: flex; align-items: center; justify-content: center;">
     <span id="playIcon">&#9654;</span>
   </button>
-  <button id="videoPrevBtn" type="button" aria-label="Previous Video"
-    style="position: absolute; left: 4px; top: 50%; transform: translateY(-50%); font-size: 2rem; background: rgba(255,255,255,0.7); border: none; border-radius: 50%; cursor: pointer; z-index: 1; width: 2.2em; height: 2.2em; display: flex; align-items: center; justify-content: center;">&#8592;</button>
-  <button id="videoNextBtn" type="button" aria-label="Next Video"
-    style="position: absolute; right: 4px; top: 50%; transform: translateY(-50%); font-size: 2rem; background: rgba(255,255,255,0.7); border: none; border-radius: 50%; cursor: pointer; z-index: 1; width: 2.2em; height: 2.2em; display: flex; align-items: center; justify-content: center;">&#8594;</button>
+
 </p>
 <script>
-  // 영상 목록 및 비율 정보
-  const videoList = [
-    {src: "/assets/videos/chillfriends.mp4", aspect: "9/16", vertical: true},
-    {src: "/assets/videos/logo.mp4", aspect: "16/9", vertical: false}
-  ];
-  let currentVideo = 0;
+  // 영상 정보
+  const videoInfo = {src: "/assets/videos/Chillfriends_E06.mp4", aspect: "9/16", vertical: true};
   let playMode = false; // false: 멈춤/대기모드, true: 플레이모드 (화살표 이동에도 유지)
 
   // 요소 참조
   const video = document.getElementById("pageVideo");
   const videoSource = document.getElementById("videoSource");
-  const btnPrev = document.getElementById("videoPrevBtn");
-  const btnNext = document.getElementById("videoNextBtn");
   const playBtn = document.getElementById("playBtn");
 
   // 반응형 크기
   function adjustVideoSize() {
-    const { vertical } = videoList[currentVideo];
+    const { vertical } = videoInfo;
     if (window.innerWidth < 500) {
       video.style.maxWidth = vertical ? "80vw" : "94vw";
       video.style.maxHeight = "38vh";
@@ -55,10 +46,10 @@
   }
   window.addEventListener("resize", adjustVideoSize);
 
-  // 비디오/슬라이드 초기화 및 상태 적용
+  // 비디오 초기화 및 상태 적용
   function updateVideo() {
-    videoSource.src = videoList[currentVideo].src;
-    video.style.aspectRatio = videoList[currentVideo].aspect;
+    videoSource.src = videoInfo.src;
+    video.style.aspectRatio = videoInfo.aspect;
     video.load();
     adjustVideoSize();
     if (playMode) {
@@ -81,17 +72,7 @@
     playBtn.style.display = "";
   }
 
-  // 화살표
-  btnPrev.addEventListener("click", function() {
-    currentVideo = (currentVideo - 1 + videoList.length) % videoList.length;
-    updateVideo();
-  });
-  btnNext.addEventListener("click", function() {
-    currentVideo = (currentVideo + 1) % videoList.length;
-    updateVideo();
-  });
-
-  // 플레이 버튼: 이제 "플레이모드"가 되어 화살표로 넘겨도 계속 자동재생!
+  // 플레이 버튼
   playBtn.addEventListener("click", function() {
     playMode = true;
     playVideoWithSound();
