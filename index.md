@@ -9,8 +9,8 @@ keywords: "English Accents, learn English, language learning, pronunciation, iOS
 
 <div style="text-align: center; max-width: 600px; margin: 0 auto; padding: 2rem 1rem;">
   
-  <h1 style="font-size: 2.5rem; font-weight: 400; margin-bottom: 0.5rem; line-height: 1.2;">English Accents</h1>
-  <p style="font-size: 1.1rem; color: #666; margin-bottom: 2.5rem; font-weight: 300;">Learn English through authentic voices</p>
+  <h1 style="margin-bottom: 0.5rem;">English Accents</h1>
+  <p style="color: #666; margin-bottom: 2.5rem;">Learn English through authentic voices</p>
 
   <!-- Hero Video -->
   <div style="margin-bottom: 2rem; position: relative;">
@@ -60,23 +60,12 @@ keywords: "English Accents, learn English, language learning, pronunciation, iOS
     </button>
   </div>
 
-  <!-- App Store Button -->
+  <!-- App Store Badge -->
   <div style="margin-bottom: 3rem;">
-    <a href="https://apps.apple.com/app/english-accents/id1281312028" 
-       style="
-         display: inline-block;
-         background: #000;
-         color: #fff;
-         padding: 0.9rem 2rem;
-         border-radius: 0.6rem;
-         text-decoration: none;
-         font-size: 1rem;
-         font-weight: 500;
-         transition: opacity 0.2s;
-       "
-       onmouseover="this.style.opacity='0.85'"
-       onmouseout="this.style.opacity='1'">
-      Download on the App Store
+    <a href="https://apps.apple.com/app/english-accents/id1281312028">
+      <img src="/assets/images/download-on-the-app-store.svg" 
+           alt="Download on the App Store" 
+           style="height: 40px; display: block; margin: 0 auto;">
     </a>
   </div>
 
@@ -105,9 +94,9 @@ keywords: "English Accents, learn English, language learning, pronunciation, iOS
     </audio>
     <div style="font-size: 0.85rem; color: #888;">
       Available on 
-      <a href="#" style="text-decoration: none; color: inherit; border-bottom: 1px solid #ddd;">Spotify</a>
+      <a href="https://open.spotify.com/track/5HkrFa5czGAb4fEN8biPSB" style="text-decoration: none; color: inherit; border-bottom: 1px solid #ddd;">Spotify</a>
       <span style="margin: 0 0.3rem;">·</span>
-      <a href="#" style="text-decoration: none; color: inherit; border-bottom: 1px solid #ddd;">Apple Music</a>
+      <a href="https://music.apple.com/album/apologies-we-forget-to-say/1859940737" style="text-decoration: none; color: inherit; border-bottom: 1px solid #ddd;">Apple Music</a>
     </div>
   </div>
 
