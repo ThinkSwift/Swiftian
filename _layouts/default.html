@@ -40,12 +40,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Canonical URL to prevent duplicate content issues -->
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-
-  <!-- hreflang tags for multilingual SEO -->
-  {% for lang in site.languages.docs %}
-    <link rel="alternate" hreflang="{{ lang.lang }}" href="{{ site.url }}/{{ lang.path }}">
-  {% endfor %}
+  {% if page.url == "/" %}
+    <link rel="canonical" href="{{ site.url }}/">
+  {% else %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {% endif %}
 
   <!-- Structured Data in JSON-LD for enhanced SEO -->
   <script type="application/ld+json">
