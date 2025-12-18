@@ -71,38 +71,16 @@
   }
   </script>
 
-  <script>
-  (function() {
-    var supportedLangs = ['en','ar','cs','da','de','el','es','fi','fr','hu','id','it','ja','ko','nl','no','pl','pt','ro','ru','sk','sv','tr','uk','zh-hans','zh-hant'];
-    var defaultLang = 'en';
-    if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
-      var userLangs = navigator.languages || [navigator.language];
-      var redirectLang = defaultLang;
-      for (var i = 0; i < userLangs.length; i++) {
-        var code = userLangs[i].toLowerCase().split('-')[0];
-        if (code === 'zh') {
-          if (userLangs[i].toLowerCase().includes('hans')) code = 'zh-hans';
-          else if (userLangs[i].toLowerCase().includes('hant')) code = 'zh-hant';
-        }
-        if (supportedLangs.includes(code)) {
-          redirectLang = code;
-          break;
-        }
-      }
-      if (redirectLang !== defaultLang) {
-        window.location.replace('/' + redirectLang + '/');
-      }
-    }
-  })();
-  </script>
+
 
   <style>
     body {
-      font-family: "Noto Sans", "Arial", sans-serif;
-    }
-    body {
+      font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       background-color: #ffffff;
       color: #000000;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
     }
     a {
       color: #007bff;
@@ -120,6 +98,7 @@
       max-width: 900px;
       margin: 0 auto;
       padding: 1rem;
+      min-height: 100vh;
       {% if page.lang == 'ar' or page.lang == 'he' or page.lang == 'ur' %}
         direction: rtl;
         text-align: right;
@@ -127,6 +106,16 @@
         direction: ltr;
         text-align: left;
       {% endif %}
+    }
+    
+    /* Mobile-first responsive design */
+    @media (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 2rem !important;
+      }
     }
   </style>
 </head>

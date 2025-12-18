@@ -1,35 +1,9 @@
 <footer>
-  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+  <div style="text-align: center; margin-top: 3rem; padding: 2rem 0;">
     <small>
-      <a href="{{ prefix }}/privacy/">{{ nav.privacy }}</a>
-      <span style="margin: 0 0.5rem; color: #ccc;">|</span>
-      <a href="mailto:hello@swiftian.com">Support</a>
-      <span style="margin-left: 0.5rem; color: #666; font-size: 0.9em;">
-        Contact us for any questions or issues.
-      </span>
+      <a href="/privacy/" style="text-decoration: none;">Privacy</a>
+      <span style="margin: 0 0.75rem; color: #ccc;">·</span>
+      <a href="mailto:hello@swiftian.com" style="text-decoration: none;">Support</a>
     </small>
-    <span id="languageToggle" style="cursor: pointer; font-size: 1.2em;">🌐</span>
-  </div>
-
-  <div id="languageList" style="display: none; margin-top: 20px; font-size: 0.9em;">
-    <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 4px;">
-      {% assign supported_langs = "en,ar,cs,da,de,el,es,fi,fr,hu,id,it,ja,ko,nl,no,pl,pt,ro,ru,sk,sv,tr,uk,zh-hans,zh-hant" | split: "," %}
-      {% for code in supported_langs %}
-        {% assign label = site.data.languageLabels[code] | default: code %}
-        <li><a href="/{% if code != 'en' %}{{ code }}/{% endif %}">{{ label }}</a></li>
-      {% endfor %}
-    </ul>
   </div>
 </footer>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.getElementById('languageToggle');
-    const list = document.getElementById('languageList');
-    if (toggle && list) {
-      toggle.addEventListener('click', function () {
-        list.style.display = list.style.display === 'none' ? 'block' : 'none';
-      });
-    }
-  });
-</script>
