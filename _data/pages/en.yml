@@ -97,3 +97,17 @@ privacy:
         Please review this page periodically.
         Any significant changes will be clearly indicated.
   effective_date: "February 24, 2025"
+
+support:
+  title: Support
+  sections:
+    - heading: "Get Help"
+      text: |
+        We're here to help with any questions or issues you may have with our apps.
+        Whether you need technical assistance, have feedback, or want to report a problem, we're happy to hear from you.
+    - heading: "Contact Us"
+      text: |
+        Please reach out to us at: **hello@swiftian.com**
+        
+        We aim to respond to all inquiries as quickly as possible.
+  effective_date: "February 24, 2025"
