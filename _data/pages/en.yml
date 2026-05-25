@@ -81,22 +81,48 @@ creators:
         Stay tuned for future updates, new projects, and more ways to be involved. Swiftian is yours to grow.
 
 privacy:
-  title: Privacy Policy
+  title: Mission Pilot Privacy Policy
   sections:
-    - heading: "1. No Data Collection"
-      bullets:
-        - No user registration or login is required.
-        - We do not track location or store unique device identifiers.
-        - We do not use cookies or analytics tools to gather personal data.
-    - heading: "2. Third-Party Services"
-      bullets:
-        - Our apps do not integrate with external services that collect personal information.
-    - heading: "3. Changes to This Policy"
+    - heading: "Information We Process"
       text: |
-        We may update or modify this Privacy Policy at any time.
-        Please review this page periodically.
-        Any significant changes will be clearly indicated.
-  effective_date: "February 24, 2025"
+        Mission Pilot helps you turn a thought into a small mission card. We collect only the information needed to run the app, protect the service from abuse, and support purchases.
+
+        Mission cards and prompts: The text you enter may be sent to our generation service so the app can create or refine a mission card. Mission cards are stored on your device unless you choose to send text for generation.
+
+        App and device verification data: The app may send an install identifier and an Apple DeviceCheck token to help enforce usage limits and protect the generation service from automated abuse.
+
+        Purchase information: If you buy Mission Pilot Pro, Apple processes the purchase. The app may send signed transaction information to our server so we can verify your subscription and apply Pro generation limits.
+
+        Service logs: Our server may record technical logs such as request time, status code, generation mode, locale, usage counts, and approximate model usage.
+    - heading: "How We Use Information"
+      bullets:
+        - To generate and refine mission cards at your request.
+        - To enforce free and Pro usage limits.
+        - To verify purchases and restore Pro access.
+        - To protect the API from spam, automated abuse, and unauthorized access.
+        - To maintain, debug, and improve the app and backend service.
+    - heading: "Third-Party Services"
+      text: |
+        Mission Pilot uses Apple services for App Store purchases and DeviceCheck verification. Mission Pilot also uses Google Cloud services, including Vertex AI and Firestore, to generate mission cards, enforce quota, and operate the backend.
+    - heading: "Tracking and Advertising"
+      text: |
+        Mission Pilot does not use your information for third-party advertising and does not track you across apps or websites owned by other companies.
+    - heading: "Data Retention"
+      text: |
+        Mission cards saved in the app remain on your device until you delete them or uninstall the app. Backend quota records and technical logs are kept only as long as reasonably needed for service operation, fraud prevention, security, legal compliance, and debugging.
+    - heading: "Your Choices"
+      text: |
+        You can delete mission cards inside the app. You can manage or cancel subscriptions through your Apple ID subscription settings. You may contact us with privacy questions through the support page.
+    - heading: "Children"
+      text: |
+        Mission Pilot is not directed to children under 13, and we do not knowingly collect personal information from children under 13.
+    - heading: "Changes to This Policy"
+      text: |
+        We may update this policy when the app, backend, or legal requirements change. Any significant changes will be clearly indicated.
+    - heading: "Contact"
+      text: |
+        For privacy questions, contact us at https://swiftian.com/support/.
+  effective_date: "May 25, 2026"
 
 support:
   title: Support
