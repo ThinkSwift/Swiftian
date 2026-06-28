@@ -130,8 +130,7 @@
 
       <hr>
       <p>
-        Questions? Contact us at
-        <a class="inline email" data-u="hello" data-d="swiftian.com" href="#">contact</a>.
+        Questions? <a class="inline email" data-u="hello" data-d="swiftian.com" href="#">Contact&nbsp;us</a>.
       </p>
     </main>
   </div>
@@ -139,12 +138,13 @@
   <footer>&copy; 2026 Swiftian &middot; <a href="/">swiftian.com</a></footer>
 
   <script>
-    // Assemble the contact address at runtime so the raw string never appears in
-    // the page source — keeps spam bots from harvesting it.
+    // The address is assembled only on click, so it never appears in the page
+    // source OR on screen — the link just reads "Contact us".
     document.querySelectorAll('a.email').forEach(function(a){
-      var addr = a.dataset.u + String.fromCharCode(64) + a.dataset.d;
-      a.href = 'mailto:' + addr;
-      a.textContent = addr;
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        location.href = 'mailto:' + a.dataset.u + String.fromCharCode(64) + a.dataset.d;
+      });
     });
   </script>
 </body>

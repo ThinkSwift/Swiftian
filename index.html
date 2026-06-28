@@ -97,7 +97,6 @@
   <div class="wrap">
     <nav>
       <div class="brand"><span class="glyph"><img src="/assets/pythoneer-icon.png" alt="Pythoneer"></span> Pythoneer</div>
-      <a class="priv" href="/privacy/">Privacy</a>
     </nav>
 
     <header class="hero">
@@ -203,16 +202,18 @@
     <span class="sep">&middot;</span>
     <a href="/privacy/">Privacy Policy</a>
     <span class="sep">&middot;</span>
-    <a class="email" data-u="hello" data-d="swiftian.com" href="#">contact</a>
+    <a class="email" data-u="hello" data-d="swiftian.com" href="#">Contact</a>
   </footer>
 
   <script>
-    // Email is assembled at runtime so the raw address never appears in the page
-    // source — keeps scrapers / spam bots from harvesting it.
+    // The address is assembled only when the user clicks, so it never appears in
+    // the page source OR on screen — bots can't scrape it and it stays hidden
+    // until someone actually wants to email. The link just reads "Contact".
     document.querySelectorAll('a.email').forEach(function(a){
-      var addr = a.dataset.u + String.fromCharCode(64) + a.dataset.d;
-      a.href = 'mailto:' + addr;
-      a.textContent = addr;
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        location.href = 'mailto:' + a.dataset.u + String.fromCharCode(64) + a.dataset.d;
+      });
     });
   </script>
 </body>
