@@ -86,9 +86,13 @@
     @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(110,231,249,.55)}70%{box-shadow:0 0 0 9px rgba(110,231,249,0)}100%{box-shadow:0 0 0 0 rgba(110,231,249,0)}}
 
     footer{position:relative;z-index:1;text-align:center;color:var(--muted);font-size:13px;padding:54px 24px 30px}
-    footer a{color:var(--muted);text-decoration:none}
-    footer a:hover{color:var(--ink)}
-    footer .sep{opacity:.4;margin:0 9px}
+    footer .copy{color:var(--muted)}
+    footer a{color:var(--c1);text-decoration:none}
+    footer a:hover{text-decoration:underline;text-underline-offset:3px}
+    footer a.mail{display:inline-flex;vertical-align:-3px}
+    footer a.mail:hover{text-decoration:none;opacity:.75}
+    footer a.mail svg{width:16px;height:16px}
+    footer .sep{opacity:.35;margin:0 9px;color:var(--muted)}
 
     @media (prefers-reduced-motion:reduce){.dot{animation:none}}
   </style>
@@ -198,22 +202,23 @@
   </div>
 
   <footer>
-    &copy; 2026 Swiftian
+    <span class="copy">&copy; 2026 Swiftian</span>
     <span class="sep">&middot;</span>
     <a href="/privacy/">Privacy Policy</a>
     <span class="sep">&middot;</span>
-    <a class="email" data-u="hello" data-d="swiftian.com" href="#">Contact</a>
+    <a class="mail email" data-u="hello" data-d="swiftian.com" href="#" aria-label="Email us" title="Email us">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/>
+      </svg>
+    </a>
   </footer>
 
   <script>
-    // The address is assembled only when the user clicks, so it never appears in
-    // the page source OR on screen — bots can't scrape it and it stays hidden
-    // until someone actually wants to email. The link just reads "Contact".
+    // The address is assembled into the link only at runtime, so the raw string
+    // never appears in the page HTML source — basic spam scrapers can't harvest
+    // it, while the link still opens the mail app normally when clicked.
     document.querySelectorAll('a.email').forEach(function(a){
-      a.addEventListener('click', function(e){
-        e.preventDefault();
-        location.href = 'mailto:' + a.dataset.u + String.fromCharCode(64) + a.dataset.d;
-      });
+      a.href = 'mailto:' + a.dataset.u + String.fromCharCode(64) + a.dataset.d;
     });
   </script>
 </body>

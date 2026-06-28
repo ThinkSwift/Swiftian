@@ -71,8 +71,9 @@
     hr{border:none;border-top:1px solid var(--line);margin:26px 0}
 
     footer{position:relative;z-index:1;text-align:center;color:var(--muted);font-size:13px;padding:40px 24px 30px}
-    footer a{color:var(--muted);text-decoration:none}
-    footer a:hover{color:var(--ink)}
+    footer .copy{color:var(--muted)}
+    footer a{color:var(--c1);text-decoration:none}
+    footer a:hover{text-decoration:underline;text-underline-offset:3px}
   </style>
 </head>
 <body>
@@ -135,16 +136,14 @@
     </main>
   </div>
 
-  <footer>&copy; 2026 Swiftian &middot; <a href="/">swiftian.com</a></footer>
+  <footer><span class="copy">&copy; 2026 Swiftian</span> &middot; <a href="/">swiftian.com</a></footer>
 
   <script>
-    // The address is assembled only on click, so it never appears in the page
-    // source OR on screen — the link just reads "Contact us".
+    // The address is assembled into the link only at runtime, so the raw string
+    // never appears in the page HTML source — basic spam scrapers can't harvest
+    // it, while the link still opens the mail app normally when clicked.
     document.querySelectorAll('a.email').forEach(function(a){
-      a.addEventListener('click', function(e){
-        e.preventDefault();
-        location.href = 'mailto:' + a.dataset.u + String.fromCharCode(64) + a.dataset.d;
-      });
+      a.href = 'mailto:' + a.dataset.u + String.fromCharCode(64) + a.dataset.d;
     });
   </script>
 </body>
