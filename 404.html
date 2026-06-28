@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pythoneer</title>
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -15,8 +16,9 @@
       background:radial-gradient(900px 600px at 70% -10%,rgba(129,140,248,.22),transparent 60%),linear-gradient(180deg,#0e1422,#0b0f1a);
       display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px
     }
-    .glyph{width:64px;height:64px;border-radius:16px;display:grid;place-items:center;font-size:34px;margin:0 auto 18px;
-      background:linear-gradient(135deg,#818cf8,#6ee7f9);box-shadow:0 10px 30px rgba(110,231,249,.35),inset 0 0 0 1px rgba(255,255,255,.18)}
+    .glyph{width:72px;height:72px;border-radius:18px;display:grid;place-items:center;overflow:hidden;margin:0 auto 18px;
+      background:linear-gradient(160deg,#bfe9ff,#a3d8ff);box-shadow:0 10px 30px rgba(110,231,249,.35),inset 0 0 0 1px rgba(255,255,255,.35)}
+    .glyph img{width:62px;height:62px;image-rendering:pixelated;display:block}
     h1{font-family:"Space Grotesk";margin:0 0 6px}
     .big{font-size:clamp(56px,16vw,120px);line-height:1;
       background:linear-gradient(100deg,#6ee7f9,#818cf8 55%,#f0abfc);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -52,7 +54,7 @@
         ? '<a class="btn" href="' + APP_STORE_URL + '">Download Pythoneer</a>'
         : '<span class="soon">Coming soon to the App Store</span>';
       document.getElementById('view').innerHTML =
-        '<div class="glyph">🧱</div>' +
+        '<div class="glyph"><img src="/assets/pythoneer-player.png" alt="Pythoneer"></div>' +
         '<h1>Open in Pythoneer</h1>' +
         '<p>Someone shared a world with you. Get Pythoneer to play &amp; remix it.</p>' +
         cta;
