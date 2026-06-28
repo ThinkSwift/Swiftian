@@ -1,11 +1,31 @@
----
-layout: default
-title: "Page Not Found"
-permalink: /404.html
----
-
-<h1>404 – Page Not Found</h1>
-
-<p>Sorry, the page you’re looking for doesn’t exist.</p>
-
-<p><a href="/">Back to Home</a></p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — Swiftian</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    html,body{margin:0;height:100%}
+    body{
+      font-family:"Inter",-apple-system,system-ui,sans-serif;color:#eef2ff;
+      background:radial-gradient(900px 600px at 70% -10%,rgba(129,140,248,.22),transparent 60%),linear-gradient(180deg,#0e1422,#0b0f1a);
+      display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px
+    }
+    h1{font-family:"Space Grotesk";font-size:clamp(56px,16vw,120px);margin:0;line-height:1;
+       background:linear-gradient(100deg,#6ee7f9,#818cf8 55%,#f0abfc);-webkit-background-clip:text;background-clip:text;color:transparent}
+    p{color:#9aa6c4;font-size:16px;margin:14px 0 26px}
+    a{display:inline-block;color:#eef2ff;text-decoration:none;font-weight:600;padding:11px 20px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04)}
+    a:hover{background:rgba(255,255,255,.09)}
+  </style>
+</head>
+<body>
+  <h1>404</h1>
+  <p>This page wandered off the grid.</p>
+  <a href="/">&larr; Back home</a>
+</body>
+</html>

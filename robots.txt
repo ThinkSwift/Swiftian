@@ -1,6 +1,3 @@
 User-agent: *
 Allow: /
-
 Disallow: /privacy/
-
-Sitemap: https://swiftian.com/sitemap.xml
