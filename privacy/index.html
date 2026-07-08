@@ -41,12 +41,7 @@
     nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:30px}
     .brand{display:flex;align-items:center;gap:11px;font-family:"Space Grotesk";font-weight:700}
     .brand a{color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:11px}
-    .glyph{
-      width:34px;height:34px;border-radius:10px;display:grid;place-items:center;overflow:hidden;
-      background:linear-gradient(160deg,#bfe9ff,#a3d8ff);
-      box-shadow:0 6px 22px rgba(110,231,249,.28), inset 0 0 0 1px rgba(255,255,255,.35)
-    }
-    .glyph img{width:30px;height:30px;image-rendering:pixelated;display:block}
+    .brand .mark{width:34px;height:34px;border-radius:9px;display:block}
     nav a.back{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
     nav a.back:hover{color:var(--ink)}
 
@@ -79,7 +74,7 @@
 <body>
   <div class="wrap">
     <nav>
-      <div class="brand"><a href="/"><span class="glyph"><img src="/assets/pythoneer-icon.png" alt=""></span> Swiftian</a></div>
+      <div class="brand"><a href="/"><img class="mark" src="/assets/swiftian-mark.png" alt=""> Swiftian</a></div>
       <a class="back" href="/">&larr; Home</a>
     </nav>
 
@@ -136,7 +131,7 @@
     </main>
   </div>
 
-  <footer><span class="copy">&copy; 2026 Swiftian</span> &middot; <a href="/">swiftian.com</a></footer>
+  <footer><span class="copy">&copy; 2026 Swiftian Inc.</span> &middot; <a href="/">swiftian.com</a></footer>
 
   <script>
     // The address is assembled into the link only at runtime, so the raw string
