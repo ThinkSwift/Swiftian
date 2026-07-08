@@ -23,7 +23,7 @@
   <style>
     :root{
       --bg:#0b0f1a; --bg-2:#0e1422; --ink:#eef2ff; --muted:#9aa6c4; --line:rgba(255,255,255,.10);
-      --card:rgba(255,255,255,.04); --c1:#6ee7f9; --c2:#818cf8; --c3:#f0abfc;
+      --c1:#6ee7f9; --c2:#818cf8; --c3:#f0abfc;
     }
     *{box-sizing:border-box}
     html,body{margin:0}
@@ -42,26 +42,25 @@
     }
     .wrap{position:relative;z-index:1;width:100%;max-width:1000px;margin:0 auto;padding:0 22px}
 
-    /* nav */
     nav{display:flex;align-items:center;gap:11px;padding:26px 0 8px}
     nav img{width:34px;height:34px;border-radius:9px;display:block}
     nav .name{font-family:"Space Grotesk";font-weight:700;font-size:19px;letter-spacing:.2px}
 
-    /* hero */
-    .hero{padding:46px 0 30px;max-width:680px}
-    .eyebrow{display:inline-block;font-size:13px;font-weight:600;color:var(--c1);letter-spacing:.4px;
-      padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03);margin-bottom:20px}
+    .hero{padding:44px 0 26px;max-width:680px}
     h1{font-family:"Space Grotesk";font-weight:700;font-size:clamp(38px,7vw,62px);line-height:1.02;margin:0;letter-spacing:-1.5px;
       background:linear-gradient(100deg,#fff 30%,var(--c1) 75%,var(--c2));-webkit-background-clip:text;background-clip:text;color:transparent}
     .hero p{color:var(--muted);font-size:clamp(15px,2.4vw,18px);line-height:1.6;margin:18px 0 0}
 
-    /* apps */
     .apps-head{font-family:"Space Grotesk";font-weight:600;font-size:14px;letter-spacing:.14em;text-transform:uppercase;
       color:var(--muted);margin:40px 0 16px}
     .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;padding-bottom:8px}
 
-    .card{display:flex;flex-direction:column;gap:14px;padding:22px;border:1px solid var(--line);border-radius:20px;
-      background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.02));backdrop-filter:blur(6px)}
+    /* whole card is the App Store link */
+    .card{display:flex;flex-direction:column;gap:13px;padding:22px;border:1px solid var(--line);border-radius:20px;
+      background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.02));backdrop-filter:blur(6px);
+      text-decoration:none;color:inherit;cursor:pointer;
+      transition:transform .14s ease,border-color .14s ease,box-shadow .14s ease}
+    .card:hover{transform:translateY(-3px);border-color:rgba(110,231,249,.35);box-shadow:0 18px 44px rgba(0,0,0,.38)}
     .card-top{display:flex;gap:15px;align-items:center}
     .card-top img{width:62px;height:62px;border-radius:15px;display:block;box-shadow:0 6px 18px rgba(0,0,0,.35);
       border:1px solid rgba(255,255,255,.08)}
@@ -70,18 +69,11 @@
       border:1px solid rgba(110,231,249,.18);padding:3px 9px;border-radius:999px}
     .card p{color:var(--muted);font-size:14.5px;line-height:1.55;margin:0;flex:1}
 
-    .appstore{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;margin-top:2px;
-      background:#fff;color:#000;text-decoration:none;padding:9px 16px 9px 14px;border-radius:12px;
-      transition:transform .12s ease, box-shadow .12s ease;box-shadow:0 6px 18px rgba(0,0,0,.28)}
-    .appstore:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(0,0,0,.38)}
-    .appstore svg{width:22px;height:22px;flex:none}
-    .appstore .txt{display:flex;flex-direction:column;line-height:1.05;text-align:left}
-    .appstore .txt small{font-size:9.5px;font-weight:500;letter-spacing:.02em;opacity:.8}
-    .appstore .txt strong{font-size:15px;font-weight:700;font-family:"Space Grotesk"}
-    .soon{align-self:flex-start;font-size:13px;font-weight:600;color:var(--muted);
-      border:1px solid var(--line);padding:9px 16px;border-radius:12px;background:rgba(255,255,255,.03)}
+    .get{display:inline-flex;align-items:center;gap:7px;color:var(--c1);font-size:13px;font-weight:600;margin-top:2px}
+    .get svg{width:13px;height:13px;flex:none}
+    .get .arr{transition:transform .14s ease}
+    .card:hover .get .arr{transform:translateX(3px)}
 
-    /* footer */
     footer{position:relative;z-index:1;text-align:center;font-size:13px;padding:44px 22px 34px}
     footer .copy{color:var(--muted)}
     footer a{color:var(--c1);text-decoration:none}
@@ -93,7 +85,7 @@
 
     @media (max-width:680px){
       .grid{grid-template-columns:1fr}
-      .hero{padding:30px 0 18px}
+      .hero{padding:28px 0 16px}
     }
   </style>
 </head>
@@ -105,7 +97,6 @@
     </nav>
 
     <header class="hero">
-      <span class="eyebrow">Indie app studio</span>
       <h1>Small apps, made with care.</h1>
       <p>
         Swiftian is a tiny studio building playful, genuinely useful apps for
@@ -116,77 +107,49 @@
     <h2 class="apps-head">Our apps</h2>
     <section class="grid">
 
-      <!-- English Accents -->
-      <article class="card">
+      <a class="card" href="https://apps.apple.com/app/id1281312028" target="_blank" rel="noopener">
         <div class="card-top">
           <img src="/assets/apps/english-accents.png" alt="English Accents icon">
-          <div>
-            <h3>English Accents</h3>
-            <span class="tag">Language</span>
-          </div>
+          <div><h3>English Accents</h3><span class="tag">Language</span></div>
         </div>
         <p>Practice English in the accent you actually need. Write your own lines,
            hear them spoken in different accents, and watch your voice grow clearer
            and more confident.</p>
-        <a class="appstore" href="https://apps.apple.com/app/id1281312028" target="_blank" rel="noopener" aria-label="Download English Accents on the App Store">
-          <svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-          <span class="txt"><small>Download on the</small><strong>App Store</strong></span>
-        </a>
-      </article>
+        <span class="get"><svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Download on the App Store <span class="arr">&rarr;</span></span>
+      </a>
 
-      <!-- Pythoneer -->
-      <article class="card">
+      <a class="card" href="https://apps.apple.com/app/id6754533772" target="_blank" rel="noopener">
         <div class="card-top">
           <img src="/assets/apps/pythoneer.png" alt="Pythoneer icon">
-          <div>
-            <h3>Pythoneer</h3>
-            <span class="tag">Coding &amp; Games</span>
-          </div>
+          <div><h3>Pythoneer</h3><span class="tag">Coding &amp; Games</span></div>
         </div>
         <p>Don&rsquo;t just play games — make them. Drop tiles into a world, change one
            number, hit play. Real Python underneath when you&rsquo;re ready. Make it,
            remix a friend&rsquo;s, share your own.</p>
-        <a class="appstore" href="https://apps.apple.com/app/id6754533772" target="_blank" rel="noopener" aria-label="Download Pythoneer on the App Store">
-          <svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-          <span class="txt"><small>Download on the</small><strong>App Store</strong></span>
-        </a>
-      </article>
+        <span class="get"><svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Download on the App Store <span class="arr">&rarr;</span></span>
+      </a>
 
-      <!-- iFlipbook -->
-      <article class="card">
+      <a class="card" href="https://apps.apple.com/app/id6759637879" target="_blank" rel="noopener">
         <div class="card-top">
           <img src="/assets/apps/iflipbook.png" alt="iFlipbook icon">
-          <div>
-            <h3>iFlipbook</h3>
-            <span class="tag">Animation</span>
-          </div>
+          <div><h3>iFlipbook</h3><span class="tag">Animation</span></div>
         </div>
         <p>Hand-draw animation, frame by frame. Sketch, flip, and watch your doodles
            come alive — then export as video or GIF. Vector-based, so every drawing
-           stays editable. <a href="https://iflipbook.com" style="color:var(--c1);text-decoration:none">iflipbook.com&nbsp;&rarr;</a></p>
-        <a class="appstore" href="https://apps.apple.com/app/id6759637879" target="_blank" rel="noopener" aria-label="Download iFlipbook on the App Store">
-          <svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-          <span class="txt"><small>Download on the</small><strong>App Store</strong></span>
-        </a>
-      </article>
+           stays editable.</p>
+        <span class="get"><svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Download on the App Store <span class="arr">&rarr;</span></span>
+      </a>
 
-      <!-- Chillfriends: Times Tables -->
-      <article class="card">
+      <a class="card" href="https://apps.apple.com/app/id6752542327" target="_blank" rel="noopener">
         <div class="card-top">
           <img src="/assets/apps/chillfriends.png" alt="Chillfriends: Times Tables icon">
-          <div>
-            <h3>Chillfriends: Times Tables</h3>
-            <span class="tag">Kids &middot; Math</span>
-          </div>
+          <div><h3>Chillfriends: Times Tables</h3><span class="tag">Kids &middot; Math</span></div>
         </div>
         <p>Turn multiplication practice into a game kids come back to. Solve quick
            times-table rounds, earn cute character cards, and build a collection —
            one small win at a time.</p>
-        <a class="appstore" href="https://apps.apple.com/app/id6752542327" target="_blank" rel="noopener" aria-label="Download Chillfriends: Times Tables on the App Store">
-          <svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-          <span class="txt"><small>Download on the</small><strong>App Store</strong></span>
-        </a>
-      </article>
+        <span class="get"><svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Download on the App Store <span class="arr">&rarr;</span></span>
+      </a>
 
     </section>
   </div>
