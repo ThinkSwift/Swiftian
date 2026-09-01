@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Swiftian — Chillfriends Comics</title>
-  <meta name="description" content="Chillfriends Comics — short comic episodes from the Swiftian studio, read aloud in different English accents. New episodes keep coming.">
+  <meta name="description" content="Chillfriends Comics — short animated comic episodes from the Swiftian studio, read aloud in different English accents. Three volumes and counting.">
   <meta name="theme-color" content="#0b0f1a">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
@@ -12,7 +12,7 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Swiftian — Chillfriends Comics">
-  <meta property="og:description" content="Short comic episodes, read aloud in different English accents.">
+  <meta property="og:description" content="Short animated comic episodes, read aloud in different English accents.">
   <meta property="og:url" content="https://swiftian.com/">
   <meta property="og:image" content="https://swiftian.com/assets/apps/chillfriends.png">
 
@@ -35,7 +35,7 @@
         linear-gradient(180deg,var(--bg-2),var(--bg));
       min-height:100vh;-webkit-font-smoothing:antialiased
     }
-    .wrap{position:relative;z-index:1;width:100%;max-width:860px;margin:0 auto;padding:0 22px}
+    .wrap{position:relative;z-index:1;width:100%;max-width:880px;margin:0 auto;padding:0 22px}
 
     nav{display:flex;align-items:center;gap:11px;padding:26px 0 8px}
     nav img{width:34px;height:34px;display:block;image-rendering:pixelated}
@@ -47,41 +47,60 @@
     .lang-toggle.hide{display:none}
 
     .kicker{font-family:"Space Grotesk";font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;
-      color:var(--muted);margin:38px 0 10px}
-    h1{font-family:"Space Grotesk";font-weight:700;font-size:clamp(34px,6.4vw,54px);line-height:1.05;margin:0;letter-spacing:-1.2px;
+      color:var(--muted);margin:34px 0 10px}
+    h1{font-family:"Space Grotesk";font-weight:700;font-size:clamp(32px,6vw,50px);line-height:1.05;margin:0;letter-spacing:-1.2px;
       background:linear-gradient(100deg,#fff 30%,var(--c1) 75%,var(--c2));-webkit-background-clip:text;background-clip:text;color:transparent}
-    .intro{color:var(--muted);font-size:clamp(15px,2.3vw,17px);line-height:1.65;margin:16px 0 0;max-width:600px}
+    .intro{color:var(--muted);font-size:clamp(15px,2.3vw,17px);line-height:1.65;margin:14px 0 0;max-width:600px}
 
-    .player{margin:30px 0 0;border:1px solid var(--line);border-radius:20px;overflow:hidden;
+    /* ── 플레이어 ── */
+    .stage{margin:28px 0 0;border:1px solid var(--line);border-radius:22px;overflow:hidden;
       background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02))}
-    .player video{display:block;width:100%;max-height:72vh;background:#000}
-    .player .bar{display:flex;align-items:center;gap:12px;padding:13px 18px;border-top:1px solid var(--line)}
-    .player .ep-now{font-family:"Space Grotesk";font-weight:600;font-size:14.5px;flex:1}
-    .made{color:var(--muted);font-size:12.5px}
-    .made a{color:var(--muted);text-decoration:none;border-bottom:1px dotted rgba(154,166,196,.5)}
-    .made a:hover{color:var(--c1)}
-    .made svg{width:11px;height:11px;vertical-align:-1px;opacity:.8}
+    .video-box{background:#000;display:flex;justify-content:center}
+    .video-box video{display:block;width:100%;max-height:min(66vh,560px);object-fit:contain;background:#000}
+    .bar{display:flex;align-items:center;gap:16px;padding:14px 18px;border-top:1px solid var(--line)}
+    .now{flex:1;min-width:0}
+    .now .n-ep{font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--c1)}
+    .now .n-title{font-family:"Space Grotesk";font-weight:600;font-size:16px;
+      white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .store{display:flex;align-items:center;gap:10px;flex:none}
+    .store .apps{display:flex;gap:8px}
+    .store a{display:block;line-height:0}
+    .store img{width:40px;height:40px;border-radius:10px;border:1px solid rgba(255,255,255,.10);
+      box-shadow:0 4px 12px rgba(0,0,0,.35);transition:transform .13s ease}
+    .store a:hover img{transform:translateY(-2px)}
+    .store .cap{font-size:10.5px;font-weight:600;letter-spacing:.06em;color:var(--muted);
+      text-transform:uppercase;text-align:center;margin-top:5px}
 
-    .eps{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
-    .eps button{font-family:"Space Grotesk";font-weight:600;font-size:13.5px;color:var(--muted);
-      background:none;border:1px solid var(--line);border-radius:11px;padding:8px 13px;cursor:pointer;
-      transition:color .12s ease,border-color .12s ease,background .12s ease}
-    .eps button:hover{color:var(--ink);border-color:rgba(110,231,249,.4)}
-    .eps button.on{color:var(--c1);border-color:rgba(110,231,249,.45);background:rgba(110,231,249,.10)}
+    /* ── 에피소드 레일 (가로 스크롤) ── */
+    .vol{margin:26px 0 0}
+    .vol h2{font-family:"Space Grotesk";font-weight:600;font-size:13px;letter-spacing:.13em;text-transform:uppercase;
+      color:var(--muted);margin:0 0 10px}
+    .rail{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x proximity;padding:2px 2px 12px;
+      scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.15) transparent}
+    .rail::-webkit-scrollbar{height:6px}
+    .rail::-webkit-scrollbar-thumb{background:rgba(255,255,255,.12);border-radius:3px}
+    .ep{scroll-snap-align:start;flex:0 0 auto;width:172px;text-align:left;cursor:pointer;
+      font-family:inherit;color:inherit;background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.015));
+      border:1px solid var(--line);border-radius:15px;padding:13px 14px;
+      transition:border-color .13s ease,transform .13s ease}
+    .ep:hover{transform:translateY(-2px);border-color:rgba(110,231,249,.35)}
+    .ep.on{border-color:rgba(110,231,249,.55);background:rgba(110,231,249,.08)}
+    .ep .e-num{font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+    .ep.on .e-num{color:var(--c1)}
+    .ep .e-title{font-family:"Space Grotesk";font-weight:600;font-size:14px;line-height:1.35;margin-top:5px;
+      display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:38px}
 
-    .more{margin:56px 0 0;padding-top:26px;border-top:1px solid var(--line)}
+    /* ── 다른 사이트 통로 ── */
+    .more{margin:52px 0 0;padding-top:24px;border-top:1px solid var(--line)}
     .more h2{font-family:"Space Grotesk";font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;
-      color:var(--muted);margin:0 0 14px}
+      color:var(--muted);margin:0 0 12px}
     .site-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding:7px 0;font-size:14.5px}
     .site-row a{color:var(--c1);text-decoration:none;font-weight:600;font-family:"Space Grotesk"}
     .site-row a:hover{text-decoration:underline;text-underline-offset:3px}
     .site-row .d{color:var(--muted)}
     .site-row .soon{font-size:11.5px;color:var(--muted);border:1px dashed var(--line);border-radius:999px;padding:2px 9px;opacity:.8}
-    .also{color:var(--muted);font-size:13px;margin-top:16px}
-    .also a{color:var(--muted);text-decoration:none;border-bottom:1px dotted rgba(154,166,196,.5)}
-    .also a:hover{color:var(--c1)}
 
-    footer{position:relative;z-index:1;text-align:center;font-size:13px;padding:46px 22px 34px;color:var(--muted)}
+    footer{position:relative;z-index:1;text-align:center;font-size:13px;padding:44px 22px 34px;color:var(--muted)}
     footer a{color:var(--c1);text-decoration:none}
     footer a:hover{text-decoration:underline;text-underline-offset:3px}
     footer a.mail{display:inline-flex;vertical-align:-3px}
@@ -89,7 +108,10 @@
     footer a.mail svg{width:16px;height:16px}
     footer .sep{opacity:.35;margin:0 9px}
 
-    html[dir="rtl"] .name{text-align:right}
+    @media (max-width:560px){
+      .bar{flex-wrap:wrap}
+      .ep{width:150px}
+    }
   </style>
 </head>
 <body>
@@ -102,23 +124,35 @@
 
     <p class="kicker" data-t="kicker">A series from our studio</p>
     <h1 data-t="title">Chillfriends Comics</h1>
-    <p class="intro" data-t="intro">Short comic episodes, drawn with our Chillfriends characters and
-      read aloud in different English accents. Watch one — they&rsquo;re tiny.</p>
+    <p class="intro" data-t="intro">Short animated comic episodes, read aloud in different English
+      accents. Three volumes and counting — start anywhere.</p>
 
-    <div class="player">
-      <video id="player" controls playsinline preload="metadata" src="/media/comics/e01.mp4"></video>
+    <div class="stage">
+      <div class="video-box">
+        <video id="player" controls playsinline preload="metadata"></video>
+      </div>
       <div class="bar">
-        <span class="ep-now" id="epNow"><span data-t="episode">Episode</span> 1</span>
-        <span class="made">
-          <svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-          <a href="https://apps.apple.com/app/id6752542327?ct=web-sw-cf" target="_blank" rel="noopener">Chillfriends</a>
-          &middot;
-          <a href="https://apps.apple.com/app/id1281312028?ct=web-sw-ea" target="_blank" rel="noopener">English&nbsp;Accents</a>
-        </span>
+        <div class="now">
+          <div class="n-ep" id="nowEp">E1 · Vol. 1</div>
+          <div class="n-title" id="nowTitle">Slow Replies, Heavy Days</div>
+        </div>
+        <div class="store">
+          <div>
+            <div class="apps">
+              <a href="https://apps.apple.com/app/id6752542327?ct=web-sw-cf" target="_blank" rel="noopener" aria-label="Chillfriends on the App Store">
+                <img src="/assets/apps/chillfriends.png" alt="Chillfriends">
+              </a>
+              <a href="https://apps.apple.com/app/id1281312028?ct=web-sw-ea" target="_blank" rel="noopener" aria-label="English Accents on the App Store">
+                <img src="/assets/apps/english-accents.png" alt="English Accents">
+              </a>
+            </div>
+            <div class="cap">App Store</div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="eps" id="eps" aria-label="Episodes"></div>
+    <div id="volumes"></div>
 
     <section class="more">
       <h2 data-t="moreTitle">More from us</h2>
@@ -137,10 +171,6 @@
         <span class="d" data-t="coDesc">read a coordinate, get a picture</span>
         <span class="soon" data-t="blogSoon">blog &mdash; coming soon</span>
       </div>
-      <p class="also"><span data-t="also">Also on the App Store:</span>
-        <a href="https://apps.apple.com/app/id6796374506?ct=web-sw-sp" target="_blank" rel="noopener">Spriteer</a> &middot;
-        <a href="https://apps.apple.com/app/id1293199498?ct=web-sw-cp" target="_blank" rel="noopener">Chinese Pronunciation</a>
-      </p>
     </section>
   </div>
 
@@ -157,95 +187,111 @@
   </footer>
 
   <script>
+  // ── 에피소드 목록 — EA 앱과 같은 원본 (english-accents-media 워커에서 스트리밍) ──
+  var MEDIA = "https://english-accents-media.ilbulyori.workers.dev/";
+  var EPISODES = [
+    {n:1,v:1,t:"Slow Replies, Heavy Days"},{n:2,v:1,t:"The Day That Wouldn’t End"},
+    {n:3,v:1,t:"The Cost of Being Reliable"},{n:4,v:1,t:"Almost Saying It"},
+    {n:5,v:1,t:"Things We Outgrow Quietly"},{n:6,v:1,t:"Apologies We Forget to Say"},
+    {n:7,v:1,t:"Different Mornings, Same Life"},{n:8,v:1,t:"The Last Slice of Quiet"},
+    {n:9,v:2,t:"Small Places, Big Opinions"},{n:10,v:2,t:"Sleep Is a Fact-Checker"},
+    {n:11,v:2,t:"Menus We Pretend to Read"},{n:12,v:2,t:"Hope Has Bad UX"},
+    {n:13,v:2,t:"Carry-On Personality"},{n:14,v:2,t:"Calendar Noise"},
+    {n:15,v:2,t:"Care First, Analysis Later"},{n:16,v:2,t:"No Performance Required"},
+    {n:17,v:3,t:"Soft Launch Energy"},{n:18,v:3,t:"Playlist Liability"},
+    {n:19,v:3,t:"Three Percent Theology"},{n:20,v:3,t:"Jacket Weather"},
+    {n:21,v:3,t:"VIP Anxiety"},{n:22,v:3,t:"Parking Lot Cinema"},
+    {n:23,v:3,t:"Luxury Delusion"},{n:24,v:3,t:"Definition Pending"}
+  ];
+
   // ── 2개 언어 토글: 사용자 언어 ⇄ English ──
   var I18N = {
-    "en":      {name:"English"},
     "ko":      {name:"한국어", kicker:"우리 스튜디오의 연재물", title:"칠프렌즈 코믹스",
-                intro:"칠프렌즈 캐릭터로 그린 짧은 코믹 에피소드를 여러 영어 억양으로 읽어 드립니다. 한 편 보세요 — 금방 끝나요.",
-                episode:"에피소드", moreTitle:"우리가 만드는 것들", ifDesc:"손으로 그리는 프레임 애니메이션",
+                intro:"짧은 애니메이션 코믹 에피소드를 여러 영어 억양으로 읽어 드립니다. 세 권째 연재 중 — 아무 편이나 시작하세요.",
+                vol:"", moreTitle:"우리가 만드는 것들", ifDesc:"손으로 그리는 프레임 애니메이션",
                 pyDesc:"나만의 게임 만들기", coDesc:"좌표를 읽으면 그림이 나와요", blogSoon:"블로그 — 준비 중",
-                also:"앱스토어에도 있어요:", privacy:"개인정보 처리방침"},
+                privacy:"개인정보 처리방침"},
     "ja":      {name:"日本語", kicker:"スタジオの連載", title:"チルフレンズ・コミックス",
-                intro:"チルフレンズのキャラクターで描いた短いコミックを、さまざまな英語アクセントで朗読します。1話どうぞ — すぐ終わります。",
-                episode:"エピソード", moreTitle:"私たちの作品", ifDesc:"手描きのコマ送りアニメ",
+                intro:"短いアニメコミックをさまざまな英語アクセントで朗読。現在3巻まで連載中 — どの話からでもどうぞ。",
+                moreTitle:"私たちの作品", ifDesc:"手描きのコマ送りアニメ",
                 pyDesc:"自分のゲームを作ろう", coDesc:"座標を読むと絵が現れる", blogSoon:"ブログ — 近日公開",
-                also:"App Storeにも:", privacy:"プライバシーポリシー"},
+                privacy:"プライバシーポリシー"},
     "zh-Hans": {name:"简体中文", kicker:"来自我们工作室的连载", title:"Chillfriends 漫画",
-                intro:"用 Chillfriends 角色绘制的短篇漫画，以不同的英语口音朗读。看一集吧——很短的。",
-                episode:"第", moreTitle:"我们的作品", ifDesc:"手绘逐帧动画",
+                intro:"短篇动画漫画，以不同的英语口音朗读。已连载三卷——从任意一集开始都行。",
+                moreTitle:"我们的作品", ifDesc:"手绘逐帧动画",
                 pyDesc:"制作你自己的游戏", coDesc:"读坐标，出图画", blogSoon:"博客 — 即将上线",
-                also:"App Store 上还有:", privacy:"隐私政策"},
+                privacy:"隐私政策"},
     "zh-Hant": {name:"繁體中文", kicker:"來自我們工作室的連載", title:"Chillfriends 漫畫",
-                intro:"用 Chillfriends 角色繪製的短篇漫畫，以不同的英語口音朗讀。看一集吧——很短的。",
-                episode:"第", moreTitle:"我們的作品", ifDesc:"手繪逐格動畫",
+                intro:"短篇動畫漫畫，以不同的英語口音朗讀。已連載三卷——從任何一集開始都可以。",
+                moreTitle:"我們的作品", ifDesc:"手繪逐格動畫",
                 pyDesc:"打造你自己的遊戲", coDesc:"讀座標，出圖畫", blogSoon:"部落格 — 即將推出",
-                also:"App Store 上還有:", privacy:"隱私權政策"},
+                privacy:"隱私權政策"},
     "es":      {name:"Español", kicker:"Una serie de nuestro estudio", title:"Chillfriends Comics",
-                intro:"Episodios cortos de cómic, dibujados con nuestros personajes Chillfriends y leídos en voz alta con distintos acentos del inglés. Mira uno — son cortitos.",
-                episode:"Episodio", moreTitle:"Más de nosotros", ifDesc:"animación dibujada a mano, cuadro a cuadro",
+                intro:"Episodios cortos de cómic animado, leídos en voz alta con distintos acentos del inglés. Tres volúmenes y contando — empieza por donde quieras.",
+                moreTitle:"Más de nosotros", ifDesc:"animación dibujada a mano, cuadro a cuadro",
                 pyDesc:"crea tus propios juegos", coDesc:"lee una coordenada y aparece un dibujo", blogSoon:"blog — muy pronto",
-                also:"También en el App Store:", privacy:"Política de privacidad"},
+                privacy:"Política de privacidad"},
     "fr":      {name:"Français", kicker:"Une série de notre studio", title:"Chillfriends Comics",
-                intro:"De courts épisodes de BD, dessinés avec nos personnages Chillfriends et lus à voix haute avec différents accents anglais. Regardez-en un — c'est tout court.",
-                episode:"Épisode", moreTitle:"Nos créations", ifDesc:"animation dessinée à la main, image par image",
+                intro:"De courts épisodes de BD animée, lus à voix haute avec différents accents anglais. Trois volumes et ça continue — commencez où vous voulez.",
+                moreTitle:"Nos créations", ifDesc:"animation dessinée à la main, image par image",
                 pyDesc:"créez vos propres jeux", coDesc:"lisez une coordonnée, une image apparaît", blogSoon:"blog — bientôt",
-                also:"Aussi sur l'App Store :", privacy:"Politique de confidentialité"},
+                privacy:"Politique de confidentialité"},
     "de":      {name:"Deutsch", kicker:"Eine Serie aus unserem Studio", title:"Chillfriends Comics",
-                intro:"Kurze Comic-Episoden, gezeichnet mit unseren Chillfriends-Figuren und vorgelesen in verschiedenen englischen Akzenten. Schau eine an — sie sind winzig.",
-                episode:"Episode", moreTitle:"Mehr von uns", ifDesc:"handgezeichnete Animation, Bild für Bild",
+                intro:"Kurze animierte Comic-Episoden, vorgelesen in verschiedenen englischen Akzenten. Drei Bände und mehr — fang irgendwo an.",
+                moreTitle:"Mehr von uns", ifDesc:"handgezeichnete Animation, Bild für Bild",
                 pyDesc:"bau deine eigenen Spiele", coDesc:"Koordinate lesen, Bild sehen", blogSoon:"Blog — bald",
-                also:"Auch im App Store:", privacy:"Datenschutz"},
+                privacy:"Datenschutz"},
     "it":      {name:"Italiano", kicker:"Una serie dal nostro studio", title:"Chillfriends Comics",
-                intro:"Brevi episodi a fumetti, disegnati con i nostri personaggi Chillfriends e letti ad alta voce con diversi accenti inglesi. Guardane uno — sono piccolissimi.",
-                episode:"Episodio", moreTitle:"Altro da noi", ifDesc:"animazione disegnata a mano, fotogramma per fotogramma",
+                intro:"Brevi episodi a fumetti animati, letti ad alta voce con diversi accenti inglesi. Tre volumi e non è finita — inizia da dove vuoi.",
+                moreTitle:"Altro da noi", ifDesc:"animazione disegnata a mano, fotogramma per fotogramma",
                 pyDesc:"crea i tuoi giochi", coDesc:"leggi una coordinata, appare un disegno", blogSoon:"blog — in arrivo",
-                also:"Anche sull'App Store:", privacy:"Privacy"},
+                privacy:"Privacy"},
     "pt":      {name:"Português", kicker:"Uma série do nosso estúdio", title:"Chillfriends Comics",
-                intro:"Episódios curtos de quadrinhos, desenhados com nossos personagens Chillfriends e lidos em voz alta em diferentes sotaques do inglês. Assista um — são bem curtinhos.",
-                episode:"Episódio", moreTitle:"Mais do estúdio", ifDesc:"animação desenhada à mão, quadro a quadro",
+                intro:"Episódios curtos de quadrinhos animados, lidos em voz alta em diferentes sotaques do inglês. Três volumes e contando — comece por onde quiser.",
+                moreTitle:"Mais do estúdio", ifDesc:"animação desenhada à mão, quadro a quadro",
                 pyDesc:"crie seus próprios jogos", coDesc:"leia uma coordenada, surge um desenho", blogSoon:"blog — em breve",
-                also:"Também na App Store:", privacy:"Privacidade"},
+                privacy:"Privacidade"},
     "ru":      {name:"Русский", kicker:"Серия от нашей студии", title:"Комиксы Chillfriends",
-                intro:"Короткие комикс-эпизоды с персонажами Chillfriends, озвученные с разными английскими акцентами. Посмотрите один — они совсем короткие.",
-                episode:"Эпизод", moreTitle:"Ещё от нас", ifDesc:"рисованная анимация, кадр за кадром",
+                intro:"Короткие анимированные комикс-эпизоды, озвученные с разными английскими акцентами. Уже три тома — начните с любого.",
+                moreTitle:"Ещё от нас", ifDesc:"рисованная анимация, кадр за кадром",
                 pyDesc:"создавайте свои игры", coDesc:"читаешь координату — появляется картинка", blogSoon:"блог — скоро",
-                also:"Также в App Store:", privacy:"Конфиденциальность"},
+                privacy:"Конфиденциальность"},
     "tr":      {name:"Türkçe", kicker:"Stüdyomuzdan bir seri", title:"Chillfriends Çizgi Romanları",
-                intro:"Chillfriends karakterlerimizle çizilmiş, farklı İngilizce aksanlarıyla seslendirilen kısa bölümler. Bir tane izleyin — çok kısalar.",
-                episode:"Bölüm", moreTitle:"Bizden daha fazlası", ifDesc:"kare kare el çizimi animasyon",
+                intro:"Farklı İngilizce aksanlarıyla seslendirilen kısa animasyon bölümleri. Üç cilt oldu bile — istediğin yerden başla.",
+                moreTitle:"Bizden daha fazlası", ifDesc:"kare kare el çizimi animasyon",
                 pyDesc:"kendi oyununu yap", coDesc:"koordinatı oku, resim belirsin", blogSoon:"blog — çok yakında",
-                also:"App Store'da ayrıca:", privacy:"Gizlilik"},
+                privacy:"Gizlilik"},
     "id":      {name:"Bahasa Indonesia", kicker:"Serial dari studio kami", title:"Komik Chillfriends",
-                intro:"Episode komik pendek dengan karakter Chillfriends, dibacakan dalam berbagai aksen bahasa Inggris. Tonton satu — singkat kok.",
-                episode:"Episode", moreTitle:"Karya kami lainnya", ifDesc:"animasi gambar tangan, bingkai demi bingkai",
+                intro:"Episode komik animasi pendek, dibacakan dalam berbagai aksen bahasa Inggris. Sudah tiga volume — mulai dari mana saja.",
+                moreTitle:"Karya kami lainnya", ifDesc:"animasi gambar tangan, bingkai demi bingkai",
                 pyDesc:"buat gimmu sendiri", coDesc:"baca koordinat, muncul gambar", blogSoon:"blog — segera",
-                also:"Juga di App Store:", privacy:"Privasi"},
+                privacy:"Privasi"},
     "vi":      {name:"Tiếng Việt", kicker:"Loạt truyện từ studio của chúng tôi", title:"Truyện tranh Chillfriends",
-                intro:"Những tập truyện tranh ngắn với các nhân vật Chillfriends, được đọc bằng nhiều giọng tiếng Anh khác nhau. Xem thử một tập — ngắn lắm.",
-                episode:"Tập", moreTitle:"Sản phẩm khác", ifDesc:"hoạt hình vẽ tay, từng khung hình",
+                intro:"Những tập truyện tranh hoạt hình ngắn, đọc bằng nhiều giọng tiếng Anh khác nhau. Đã ba tập — bắt đầu từ đâu cũng được.",
+                moreTitle:"Sản phẩm khác", ifDesc:"hoạt hình vẽ tay, từng khung hình",
                 pyDesc:"tự làm game của bạn", coDesc:"đọc tọa độ, hiện bức tranh", blogSoon:"blog — sắp ra mắt",
-                also:"Cũng có trên App Store:", privacy:"Quyền riêng tư"},
+                privacy:"Quyền riêng tư"},
     "th":      {name:"ไทย", kicker:"ซีรีส์จากสตูดิโอของเรา", title:"การ์ตูน Chillfriends",
-                intro:"ตอนการ์ตูนสั้น ๆ วาดด้วยตัวละคร Chillfriends อ่านออกเสียงด้วยสำเนียงภาษาอังกฤษหลากหลาย ลองดูสักตอน — สั้นนิดเดียว",
-                episode:"ตอนที่", moreTitle:"ผลงานอื่นของเรา", ifDesc:"แอนิเมชันวาดมือ ทีละเฟรม",
+                intro:"ตอนการ์ตูนแอนิเมชันสั้น ๆ อ่านออกเสียงด้วยสำเนียงภาษาอังกฤษหลากหลาย ครบสามเล่มแล้ว — เริ่มตอนไหนก็ได้",
+                moreTitle:"ผลงานอื่นของเรา", ifDesc:"แอนิเมชันวาดมือ ทีละเฟรม",
                 pyDesc:"สร้างเกมของคุณเอง", coDesc:"อ่านพิกัดแล้วภาพจะปรากฏ", blogSoon:"บล็อก — เร็ว ๆ นี้",
-                also:"มีใน App Store ด้วย:", privacy:"ความเป็นส่วนตัว"},
+                privacy:"ความเป็นส่วนตัว"},
     "hi":      {name:"हिन्दी", kicker:"हमारे स्टूडियो की सीरीज़", title:"Chillfriends कॉमिक्स",
-                intro:"Chillfriends किरदारों से बनी छोटी कॉमिक कड़ियाँ, अलग-अलग अंग्रेज़ी लहजों में पढ़ी हुई। एक देखिए — बहुत छोटी हैं।",
-                episode:"एपिसोड", moreTitle:"हमारी और चीज़ें", ifDesc:"हाथ से बनी फ़्रेम-दर-फ़्रेम एनिमेशन",
+                intro:"छोटी एनिमेटेड कॉमिक कड़ियाँ, अलग-अलग अंग्रेज़ी लहजों में पढ़ी हुई। तीन खंड हो चुके — कहीं से भी शुरू कीजिए।",
+                moreTitle:"हमारी और चीज़ें", ifDesc:"हाथ से बनी फ़्रेम-दर-फ़्रेम एनिमेशन",
                 pyDesc:"अपना गेम खुद बनाइए", coDesc:"निर्देशांक पढ़िए, चित्र पाइए", blogSoon:"ब्लॉग — जल्द ही",
-                also:"App Store पर भी:", privacy:"गोपनीयता नीति"},
+                privacy:"गोपनीयता नीति"},
     "ar":      {name:"العربية", rtl:true, kicker:"سلسلة من استوديونا", title:"قصص تشيلفريندز المصوّرة",
-                intro:"حلقات قصص مصوّرة قصيرة برسوم شخصيات تشيلفريندز، تُقرأ بلهجات إنجليزية مختلفة. شاهد حلقة — إنها قصيرة جدًا.",
-                episode:"الحلقة", moreTitle:"المزيد منّا", ifDesc:"رسوم متحركة مرسومة يدويًا، إطارًا بإطار",
+                intro:"حلقات قصيرة من القصص المصوّرة المتحركة، تُقرأ بلهجات إنجليزية مختلفة. ثلاثة مجلدات حتى الآن — ابدأ من أي حلقة.",
+                moreTitle:"المزيد منّا", ifDesc:"رسوم متحركة مرسومة يدويًا، إطارًا بإطار",
                 pyDesc:"اصنع ألعابك بنفسك", coDesc:"اقرأ الإحداثيات لتظهر صورة", blogSoon:"المدونة — قريبًا",
-                also:"أيضًا على App Store:", privacy:"سياسة الخصوصية"}
+                privacy:"سياسة الخصوصية"}
   };
   var EN = {kicker:"A series from our studio", title:"Chillfriends Comics",
-    intro:"Short comic episodes, drawn with our Chillfriends characters and read aloud in different English accents. Watch one — they’re tiny.",
-    episode:"Episode", moreTitle:"More from us", ifDesc:"hand-drawn animation, frame by frame",
+    intro:"Short animated comic episodes, read aloud in different English accents. Three volumes and counting — start anywhere.",
+    moreTitle:"More from us", ifDesc:"hand-drawn animation, frame by frame",
     pyDesc:"make your own games", coDesc:"read a coordinate, get a picture", blogSoon:"blog — coming soon",
-    also:"Also on the App Store:", privacy:"Privacy Policy"};
+    privacy:"Privacy Policy"};
 
   function detect(){
     var langs = navigator.languages || [navigator.language || "en"];
@@ -253,15 +299,13 @@
       var l = langs[i];
       if (/^zh\b/.test(l)) return /tw|hk|mo|hant/i.test(l) ? "zh-Hant" : "zh-Hans";
       var two = l.slice(0,2).toLowerCase();
-      if (two === "pt") return "pt";
       if (I18N[two]) return two;
     }
     return "en";
   }
-  var local = detect();
-  var cur;
+  var local = detect(), cur;
   try { cur = localStorage.getItem("sw_lang"); } catch(_){}
-  if (cur !== "en" && cur !== local) cur = local;   // 저장값이 어긋나면 감지값으로
+  if (cur !== "en" && cur !== local) cur = local;
 
   function apply(lang){
     cur = lang;
@@ -271,7 +315,7 @@
       var k = el.getAttribute("data-t");
       if (d[k]) el.textContent = d[k];
     });
-    document.documentElement.lang = lang === "zh-Hans" ? "zh-Hans" : lang === "zh-Hant" ? "zh-Hant" : lang;
+    document.documentElement.lang = lang;
     document.documentElement.dir = (lang !== "en" && I18N[lang].rtl) ? "rtl" : "ltr";
     var btn = document.getElementById("langToggle");
     if (local === "en"){ btn.classList.add("hide"); }
@@ -279,41 +323,45 @@
       btn.classList.remove("hide");
       btn.textContent = (lang === "en") ? I18N[local].name : "English";
     }
-    renderEpNow();
   }
   document.getElementById("langToggle").addEventListener("click", function(){
     apply(cur === "en" ? local : "en");
   });
 
-  // ── 에피소드 ──
-  var TOTAL = 16, epCur = 1;
+  // ── 플레이어 + 권별 레일 ──
   var player = document.getElementById("player");
-  function label(n){
-    var d = (cur === "en") ? EN : I18N[cur];
-    if (cur === "zh-Hans" || cur === "zh-Hant") return d.episode + " " + n + " " + (cur==="zh-Hans"?"集":"集");
-    return d.episode + " " + n;
-  }
-  function renderEpNow(){
-    document.getElementById("epNow").textContent = label(epCur);
-    document.querySelectorAll("#eps button").forEach(function(b,i){
-      b.classList.toggle("on", i+1 === epCur);
+  var curEp = EPISODES[0];
+  function pad(n){ return String(n).padStart(2, "0"); }
+  function select(ep, play){
+    curEp = ep;
+    player.src = MEDIA + "Chillfriends_E" + pad(ep.n) + ".mp4";
+    document.getElementById("nowEp").textContent = "E" + ep.n + " · Vol. " + ep.v;
+    document.getElementById("nowTitle").textContent = ep.t;
+    document.querySelectorAll(".ep").forEach(function(b){
+      b.classList.toggle("on", +b.dataset.n === ep.n);
     });
+    if (play){
+      player.play().catch(function(){});
+      document.querySelector(".stage").scrollIntoView({behavior:"smooth", block:"nearest"});
+    }
   }
-  var epsBox = document.getElementById("eps");
-  for (var i=1;i<=TOTAL;i++){
-    (function(n){
+  var volsBox = document.getElementById("volumes");
+  [1,2,3].forEach(function(v){
+    var sec = document.createElement("section"); sec.className = "vol";
+    var h = document.createElement("h2"); h.textContent = "Vol. " + v; sec.appendChild(h);
+    var rail = document.createElement("div"); rail.className = "rail";
+    EPISODES.filter(function(e){ return e.v === v; }).forEach(function(e){
       var b = document.createElement("button");
-      b.type = "button"; b.textContent = n;
-      b.setAttribute("aria-label", "Episode " + n);
-      b.addEventListener("click", function(){
-        epCur = n;
-        player.src = "/media/comics/e" + String(n).padStart(2,"0") + ".mp4";
-        player.play().catch(function(){});
-        renderEpNow();
-      });
-      epsBox.appendChild(b);
-    })(i);
-  }
+      b.type = "button"; b.className = "ep"; b.dataset.n = e.n;
+      b.innerHTML = '<div class="e-num">E' + e.n + '</div><div class="e-title"></div>';
+      b.querySelector(".e-title").textContent = e.t;
+      b.addEventListener("click", function(){ select(e, true); });
+      rail.appendChild(b);
+    });
+    sec.appendChild(rail);
+    volsBox.appendChild(sec);
+  });
+  select(EPISODES[0], false);
   apply(cur);
 
   document.querySelectorAll('a.email').forEach(function(a){
