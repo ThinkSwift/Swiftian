@@ -296,9 +296,9 @@
   function detect(){
     var langs = navigator.languages || [navigator.language || "en"];
     for (var i=0;i<langs.length;i++){
-      var l = langs[i];
+      var l = langs[i], two = l.slice(0,2).toLowerCase();
+      if (two === "en") return "en";   // 영어가 목록에서 먼저 나오면 영어 — 뒤쪽의 다른 언어를 잡지 않는다
       if (/^zh\b/.test(l)) return /tw|hk|mo|hant/i.test(l) ? "zh-Hant" : "zh-Hans";
-      var two = l.slice(0,2).toLowerCase();
       if (I18N[two]) return two;
     }
     return "en";
