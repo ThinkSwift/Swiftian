@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Swiftian — Small apps, made with care.</title>
-  <meta name="description" content="Swiftian is an indie studio crafting playful, useful apps for iPhone and iPad — iFlipbook, Chillfriends, English Accents, Pythoneer, Spriteer, Chinese Pronunciation, and Coordigo.">
+  <title>Swiftian — Chillfriends Comics</title>
+  <meta name="description" content="Chillfriends Comics — short comic episodes from the Swiftian studio, read aloud in different English accents. New episodes keep coming.">
   <meta name="theme-color" content="#0b0f1a">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Swiftian">
-  <meta property="og:description" content="Small apps, made with care — for iPhone & iPad.">
+  <meta property="og:title" content="Swiftian — Chillfriends Comics">
+  <meta property="og:description" content="Short comic episodes, read aloud in different English accents.">
   <meta property="og:url" content="https://swiftian.com/">
-  <meta property="og:image" content="https://swiftian.com/assets/icon-192.png">
+  <meta property="og:image" content="https://swiftian.com/assets/apps/chillfriends.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
   <style>
     :root{
       --bg:#0b0f1a; --bg-2:#0e1422; --ink:#eef2ff; --muted:#9aa6c4; --line:rgba(255,255,255,.10);
-      --c1:#6ee7f9; --c2:#818cf8; --c3:#f0abfc;
+      --c1:#6ee7f9; --c2:#818cf8;
     }
     *{box-sizing:border-box}
     html,body{margin:0}
@@ -35,77 +35,61 @@
         linear-gradient(180deg,var(--bg-2),var(--bg));
       min-height:100vh;-webkit-font-smoothing:antialiased
     }
-    body::before{
-      content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
-      background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
-      background-size:48px 48px;mask-image:radial-gradient(900px 700px at 50% 0%,#000,transparent 80%)
-    }
-    .wrap{position:relative;z-index:1;width:100%;max-width:1000px;margin:0 auto;padding:0 22px}
+    .wrap{position:relative;z-index:1;width:100%;max-width:860px;margin:0 auto;padding:0 22px}
 
     nav{display:flex;align-items:center;gap:11px;padding:26px 0 8px}
     nav img{width:34px;height:34px;display:block;image-rendering:pixelated}
-    nav .name{font-family:"Space Grotesk";font-weight:700;font-size:19px;letter-spacing:.2px}
+    nav .name{font-family:"Space Grotesk";font-weight:700;font-size:19px;letter-spacing:.2px;flex:1}
+    .lang-toggle{font-size:13px;font-weight:600;color:var(--muted);border:1px solid var(--line);
+      background:none;border-radius:999px;padding:7px 14px;cursor:pointer;font-family:inherit;
+      transition:color .14s ease,border-color .14s ease}
+    .lang-toggle:hover{color:var(--c1);border-color:rgba(110,231,249,.4)}
+    .lang-toggle.hide{display:none}
 
-    .hero{padding:44px 0 26px;max-width:680px}
-    h1{font-family:"Space Grotesk";font-weight:700;font-size:clamp(38px,7vw,62px);line-height:1.02;margin:0;letter-spacing:-1.5px;
+    .kicker{font-family:"Space Grotesk";font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;
+      color:var(--muted);margin:38px 0 10px}
+    h1{font-family:"Space Grotesk";font-weight:700;font-size:clamp(34px,6.4vw,54px);line-height:1.05;margin:0;letter-spacing:-1.2px;
       background:linear-gradient(100deg,#fff 30%,var(--c1) 75%,var(--c2));-webkit-background-clip:text;background-clip:text;color:transparent}
-    .hero p{color:var(--muted);font-size:clamp(15px,2.4vw,18px);line-height:1.6;margin:18px 0 0}
+    .intro{color:var(--muted);font-size:clamp(15px,2.3vw,17px);line-height:1.65;margin:16px 0 0;max-width:600px}
 
-    .apps-head{font-family:"Space Grotesk";font-weight:600;font-size:14px;letter-spacing:.14em;text-transform:uppercase;
-      color:var(--muted);margin:40px 0 16px}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;padding-bottom:8px}
+    .player{margin:30px 0 0;border:1px solid var(--line);border-radius:20px;overflow:hidden;
+      background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02))}
+    .player video{display:block;width:100%;max-height:72vh;background:#000}
+    .player .bar{display:flex;align-items:center;gap:12px;padding:13px 18px;border-top:1px solid var(--line)}
+    .player .ep-now{font-family:"Space Grotesk";font-weight:600;font-size:14.5px;flex:1}
+    .made{color:var(--muted);font-size:12.5px}
+    .made a{color:var(--muted);text-decoration:none;border-bottom:1px dotted rgba(154,166,196,.5)}
+    .made a:hover{color:var(--c1)}
+    .made svg{width:11px;height:11px;vertical-align:-1px;opacity:.8}
 
-    .card{display:flex;flex-direction:column;gap:13px;padding:22px;border:1px solid var(--line);border-radius:20px;
-      background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.02));backdrop-filter:blur(6px);
-      text-decoration:none;color:inherit;
-      transition:transform .14s ease,border-color .14s ease,box-shadow .14s ease}
-    a.card{cursor:pointer}
-    .card:hover{transform:translateY(-3px);border-color:rgba(110,231,249,.35);box-shadow:0 18px 44px rgba(0,0,0,.38)}
-    .card-top{display:flex;gap:15px;align-items:center}
-    .card-top img{width:62px;height:62px;border-radius:15px;display:block;box-shadow:0 6px 18px rgba(0,0,0,.35);
-      border:1px solid rgba(255,255,255,.08)}
-    .card h3{font-family:"Space Grotesk";font-weight:700;font-size:19px;margin:0 0 5px}
-    .tag{font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;border:1px solid}
-    .card p{color:var(--muted);font-size:14.5px;line-height:1.55;margin:0;flex:1}
+    .eps{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+    .eps button{font-family:"Space Grotesk";font-weight:600;font-size:13.5px;color:var(--muted);
+      background:none;border:1px solid var(--line);border-radius:11px;padding:8px 13px;cursor:pointer;
+      transition:color .12s ease,border-color .12s ease,background .12s ease}
+    .eps button:hover{color:var(--ink);border-color:rgba(110,231,249,.4)}
+    .eps button.on{color:var(--c1);border-color:rgba(110,231,249,.45);background:rgba(110,231,249,.10)}
 
-    /* iFlipbook — featured card, full width */
-    .feature{grid-column:1/-1;padding:26px}
-    .feature .card-top img{width:76px;height:76px;border-radius:18px}
-    .feature h3{font-size:24px}
+    .more{margin:56px 0 0;padding-top:26px;border-top:1px solid var(--line)}
+    .more h2{font-family:"Space Grotesk";font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;
+      color:var(--muted);margin:0 0 14px}
+    .site-row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding:7px 0;font-size:14.5px}
+    .site-row a{color:var(--c1);text-decoration:none;font-weight:600;font-family:"Space Grotesk"}
+    .site-row a:hover{text-decoration:underline;text-underline-offset:3px}
+    .site-row .d{color:var(--muted)}
+    .site-row .soon{font-size:11.5px;color:var(--muted);border:1px dashed var(--line);border-radius:999px;padding:2px 9px;opacity:.8}
+    .also{color:var(--muted);font-size:13px;margin-top:16px}
+    .also a{color:var(--muted);text-decoration:none;border-bottom:1px dotted rgba(154,166,196,.5)}
+    .also a:hover{color:var(--c1)}
 
-    .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
-    .btn{display:inline-flex;align-items:center;gap:7px;padding:9px 14px;border-radius:12px;font-size:13.5px;font-weight:600;
-      text-decoration:none;color:var(--ink);border:1px solid var(--line);transition:border-color .14s ease,background .14s ease}
-    .btn:hover{border-color:rgba(110,231,249,.45);background:rgba(110,231,249,.08)}
-    .btn.primary{color:var(--c1);border-color:rgba(110,231,249,.35);background:rgba(110,231,249,.12)}
-    .btn svg{width:13px;height:13px;flex:none}
-    .soon{display:inline-flex;align-items:center;padding:9px 14px;border-radius:12px;font-size:13.5px;font-weight:600;
-      color:var(--muted);border:1px dashed var(--line)}
-
-    .get{display:inline-flex;align-items:center;gap:7px;color:var(--c1);font-size:13px;font-weight:600;margin-top:2px}
-    .get svg{width:13px;height:13px;flex:none}
-    .get .arr{transition:transform .14s ease}
-    .card:hover .get .arr{transform:translateX(3px)}
-
-    /* Coordigo — no public icon yet, magenta tile */
-    .tile{width:62px;height:62px;border-radius:15px;display:flex;align-items:center;justify-content:center;
-      font-family:"Space Grotesk";font-weight:700;font-size:24px;color:#fff;
-      background:linear-gradient(135deg,#d02670,#a3195b);box-shadow:0 6px 18px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.08)}
-
-    footer{position:relative;z-index:1;text-align:center;font-size:13px;padding:44px 22px 34px}
-    footer .family{color:var(--muted);margin-bottom:14px}
-    footer .copy{color:var(--muted)}
+    footer{position:relative;z-index:1;text-align:center;font-size:13px;padding:46px 22px 34px;color:var(--muted)}
     footer a{color:var(--c1);text-decoration:none}
     footer a:hover{text-decoration:underline;text-underline-offset:3px}
     footer a.mail{display:inline-flex;vertical-align:-3px}
     footer a.mail:hover{text-decoration:none;opacity:.75}
     footer a.mail svg{width:16px;height:16px}
-    footer .sep{opacity:.35;margin:0 9px;color:var(--muted)}
+    footer .sep{opacity:.35;margin:0 9px}
 
-    @media (max-width:680px){
-      .grid{grid-template-columns:1fr}
-      .hero{padding:28px 0 16px}
-    }
+    html[dir="rtl"] .name{text-align:right}
   </style>
 </head>
 <body>
@@ -113,118 +97,57 @@
     <nav>
       <img src="/assets/pythoneer-icon.png" alt="Swiftian">
       <span class="name">Swiftian</span>
+      <button class="lang-toggle hide" id="langToggle" type="button"></button>
     </nav>
 
-    <header class="hero">
-      <h1>Small apps, made with care.</h1>
-      <p>
-        Swiftian is a tiny studio building playful, genuinely useful apps for
-        iPhone &amp; iPad. Every app has its own home — start anywhere and wander.
+    <p class="kicker" data-t="kicker">A series from our studio</p>
+    <h1 data-t="title">Chillfriends Comics</h1>
+    <p class="intro" data-t="intro">Short comic episodes, drawn with our Chillfriends characters and
+      read aloud in different English accents. Watch one — they&rsquo;re tiny.</p>
+
+    <div class="player">
+      <video id="player" controls playsinline preload="metadata" src="/media/comics/e01.mp4"></video>
+      <div class="bar">
+        <span class="ep-now" id="epNow"><span data-t="episode">Episode</span> 1</span>
+        <span class="made">
+          <svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+          <a href="https://apps.apple.com/app/id6752542327?ct=web-sw-cf" target="_blank" rel="noopener">Chillfriends</a>
+          &middot;
+          <a href="https://apps.apple.com/app/id1281312028?ct=web-sw-ea" target="_blank" rel="noopener">English&nbsp;Accents</a>
+        </span>
+      </div>
+    </div>
+
+    <div class="eps" id="eps" aria-label="Episodes"></div>
+
+    <section class="more">
+      <h2 data-t="moreTitle">More from us</h2>
+      <div class="site-row">
+        <a href="https://iflipbook.com">iflipbook.com</a>
+        <span class="d" data-t="ifDesc">hand-drawn animation, frame by frame</span>
+        <span class="soon" data-t="blogSoon">blog &mdash; coming soon</span>
+      </div>
+      <div class="site-row">
+        <a href="https://pythoneer.io">pythoneer.io</a>
+        <span class="d" data-t="pyDesc">make your own games</span>
+        <span class="soon" data-t="blogSoon">blog &mdash; coming soon</span>
+      </div>
+      <div class="site-row">
+        <a href="https://coordigo.com">coordigo.com</a>
+        <span class="d" data-t="coDesc">read a coordinate, get a picture</span>
+        <span class="soon" data-t="blogSoon">blog &mdash; coming soon</span>
+      </div>
+      <p class="also"><span data-t="also">Also on the App Store:</span>
+        <a href="https://apps.apple.com/app/id6796374506?ct=web-sw-sp" target="_blank" rel="noopener">Spriteer</a> &middot;
+        <a href="https://apps.apple.com/app/id1293199498?ct=web-sw-cp" target="_blank" rel="noopener">Chinese Pronunciation</a>
       </p>
-    </header>
-
-    <h2 class="apps-head">Our apps</h2>
-    <section class="grid">
-
-      <div class="card feature">
-        <div class="card-top">
-          <img src="/assets/apps/iflipbook.png" alt="iFlipbook icon">
-          <div><h3>iFlipbook</h3><span class="tag" style="color:#22d3ee;background:rgba(34,211,238,.10);border-color:rgba(34,211,238,.22)">Animation</span></div>
-        </div>
-        <p>Hand-draw animation, frame by frame. Sketch, flip, and watch your doodles
-           come alive — then export as video or GIF. Vector-based, so every drawing
-           stays editable. See what people make with it on the iFlipbook site.</p>
-        <div class="btns">
-          <a class="btn primary" href="https://iflipbook.com" >Visit iflipbook.com <span aria-hidden="true">&rarr;</span></a>
-          <a class="btn" href="https://apps.apple.com/app/id6759637879?ct=web-sw-if" target="_blank" rel="noopener"><svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> App Store</a>
-        </div>
-      </div>
-
-      <a class="card" href="https://apps.apple.com/app/id6752542327?ct=web-sw-cf" target="_blank" rel="noopener">
-        <div class="card-top">
-          <img src="/assets/apps/chillfriends.png" alt="Chillfriends: Times Tables icon">
-          <div><h3>Chillfriends: Times Tables</h3><span class="tag" style="color:#fbbf24;background:rgba(251,191,36,.10);border-color:rgba(251,191,36,.22)">Kids &middot; Math</span></div>
-        </div>
-        <p>Turn multiplication practice into a game kids come back to. Solve quick
-           times-table rounds, earn cute character cards, and build a collection —
-           one small win at a time.</p>
-        <span class="get"><svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Download on the App Store <span class="arr">&rarr;</span></span>
-      </a>
-
-      <a class="card" href="https://apps.apple.com/app/id1281312028?ct=web-sw-ea" target="_blank" rel="noopener">
-        <div class="card-top">
-          <img src="/assets/apps/english-accents.png" alt="English Accents icon">
-          <div><h3>English Accents</h3><span class="tag" style="color:#60a5fa;background:rgba(96,165,250,.10);border-color:rgba(96,165,250,.22)">Language</span></div>
-        </div>
-        <p>Practice English in the accent you actually need. Write your own lines,
-           hear them spoken in different accents, and watch your voice grow clearer
-           and more confident.</p>
-        <span class="get"><svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Download on the App Store <span class="arr">&rarr;</span></span>
-      </a>
-
-      <div class="card">
-        <div class="card-top">
-          <img src="/assets/apps/pythoneer.png" alt="Pythoneer icon">
-          <div><h3>Pythoneer</h3><span class="tag" style="color:#4ade80;background:rgba(74,222,128,.10);border-color:rgba(74,222,128,.22)">Coding &amp; Games</span></div>
-        </div>
-        <p>Don&rsquo;t just play games — make them. Drop tiles into a world, change one
-           number, hit play. Real Python underneath when you&rsquo;re ready. Make it,
-           remix a friend&rsquo;s, share your own.</p>
-        <div class="btns">
-          <a class="btn primary" href="https://pythoneer.io">Visit pythoneer.io <span aria-hidden="true">&rarr;</span></a>
-          <a class="btn" href="https://apps.apple.com/app/id6754533772?ct=web-sw-py" target="_blank" rel="noopener"><svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> App Store</a>
-        </div>
-      </div>
-
-      <a class="card" href="https://apps.apple.com/app/id6796374506?ct=web-sw-sp" target="_blank" rel="noopener">
-        <div class="card-top">
-          <img src="/assets/apps/spriteer.png" alt="Spriteer icon">
-          <div><h3>Spriteer</h3><span class="tag" style="color:#a78bfa;background:rgba(167,139,250,.10);border-color:rgba(167,139,250,.22)">Pixel Art</span></div>
-        </div>
-        <p>An 8&times;8 pixel art studio. Draw tiny sprites, animate them frame by frame,
-           and use them in your Pythoneer games — small canvas, big character.</p>
-        <span class="get"><svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Download on the App Store <span class="arr">&rarr;</span></span>
-      </a>
-
-      <a class="card" href="https://apps.apple.com/app/id1293199498?ct=web-sw-cp" target="_blank" rel="noopener">
-        <div class="card-top">
-          <img src="/assets/apps/chinese-pronunciation.png" alt="Chinese Pronunciation icon">
-          <div><h3>Chinese Pronunciation</h3><span class="tag" style="color:#f87171;background:rgba(248,113,113,.10);border-color:rgba(248,113,113,.22)">Language</span></div>
-        </div>
-        <p>Get the tones right from day one. Listen, mimic, and drill Chinese
-           pronunciation until it sticks — built for learners who want to be understood.</p>
-        <span class="get"><svg viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7-59.5.9-118.7 43.5-118.7 132.2 0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.5c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Download on the App Store <span class="arr">&rarr;</span></span>
-      </a>
-
-      <div class="card">
-        <div class="card-top">
-          <div class="tile" aria-hidden="true">Co</div>
-          <div><h3>Coordigo</h3><span class="tag" style="color:#f472b6;background:rgba(244,114,182,.10);border-color:rgba(244,114,182,.22)">Kids &middot; Math</span></div>
-        </div>
-        <p>Read a coordinate, get a picture. Tap ordered pairs on a grid and watch
-           a drawing appear — draw your own, animate it, share it as a link, or print
-           coordinate graphing worksheets.</p>
-        <div class="btns">
-          <a class="btn primary" href="https://coordigo.com">Visit coordigo.com <span aria-hidden="true">&rarr;</span></a>
-          <span class="soon">App Store — coming soon</span>
-        </div>
-      </div>
-
     </section>
   </div>
 
   <footer>
-    <div class="family">
-      Our sites:
-      <a href="https://iflipbook.com">iflipbook.com</a>
-      <span class="sep">&middot;</span>
-      <a href="https://pythoneer.io">pythoneer.io</a>
-      <span class="sep">&middot;</span>
-      <a href="https://coordigo.com">coordigo.com</a>
-    </div>
-    <span class="copy">&copy; 2026 Swiftian Inc.</span>
+    <span>&copy; 2026 Swiftian Inc.</span>
     <span class="sep">&middot;</span>
-    <a href="/privacy/">Privacy Policy</a>
+    <a href="/privacy/" data-t="privacy">Privacy Policy</a>
     <span class="sep">&middot;</span>
     <a class="mail email" data-u="hello" data-d="swiftian.com" href="#" aria-label="Email us" title="Email us">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -234,9 +157,168 @@
   </footer>
 
   <script>
-    document.querySelectorAll('a.email').forEach(function(a){
-      a.href = 'mailto:' + a.dataset.u + String.fromCharCode(64) + a.dataset.d;
+  // ── 2개 언어 토글: 사용자 언어 ⇄ English ──
+  var I18N = {
+    "en":      {name:"English"},
+    "ko":      {name:"한국어", kicker:"우리 스튜디오의 연재물", title:"칠프렌즈 코믹스",
+                intro:"칠프렌즈 캐릭터로 그린 짧은 코믹 에피소드를 여러 영어 억양으로 읽어 드립니다. 한 편 보세요 — 금방 끝나요.",
+                episode:"에피소드", moreTitle:"우리가 만드는 것들", ifDesc:"손으로 그리는 프레임 애니메이션",
+                pyDesc:"나만의 게임 만들기", coDesc:"좌표를 읽으면 그림이 나와요", blogSoon:"블로그 — 준비 중",
+                also:"앱스토어에도 있어요:", privacy:"개인정보 처리방침"},
+    "ja":      {name:"日本語", kicker:"スタジオの連載", title:"チルフレンズ・コミックス",
+                intro:"チルフレンズのキャラクターで描いた短いコミックを、さまざまな英語アクセントで朗読します。1話どうぞ — すぐ終わります。",
+                episode:"エピソード", moreTitle:"私たちの作品", ifDesc:"手描きのコマ送りアニメ",
+                pyDesc:"自分のゲームを作ろう", coDesc:"座標を読むと絵が現れる", blogSoon:"ブログ — 近日公開",
+                also:"App Storeにも:", privacy:"プライバシーポリシー"},
+    "zh-Hans": {name:"简体中文", kicker:"来自我们工作室的连载", title:"Chillfriends 漫画",
+                intro:"用 Chillfriends 角色绘制的短篇漫画，以不同的英语口音朗读。看一集吧——很短的。",
+                episode:"第", moreTitle:"我们的作品", ifDesc:"手绘逐帧动画",
+                pyDesc:"制作你自己的游戏", coDesc:"读坐标，出图画", blogSoon:"博客 — 即将上线",
+                also:"App Store 上还有:", privacy:"隐私政策"},
+    "zh-Hant": {name:"繁體中文", kicker:"來自我們工作室的連載", title:"Chillfriends 漫畫",
+                intro:"用 Chillfriends 角色繪製的短篇漫畫，以不同的英語口音朗讀。看一集吧——很短的。",
+                episode:"第", moreTitle:"我們的作品", ifDesc:"手繪逐格動畫",
+                pyDesc:"打造你自己的遊戲", coDesc:"讀座標，出圖畫", blogSoon:"部落格 — 即將推出",
+                also:"App Store 上還有:", privacy:"隱私權政策"},
+    "es":      {name:"Español", kicker:"Una serie de nuestro estudio", title:"Chillfriends Comics",
+                intro:"Episodios cortos de cómic, dibujados con nuestros personajes Chillfriends y leídos en voz alta con distintos acentos del inglés. Mira uno — son cortitos.",
+                episode:"Episodio", moreTitle:"Más de nosotros", ifDesc:"animación dibujada a mano, cuadro a cuadro",
+                pyDesc:"crea tus propios juegos", coDesc:"lee una coordenada y aparece un dibujo", blogSoon:"blog — muy pronto",
+                also:"También en el App Store:", privacy:"Política de privacidad"},
+    "fr":      {name:"Français", kicker:"Une série de notre studio", title:"Chillfriends Comics",
+                intro:"De courts épisodes de BD, dessinés avec nos personnages Chillfriends et lus à voix haute avec différents accents anglais. Regardez-en un — c'est tout court.",
+                episode:"Épisode", moreTitle:"Nos créations", ifDesc:"animation dessinée à la main, image par image",
+                pyDesc:"créez vos propres jeux", coDesc:"lisez une coordonnée, une image apparaît", blogSoon:"blog — bientôt",
+                also:"Aussi sur l'App Store :", privacy:"Politique de confidentialité"},
+    "de":      {name:"Deutsch", kicker:"Eine Serie aus unserem Studio", title:"Chillfriends Comics",
+                intro:"Kurze Comic-Episoden, gezeichnet mit unseren Chillfriends-Figuren und vorgelesen in verschiedenen englischen Akzenten. Schau eine an — sie sind winzig.",
+                episode:"Episode", moreTitle:"Mehr von uns", ifDesc:"handgezeichnete Animation, Bild für Bild",
+                pyDesc:"bau deine eigenen Spiele", coDesc:"Koordinate lesen, Bild sehen", blogSoon:"Blog — bald",
+                also:"Auch im App Store:", privacy:"Datenschutz"},
+    "it":      {name:"Italiano", kicker:"Una serie dal nostro studio", title:"Chillfriends Comics",
+                intro:"Brevi episodi a fumetti, disegnati con i nostri personaggi Chillfriends e letti ad alta voce con diversi accenti inglesi. Guardane uno — sono piccolissimi.",
+                episode:"Episodio", moreTitle:"Altro da noi", ifDesc:"animazione disegnata a mano, fotogramma per fotogramma",
+                pyDesc:"crea i tuoi giochi", coDesc:"leggi una coordinata, appare un disegno", blogSoon:"blog — in arrivo",
+                also:"Anche sull'App Store:", privacy:"Privacy"},
+    "pt":      {name:"Português", kicker:"Uma série do nosso estúdio", title:"Chillfriends Comics",
+                intro:"Episódios curtos de quadrinhos, desenhados com nossos personagens Chillfriends e lidos em voz alta em diferentes sotaques do inglês. Assista um — são bem curtinhos.",
+                episode:"Episódio", moreTitle:"Mais do estúdio", ifDesc:"animação desenhada à mão, quadro a quadro",
+                pyDesc:"crie seus próprios jogos", coDesc:"leia uma coordenada, surge um desenho", blogSoon:"blog — em breve",
+                also:"Também na App Store:", privacy:"Privacidade"},
+    "ru":      {name:"Русский", kicker:"Серия от нашей студии", title:"Комиксы Chillfriends",
+                intro:"Короткие комикс-эпизоды с персонажами Chillfriends, озвученные с разными английскими акцентами. Посмотрите один — они совсем короткие.",
+                episode:"Эпизод", moreTitle:"Ещё от нас", ifDesc:"рисованная анимация, кадр за кадром",
+                pyDesc:"создавайте свои игры", coDesc:"читаешь координату — появляется картинка", blogSoon:"блог — скоро",
+                also:"Также в App Store:", privacy:"Конфиденциальность"},
+    "tr":      {name:"Türkçe", kicker:"Stüdyomuzdan bir seri", title:"Chillfriends Çizgi Romanları",
+                intro:"Chillfriends karakterlerimizle çizilmiş, farklı İngilizce aksanlarıyla seslendirilen kısa bölümler. Bir tane izleyin — çok kısalar.",
+                episode:"Bölüm", moreTitle:"Bizden daha fazlası", ifDesc:"kare kare el çizimi animasyon",
+                pyDesc:"kendi oyununu yap", coDesc:"koordinatı oku, resim belirsin", blogSoon:"blog — çok yakında",
+                also:"App Store'da ayrıca:", privacy:"Gizlilik"},
+    "id":      {name:"Bahasa Indonesia", kicker:"Serial dari studio kami", title:"Komik Chillfriends",
+                intro:"Episode komik pendek dengan karakter Chillfriends, dibacakan dalam berbagai aksen bahasa Inggris. Tonton satu — singkat kok.",
+                episode:"Episode", moreTitle:"Karya kami lainnya", ifDesc:"animasi gambar tangan, bingkai demi bingkai",
+                pyDesc:"buat gimmu sendiri", coDesc:"baca koordinat, muncul gambar", blogSoon:"blog — segera",
+                also:"Juga di App Store:", privacy:"Privasi"},
+    "vi":      {name:"Tiếng Việt", kicker:"Loạt truyện từ studio của chúng tôi", title:"Truyện tranh Chillfriends",
+                intro:"Những tập truyện tranh ngắn với các nhân vật Chillfriends, được đọc bằng nhiều giọng tiếng Anh khác nhau. Xem thử một tập — ngắn lắm.",
+                episode:"Tập", moreTitle:"Sản phẩm khác", ifDesc:"hoạt hình vẽ tay, từng khung hình",
+                pyDesc:"tự làm game của bạn", coDesc:"đọc tọa độ, hiện bức tranh", blogSoon:"blog — sắp ra mắt",
+                also:"Cũng có trên App Store:", privacy:"Quyền riêng tư"},
+    "th":      {name:"ไทย", kicker:"ซีรีส์จากสตูดิโอของเรา", title:"การ์ตูน Chillfriends",
+                intro:"ตอนการ์ตูนสั้น ๆ วาดด้วยตัวละคร Chillfriends อ่านออกเสียงด้วยสำเนียงภาษาอังกฤษหลากหลาย ลองดูสักตอน — สั้นนิดเดียว",
+                episode:"ตอนที่", moreTitle:"ผลงานอื่นของเรา", ifDesc:"แอนิเมชันวาดมือ ทีละเฟรม",
+                pyDesc:"สร้างเกมของคุณเอง", coDesc:"อ่านพิกัดแล้วภาพจะปรากฏ", blogSoon:"บล็อก — เร็ว ๆ นี้",
+                also:"มีใน App Store ด้วย:", privacy:"ความเป็นส่วนตัว"},
+    "hi":      {name:"हिन्दी", kicker:"हमारे स्टूडियो की सीरीज़", title:"Chillfriends कॉमिक्स",
+                intro:"Chillfriends किरदारों से बनी छोटी कॉमिक कड़ियाँ, अलग-अलग अंग्रेज़ी लहजों में पढ़ी हुई। एक देखिए — बहुत छोटी हैं।",
+                episode:"एपिसोड", moreTitle:"हमारी और चीज़ें", ifDesc:"हाथ से बनी फ़्रेम-दर-फ़्रेम एनिमेशन",
+                pyDesc:"अपना गेम खुद बनाइए", coDesc:"निर्देशांक पढ़िए, चित्र पाइए", blogSoon:"ब्लॉग — जल्द ही",
+                also:"App Store पर भी:", privacy:"गोपनीयता नीति"},
+    "ar":      {name:"العربية", rtl:true, kicker:"سلسلة من استوديونا", title:"قصص تشيلفريندز المصوّرة",
+                intro:"حلقات قصص مصوّرة قصيرة برسوم شخصيات تشيلفريندز، تُقرأ بلهجات إنجليزية مختلفة. شاهد حلقة — إنها قصيرة جدًا.",
+                episode:"الحلقة", moreTitle:"المزيد منّا", ifDesc:"رسوم متحركة مرسومة يدويًا، إطارًا بإطار",
+                pyDesc:"اصنع ألعابك بنفسك", coDesc:"اقرأ الإحداثيات لتظهر صورة", blogSoon:"المدونة — قريبًا",
+                also:"أيضًا على App Store:", privacy:"سياسة الخصوصية"}
+  };
+  var EN = {kicker:"A series from our studio", title:"Chillfriends Comics",
+    intro:"Short comic episodes, drawn with our Chillfriends characters and read aloud in different English accents. Watch one — they’re tiny.",
+    episode:"Episode", moreTitle:"More from us", ifDesc:"hand-drawn animation, frame by frame",
+    pyDesc:"make your own games", coDesc:"read a coordinate, get a picture", blogSoon:"blog — coming soon",
+    also:"Also on the App Store:", privacy:"Privacy Policy"};
+
+  function detect(){
+    var langs = navigator.languages || [navigator.language || "en"];
+    for (var i=0;i<langs.length;i++){
+      var l = langs[i];
+      if (/^zh\b/.test(l)) return /tw|hk|mo|hant/i.test(l) ? "zh-Hant" : "zh-Hans";
+      var two = l.slice(0,2).toLowerCase();
+      if (two === "pt") return "pt";
+      if (I18N[two]) return two;
+    }
+    return "en";
+  }
+  var local = detect();
+  var cur;
+  try { cur = localStorage.getItem("sw_lang"); } catch(_){}
+  if (cur !== "en" && cur !== local) cur = local;   // 저장값이 어긋나면 감지값으로
+
+  function apply(lang){
+    cur = lang;
+    try { localStorage.setItem("sw_lang", lang); } catch(_){}
+    var d = (lang === "en") ? EN : I18N[lang];
+    document.querySelectorAll("[data-t]").forEach(function(el){
+      var k = el.getAttribute("data-t");
+      if (d[k]) el.textContent = d[k];
     });
+    document.documentElement.lang = lang === "zh-Hans" ? "zh-Hans" : lang === "zh-Hant" ? "zh-Hant" : lang;
+    document.documentElement.dir = (lang !== "en" && I18N[lang].rtl) ? "rtl" : "ltr";
+    var btn = document.getElementById("langToggle");
+    if (local === "en"){ btn.classList.add("hide"); }
+    else {
+      btn.classList.remove("hide");
+      btn.textContent = (lang === "en") ? I18N[local].name : "English";
+    }
+    renderEpNow();
+  }
+  document.getElementById("langToggle").addEventListener("click", function(){
+    apply(cur === "en" ? local : "en");
+  });
+
+  // ── 에피소드 ──
+  var TOTAL = 16, epCur = 1;
+  var player = document.getElementById("player");
+  function label(n){
+    var d = (cur === "en") ? EN : I18N[cur];
+    if (cur === "zh-Hans" || cur === "zh-Hant") return d.episode + " " + n + " " + (cur==="zh-Hans"?"集":"集");
+    return d.episode + " " + n;
+  }
+  function renderEpNow(){
+    document.getElementById("epNow").textContent = label(epCur);
+    document.querySelectorAll("#eps button").forEach(function(b,i){
+      b.classList.toggle("on", i+1 === epCur);
+    });
+  }
+  var epsBox = document.getElementById("eps");
+  for (var i=1;i<=TOTAL;i++){
+    (function(n){
+      var b = document.createElement("button");
+      b.type = "button"; b.textContent = n;
+      b.setAttribute("aria-label", "Episode " + n);
+      b.addEventListener("click", function(){
+        epCur = n;
+        player.src = "/media/comics/e" + String(n).padStart(2,"0") + ".mp4";
+        player.play().catch(function(){});
+        renderEpNow();
+      });
+      epsBox.appendChild(b);
+    })(i);
+  }
+  apply(cur);
+
+  document.querySelectorAll('a.email').forEach(function(a){
+    a.href = 'mailto:' + a.dataset.u + String.fromCharCode(64) + a.dataset.d;
+  });
   </script>
 <!-- Cloudflare Web Analytics — 프록시 없이 도는 비콘. 쿠키도, 개인 식별도 없다. --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "3be86aab8cf24999be8e5d44456fee80"}'></script>
 <!-- 앱스토어 클릭 계측 — ct= 는 설치를 가르지만 클릭은 못 센다. 둘을 같이 봐야 이탈이 보인다.
