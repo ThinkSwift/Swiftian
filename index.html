@@ -196,6 +196,9 @@
   var MEDIA  = "https://media.coordigo.com/chillfriends/teasers/";
   var FULL   = "https://media.coordigo.com/chillfriends/full/";
   var POSTER = "https://media.coordigo.com/chillfriends/posters/";
+  // The media is cached immutable at the edge, which is only safe while the URL
+  // changes with the file. Bump this whenever the episodes are re-rendered.
+  var MV = "?v=2";
   var EPISODES = [
     {n:1,v:1,t:"Slow Replies, Heavy Days"},{n:2,v:1,t:"The Day That Wouldn’t End"},
     {n:3,v:1,t:"Reliable Until It Hurts"},{n:4,v:1,t:"Almost Saying It"},
@@ -370,9 +373,9 @@
   function pad(n){ return String(n).padStart(2, "0"); }
   function select(ep, play){
     curEp = ep;
-    player.src = MEDIA + "Chillfriends_E" + pad(ep.n) + ".mp4";
-    player.poster = POSTER + "Chillfriends_E" + pad(ep.n) + ".jpg";
-    document.getElementById("fullLink").href = FULL + "Chillfriends_E" + pad(ep.n) + ".mp4";
+    player.src = MEDIA + "Chillfriends_E" + pad(ep.n) + ".mp4" + MV;
+    player.poster = POSTER + "Chillfriends_E" + pad(ep.n) + ".jpg" + MV;
+    document.getElementById("fullLink").href = FULL + "Chillfriends_E" + pad(ep.n) + ".mp4" + MV;
     document.getElementById("nowEp").textContent = "E" + ep.n + " · Vol. " + ep.v;
     document.getElementById("nowTitle").textContent = ep.t;
     document.querySelectorAll(".ep").forEach(function(b){
