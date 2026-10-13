@@ -656,5 +656,33 @@
   }, true);
 })();
 </script>
+<!-- events:start -->
+<script>
+(function () {
+  var SITE = "swiftian.com";
+  function ev(name, props) {
+    try {
+      var sid = "anon"; try { sid = sessionStorage.getItem("sw_sid") || (sessionStorage.setItem("sw_sid", String(Math.random()).slice(2)), sessionStorage.getItem("sw_sid")); } catch (_) {}
+      fetch("https://claude-proxy-web.ilbulyori.workers.dev/events", { method: "POST", keepalive: true,
+        headers: { "content-type": "application/json", "x-device-id": sid },
+        body: JSON.stringify({ meta: { app: SITE, build: "web", os: "web", locale: (navigator.language || "").slice(0, 8) },
+          events: [{ name: name, ts: Date.now() / 1000, props: Object.assign({ site: SITE, path: location.pathname.slice(0, 64) }, props || {}) }] }) }).catch(function () {});
+    } catch (_) {}
+  }
+  var once = {}; function first(k, f) { if (!once[k]) { once[k] = 1; f(); } }
+  function on(id, type, f) { var el = document.getElementById(id); if (el) el.addEventListener(type, f); }
+  on("player", "play", function () { var t = (document.getElementById("nowTitle") || {}).textContent || ""; first("w" + t, function () { ev("comics_play", { ep: t.slice(0, 48), mode: "watch" }); }); });
+  on("aplayer", "play", function () { var t = (document.getElementById("nowTitle") || {}).textContent || ""; first("l" + t, function () { ev("comics_play", { ep: t.slice(0, 48), mode: "listen" }); }); });
+  on("pcVideo", "play", function () { var t = (document.getElementById("pcT") || {}).textContent || ""; first("p" + t, function () { ev("postcard_play", { card: t.slice(0, 48) }); }); });
+  on("pcAnother", "click", function () { ev("postcard_another"); });
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest && e.target.closest(".door4 a.app, a[href^='/comics/']");
+    if (!a) return;
+    if (a.matches(".door4 a.app")) ev("door_click", { to: (a.hostname || "").slice(0, 32) + (a.href.indexOf("apps.apple.com") > 0 ? ":store" : "") });
+    else ev("comics_list_open");
+  }, true);
+})();
+</script>
+<!-- events:end -->
 </body>
 </html>
