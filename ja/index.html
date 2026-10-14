@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Swiftian — チルフレンズ・コミックス</title>
-  <meta name="description" content="短いアニメコミックをさまざまな英語アクセントで朗読。現在3巻まで連載中 — どの話からでもどうぞ。">
+  <title>Swiftian</title>
+  <meta name="description" content="3枚のアルバム、24曲。どの曲にも短いアニメーションがあります。">
   <meta name="theme-color" content="#0b0f1a">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Swiftian — チルフレンズ・コミックス">
-  <meta property="og:description" content="短いアニメコミックをさまざまな英語アクセントで朗読。現在3巻まで連載中 — どの話からでもどうぞ。">
+  <meta property="og:title" content="Swiftian">
+  <meta property="og:description" content="3枚のアルバム、24曲。どの曲にも短いアニメーションがあります。">
   <link rel="canonical" href="https://swiftian.com/ja/">
   <meta property="og:url" content="https://swiftian.com/ja/">
-  <meta property="og:image" content="https://swiftian.com/assets/apps/chillfriends.png">
+  <meta property="og:image" content="https://media.coordigo.com/chillfriends/posters/Chillfriends_E01.jpg?v=2">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +38,7 @@
     }
     .wrap{position:relative;z-index:1;width:100%;max-width:880px;margin:0 auto;padding:0 22px}
 
-    nav{display:flex;align-items:center;gap:11px;padding:26px 0 8px}
+    nav{display:flex;align-items:center;justify-content:flex-end;gap:11px;padding:26px 0 8px;min-height:34px}
     nav img{width:34px;height:34px;display:block;image-rendering:pixelated}
     nav .name{font-family:"Space Grotesk";font-weight:700;font-size:19px;letter-spacing:.2px;flex:1}
     .lang-toggle{font-size:13px;font-weight:600;color:var(--muted);border:1px solid var(--line);
@@ -76,7 +76,7 @@
     .crossline a:hover{text-decoration:underline;text-underline-offset:3px}
     .now{flex:1;min-width:0}
     .now .n-ep{font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--c1)}
-    .now .n-title{font-family:"Space Grotesk";font-weight:600;font-size:16px;
+    .now .n-title{margin:0;font-family:"Space Grotesk";font-weight:600;font-size:16px;
       white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .now .full-link{display:inline-block;margin-top:5px;font-size:12px;font-weight:600;
       color:var(--muted);text-decoration:none;border-bottom:1px solid transparent;transition:color .13s ease,border-color .13s ease}
@@ -106,7 +106,7 @@
     .ep.on{border-color:rgba(110,231,249,.55);background:rgba(110,231,249,.08)}
     .ep .e-num{font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
     .ep.on .e-num{color:var(--c1)}
-    .ep .e-title{font-family:"Space Grotesk";font-weight:600;font-size:14px;line-height:1.35;margin-top:5px;
+    .ep .e-title{font-family:"Space Grotesk";font-weight:600;font-size:14px;line-height:1.35;margin-top:0;
       display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:38px}
 
     /* ── 다른 사이트 통로 ── */
@@ -228,16 +228,9 @@
 <body>
   <div class="wrap">
     <nav>
-      <img src="/assets/pythoneer-icon.png" alt="Swiftian">
-      <span class="name">Swiftian</span>
       <button class="lang-toggle hide" id="langToggle" type="button"></button>
     </nav>
 
-
-
-    <p class="kicker" data-t="kicker">スタジオの連載</p>
-    <h1 data-t="title">チルフレンズ・コミックス</h1>
-    <p class="intro" data-t="intro">短いアニメコミックをさまざまな英語アクセントで朗読。現在3巻まで連載中 — どの話からでもどうぞ。</p>
 
     <div class="stage">
       <div class="video-box">
@@ -254,16 +247,15 @@
           <button type="button" class="mode" id="mListen" data-t="listen">聴く</button>
         </div>
         <div class="now">
-          <div class="n-ep" id="nowEp">E1 · Vol. 1</div>
-          <div class="n-title" id="nowTitle">Slow Replies, Heavy Days</div>
+          <div class="n-ep" id="nowEp">Quiet Things We Share</div>
+          <h1 class="n-title" id="nowTitle">Slow Replies, Heavy Days</h1>
           <a class="full-link" id="fullLink" href="#" target="_blank" rel="noopener"
-             data-t="fullEp">フルエピソードを見る</a>
+             data-t="fullEp">フルバージョン</a>
         </div>
       </div>
     </div>
 
     <div id="volumes"></div>
-    <p class="crossline"><a href="/comics/">All twenty-four episodes, with the words they speak &rarr;</a></p>
 
     <section class="also" aria-label="Also from Swiftian">
       <a href="https://pythoneer.io/ja/?ct=web-sw-py"><img src="/assets/apps/pythoneer.png" alt="" width="52" height="52"><span>Pythoneer</span></a>
@@ -296,6 +288,7 @@
   // The media is cached immutable at the edge, which is only safe while the URL
   // changes with the file. Bump this whenever the episodes are re-rendered.
   var MV = "?v=2";
+  var ALBUMS = {1:"Quiet Things We Share", 2:"Things We Never Had to Explain", 3:"Soft Launch Season"};
   var EPISODES = [
     {n:1,v:1,t:"Slow Replies, Heavy Days"},{n:2,v:1,t:"The Day That Wouldn’t End"},
     {n:3,v:1,t:"Reliable Until It Hurts"},{n:4,v:1,t:"Almost Saying It"},
@@ -313,93 +306,59 @@
 
   // ── 2개 언어 토글: 사용자 언어 ⇄ English ──
   var I18N = {
-    "ko":      {name:"한국어", watch:"보기", listen:"듣기", coLine:"같은 스물네 곡이 Coordigo에서도 흐릅니다 — 손끝에서 풍경이 떠오르는 동안.", fullEp:"전체 에피소드 보기", kicker:"우리 스튜디오의 연재물", title:"칠프렌즈 코믹스",
-                intro:"짧은 애니메이션 코믹 에피소드를 여러 영어 억양으로 읽어 드립니다. 세 권째 연재 중 — 아무 편이나 시작하세요.",
-                vol:"", moreTitle:"우리가 만드는 것들", ifDesc:"손으로 그리는 프레임 애니메이션",
+    "ko":      {name:"한국어", desc:"세 장의 앨범, 스물네 곡. 곡마다 짧은 애니메이션이 있습니다.", watch:"보기", listen:"듣기", coLine:"같은 스물네 곡이 Coordigo에서도 흐릅니다 — 손끝에서 풍경이 떠오르는 동안.", fullEp:"전체 영상", vol:"", moreTitle:"우리가 만드는 것들", ifDesc:"손으로 그리는 프레임 애니메이션",
                 pyDesc:"38개의 게임을 파내고, 나만의 게임을 만들기", cpDesc:"베이징, 타이베이, 홍콩 — 한 문장씩", coDesc:"손끝에서 풍경이 떠오른다",
                 privacy:"개인정보 처리방침",
                 pcTitle:"엽서 한 장, 아무거나", pcAnother:"다른 장 \u21bb",
                 pcNote:"아직 어느 앱의 기능도 아니다 — 스튜디오의 습작이다.",
                 doorIf:"이들을 그린 손", doorCo:"이들이 걷는 땅"},
-    "ja":      {name:"日本語", watch:"見る", listen:"聴く", coLine:"同じ二十四曲が Coordigo でも流れます — 指の先から風景が現れるあいだ。", fullEp:"フルエピソードを見る", kicker:"スタジオの連載", title:"チルフレンズ・コミックス",
-                intro:"短いアニメコミックをさまざまな英語アクセントで朗読。現在3巻まで連載中 — どの話からでもどうぞ。",
-                moreTitle:"私たちの作品", ifDesc:"手描きのコマ送りアニメ",
+    "ja":      {name:"日本語", desc:"3枚のアルバム、24曲。どの曲にも短いアニメーションがあります。", watch:"見る", listen:"聴く", coLine:"同じ二十四曲が Coordigo でも流れます — 指の先から風景が現れるあいだ。", fullEp:"フルバージョン", moreTitle:"私たちの作品", ifDesc:"手描きのコマ送りアニメ",
                 pyDesc:"38のゲームを掘り出し、自分のゲームを作る", cpDesc:"北京、台北、香港 — 一文ずつ", coDesc:"指の先から風景が現れる",
                 privacy:"プライバシーポリシー"},
-    "zh-Hans": {name:"简体中文", watch:"观看", listen:"收听", coLine:"同样这二十四首也在 Coordigo 里播放——风景在指尖浮现的时候。", fullEp:"观看完整剧集", kicker:"来自我们工作室的连载", title:"Chillfriends 漫画",
-                intro:"短篇动画漫画，以不同的英语口音朗读。已连载三卷——从任意一集开始都行。",
-                moreTitle:"我们的作品", ifDesc:"手绘逐帧动画",
+    "zh-Hans": {name:"简体中文", desc:"三张专辑，二十四首歌，每首都配有一段短动画。", watch:"观看", listen:"收听", coLine:"同样这二十四首也在 Coordigo 里播放——风景在指尖浮现的时候。", fullEp:"完整版", moreTitle:"我们的作品", ifDesc:"手绘逐帧动画",
                 pyDesc:"挖出 38 个游戏，再做一个你自己的", cpDesc:"北京、台北、香港，一句一句", coDesc:"风景在指尖浮现",
                 privacy:"隐私政策"},
-    "zh-Hant": {name:"繁體中文", watch:"觀看", listen:"收聽", coLine:"同樣這二十四首也在 Coordigo 裡播放——風景在指尖浮現的時候。", fullEp:"觀看完整劇集", kicker:"來自我們工作室的連載", title:"Chillfriends 漫畫",
-                intro:"短篇動畫漫畫，以不同的英語口音朗讀。已連載三卷——從任何一集開始都可以。",
-                moreTitle:"我們的作品", ifDesc:"手繪逐格動畫",
+    "zh-Hant": {name:"繁體中文", desc:"三張專輯，二十四首歌，每首都配有一段短動畫。", watch:"觀看", listen:"收聽", coLine:"同樣這二十四首也在 Coordigo 裡播放——風景在指尖浮現的時候。", fullEp:"完整版", moreTitle:"我們的作品", ifDesc:"手繪逐格動畫",
                 pyDesc:"挖出 38 個遊戲，再做一個你自己的", cpDesc:"北京、台北、香港，一句一句", coDesc:"風景在指尖浮現",
                 privacy:"隱私權政策"},
-    "es":      {name:"Español", watch:"Ver", listen:"Escuchar", coLine:"Las mismas veinticuatro canciones suenan en Coordigo, mientras un paisaje aparece bajo tu dedo.", fullEp:"Ver el episodio completo", kicker:"Una serie de nuestro estudio", title:"Chillfriends Comics",
-                intro:"Episodios cortos de cómic animado, leídos en voz alta con distintos acentos del inglés. Tres volúmenes y contando — empieza por donde quieras.",
-                moreTitle:"Más de nosotros", ifDesc:"animación dibujada a mano, cuadro a cuadro",
+    "es":      {name:"Español", desc:"Veinticuatro canciones en tres álbumes, cada una con un breve corto animado.", watch:"Ver", listen:"Escuchar", coLine:"Las mismas veinticuatro canciones suenan en Coordigo, mientras un paisaje aparece bajo tu dedo.", fullEp:"Versión completa", moreTitle:"Más de nosotros", ifDesc:"animación dibujada a mano, cuadro a cuadro",
                 pyDesc:"desentierra 38 juegos y luego crea el tuyo", cpDesc:"Pekín, Taipéi, Hong Kong — frase a frase", coDesc:"un paisaje aparece bajo tu dedo",
                 privacy:"Política de privacidad"},
-    "fr":      {name:"Français", watch:"Regarder", listen:"Écouter", coLine:"Les mêmes vingt-quatre chansons passent dans Coordigo, pendant qu’un paysage apparaît sous le doigt.", fullEp:"Voir l'épisode complet", kicker:"Une série de notre studio", title:"Chillfriends Comics",
-                intro:"De courts épisodes de BD animée, lus à voix haute avec différents accents anglais. Trois volumes et ça continue — commencez où vous voulez.",
-                moreTitle:"Nos créations", ifDesc:"animation dessinée à la main, image par image",
+    "fr":      {name:"Français", desc:"Vingt-quatre chansons en trois albums, chacune avec un court film d’animation.", watch:"Regarder", listen:"Écouter", coLine:"Les mêmes vingt-quatre chansons passent dans Coordigo, pendant qu’un paysage apparaît sous le doigt.", fullEp:"Version complète", moreTitle:"Nos créations", ifDesc:"animation dessinée à la main, image par image",
                 pyDesc:"déterrez 38 jeux, puis créez le vôtre", cpDesc:"Pékin, Taipei, Hong Kong — phrase par phrase", coDesc:"un paysage apparaît sous le doigt",
                 privacy:"Politique de confidentialité"},
-    "de":      {name:"Deutsch", watch:"Ansehen", listen:"Anhören", coLine:"Dieselben vierundzwanzig Lieder laufen in Coordigo, während eine Landschaft unter dem Finger hervorkommt.", fullEp:"Ganze Folge ansehen", kicker:"Eine Serie aus unserem Studio", title:"Chillfriends Comics",
-                intro:"Kurze animierte Comic-Episoden, vorgelesen in verschiedenen englischen Akzenten. Drei Bände und mehr — fang irgendwo an.",
-                moreTitle:"Mehr von uns", ifDesc:"handgezeichnete Animation, Bild für Bild",
+    "de":      {name:"Deutsch", desc:"Vierundzwanzig Songs auf drei Alben, jeder mit einem kurzen Animationsfilm.", watch:"Ansehen", listen:"Anhören", coLine:"Dieselben vierundzwanzig Lieder laufen in Coordigo, während eine Landschaft unter dem Finger hervorkommt.", fullEp:"Ganze Version", moreTitle:"Mehr von uns", ifDesc:"handgezeichnete Animation, Bild für Bild",
                 pyDesc:"grab 38 Spiele aus, dann bau dein eigenes", cpDesc:"Peking, Taipeh, Hongkong — Satz für Satz", coDesc:"eine Landschaft kommt unter dem Finger hervor",
                 privacy:"Datenschutz"},
-    "it":      {name:"Italiano", watch:"Guarda", listen:"Ascolta", coLine:"Le stesse ventiquattro canzoni suonano in Coordigo, mentre un paesaggio affiora sotto il dito.", fullEp:"Guarda l'episodio completo", kicker:"Una serie dal nostro studio", title:"Chillfriends Comics",
-                intro:"Brevi episodi a fumetti animati, letti ad alta voce con diversi accenti inglesi. Tre volumi e non è finita — inizia da dove vuoi.",
-                moreTitle:"Altro da noi", ifDesc:"animazione disegnata a mano, fotogramma per fotogramma",
+    "it":      {name:"Italiano", desc:"Ventiquattro canzoni in tre album, ognuna con un breve film d’animazione.", watch:"Guarda", listen:"Ascolta", coLine:"Le stesse ventiquattro canzoni suonano in Coordigo, mentre un paesaggio affiora sotto il dito.", fullEp:"Versione completa", moreTitle:"Altro da noi", ifDesc:"animazione disegnata a mano, fotogramma per fotogramma",
                 pyDesc:"scava 38 giochi, poi crea il tuo", cpDesc:"Pechino, Taipei, Hong Kong — frase per frase", coDesc:"un paesaggio affiora sotto il dito",
                 privacy:"Privacy"},
-    "pt":      {name:"Português", watch:"Ver", listen:"Ouvir", coLine:"As mesmas vinte e quatro canções tocam no Coordigo, enquanto uma paisagem aparece sob o dedo.", fullEp:"Ver o episódio completo", kicker:"Uma série do nosso estúdio", title:"Chillfriends Comics",
-                intro:"Episódios curtos de quadrinhos animados, lidos em voz alta em diferentes sotaques do inglês. Três volumes e contando — comece por onde quiser.",
-                moreTitle:"Mais do estúdio", ifDesc:"animação desenhada à mão, quadro a quadro",
+    "pt":      {name:"Português", desc:"Vinte e quatro músicas em três álbuns, cada uma com um curta animado.", watch:"Ver", listen:"Ouvir", coLine:"As mesmas vinte e quatro canções tocam no Coordigo, enquanto uma paisagem aparece sob o dedo.", fullEp:"Versão completa", moreTitle:"Mais do estúdio", ifDesc:"animação desenhada à mão, quadro a quadro",
                 pyDesc:"desenterre 38 jogos e depois crie o seu", cpDesc:"Pequim, Taipé, Hong Kong — frase a frase", coDesc:"uma paisagem aparece sob o dedo",
                 privacy:"Privacidade"},
-    "ru":      {name:"Русский", watch:"Смотреть", listen:"Слушать", coLine:"Те же двадцать четыре песни звучат в Coordigo, пока пейзаж проступает под пальцем.", fullEp:"Смотреть полный эпизод", kicker:"Серия от нашей студии", title:"Комиксы Chillfriends",
-                intro:"Короткие анимированные комикс-эпизоды, озвученные с разными английскими акцентами. Уже три тома — начните с любого.",
-                moreTitle:"Ещё от нас", ifDesc:"рисованная анимация, кадр за кадром",
+    "ru":      {name:"Русский", desc:"Двадцать четыре песни в трёх альбомах, у каждой — короткий анимационный фильм.", watch:"Смотреть", listen:"Слушать", coLine:"Те же двадцать четыре песни звучат в Coordigo, пока пейзаж проступает под пальцем.", fullEp:"Полная версия", moreTitle:"Ещё от нас", ifDesc:"рисованная анимация, кадр за кадром",
                 pyDesc:"откопайте 38 игр, а потом сделайте свою", cpDesc:"Пекин, Тайбэй, Гонконг — фраза за фразой", coDesc:"пейзаж проступает под пальцем",
                 privacy:"Конфиденциальность"},
-    "tr":      {name:"Türkçe", watch:"İzle", listen:"Dinle", coLine:"Aynı yirmi dört şarkı Coordigo’da da çalar — parmağının altında bir manzara belirirken.", fullEp:"Tüm bölümü izle", kicker:"Stüdyomuzdan bir seri", title:"Chillfriends Çizgi Romanları",
-                intro:"Farklı İngilizce aksanlarıyla seslendirilen kısa animasyon bölümleri. Üç cilt oldu bile — istediğin yerden başla.",
-                moreTitle:"Bizden daha fazlası", ifDesc:"kare kare el çizimi animasyon",
+    "tr":      {name:"Türkçe", desc:"Üç albümde yirmi dört şarkı; her birinin kısa bir animasyon filmi var.", watch:"İzle", listen:"Dinle", coLine:"Aynı yirmi dört şarkı Coordigo’da da çalar — parmağının altında bir manzara belirirken.", fullEp:"Tam sürüm", moreTitle:"Bizden daha fazlası", ifDesc:"kare kare el çizimi animasyon",
                 pyDesc:"38 oyunu kaz çıkar, sonra kendininkini yap", cpDesc:"Pekin, Taipei, Hong Kong — cümle cümle", coDesc:"parmağının altında bir manzara beliriyor",
                 privacy:"Gizlilik"},
-    "id":      {name:"Bahasa Indonesia", watch:"Tonton", listen:"Dengarkan", coLine:"Dua puluh empat lagu yang sama juga diputar di Coordigo, saat pemandangan muncul di bawah jarimu.", fullEp:"Tonton episode lengkap", kicker:"Serial dari studio kami", title:"Komik Chillfriends",
-                intro:"Episode komik animasi pendek, dibacakan dalam berbagai aksen bahasa Inggris. Sudah tiga volume — mulai dari mana saja.",
-                moreTitle:"Karya kami lainnya", ifDesc:"animasi gambar tangan, bingkai demi bingkai",
+    "id":      {name:"Bahasa Indonesia", desc:"Dua puluh empat lagu dalam tiga album, masing-masing dengan film animasi pendek.", watch:"Tonton", listen:"Dengarkan", coLine:"Dua puluh empat lagu yang sama juga diputar di Coordigo, saat pemandangan muncul di bawah jarimu.", fullEp:"Versi lengkap", moreTitle:"Karya kami lainnya", ifDesc:"animasi gambar tangan, bingkai demi bingkai",
                 pyDesc:"gali 38 gim, lalu buat gimmu sendiri", cpDesc:"Beijing, Taipei, Hong Kong — kalimat demi kalimat", coDesc:"pemandangan muncul di bawah jarimu",
                 privacy:"Privasi"},
-    "vi":      {name:"Tiếng Việt", watch:"Xem", listen:"Nghe", coLine:"Cũng hai mươi bốn bài hát ấy vang lên trong Coordigo, khi phong cảnh hiện lên dưới ngón tay.", fullEp:"Xem trọn tập", kicker:"Loạt truyện từ studio của chúng tôi", title:"Truyện tranh Chillfriends",
-                intro:"Những tập truyện tranh hoạt hình ngắn, đọc bằng nhiều giọng tiếng Anh khác nhau. Đã ba tập — bắt đầu từ đâu cũng được.",
-                moreTitle:"Sản phẩm khác", ifDesc:"hoạt hình vẽ tay, từng khung hình",
+    "vi":      {name:"Tiếng Việt", desc:"Hai mươi bốn bài hát trong ba album, mỗi bài kèm một đoạn phim hoạt hình ngắn.", watch:"Xem", listen:"Nghe", coLine:"Cũng hai mươi bốn bài hát ấy vang lên trong Coordigo, khi phong cảnh hiện lên dưới ngón tay.", fullEp:"Bản đầy đủ", moreTitle:"Sản phẩm khác", ifDesc:"hoạt hình vẽ tay, từng khung hình",
                 pyDesc:"đào lên 38 trò chơi, rồi tự làm trò của bạn", cpDesc:"Bắc Kinh, Đài Bắc, Hồng Kông — từng câu một", coDesc:"phong cảnh hiện lên dưới ngón tay",
                 privacy:"Quyền riêng tư"},
-    "th":      {name:"ไทย", watch:"ดู", listen:"ฟัง", coLine:"ยี่สิบสี่เพลงเดียวกันนี้เล่นอยู่ใน Coordigo ขณะที่ภูมิทัศน์ปรากฏใต้ปลายนิ้ว", fullEp:"ดูตอนเต็ม", kicker:"ซีรีส์จากสตูดิโอของเรา", title:"การ์ตูน Chillfriends",
-                intro:"ตอนการ์ตูนแอนิเมชันสั้น ๆ อ่านออกเสียงด้วยสำเนียงภาษาอังกฤษหลากหลาย ครบสามเล่มแล้ว — เริ่มตอนไหนก็ได้",
-                moreTitle:"ผลงานอื่นของเรา", ifDesc:"แอนิเมชันวาดมือ ทีละเฟรม",
+    "th":      {name:"ไทย", desc:"ยี่สิบสี่เพลงในสามอัลบั้ม แต่ละเพลงมีแอนิเมชันสั้นหนึ่งเรื่อง", watch:"ดู", listen:"ฟัง", coLine:"ยี่สิบสี่เพลงเดียวกันนี้เล่นอยู่ใน Coordigo ขณะที่ภูมิทัศน์ปรากฏใต้ปลายนิ้ว", fullEp:"ฉบับเต็ม", moreTitle:"ผลงานอื่นของเรา", ifDesc:"แอนิเมชันวาดมือ ทีละเฟรม",
                 pyDesc:"ขุดเกม 38 เกมขึ้นมา แล้วสร้างเกมของคุณเอง", cpDesc:"ปักกิ่ง ไทเป ฮ่องกง — ทีละประโยค", coDesc:"ภูมิทัศน์ปรากฏใต้ปลายนิ้ว",
                 privacy:"ความเป็นส่วนตัว"},
-    "hi":      {name:"हिन्दी", watch:"देखें", listen:"सुनें", coLine:"यही चौबीस गाने Coordigo में भी बजते हैं — जब उँगली के नीचे एक दृश्य उभरता है।", fullEp:"पूरा एपिसोड देखें", kicker:"हमारे स्टूडियो की सीरीज़", title:"Chillfriends कॉमिक्स",
-                intro:"छोटी एनिमेटेड कॉमिक कड़ियाँ, अलग-अलग अंग्रेज़ी लहजों में पढ़ी हुई। तीन खंड हो चुके — कहीं से भी शुरू कीजिए।",
-                moreTitle:"हमारी और चीज़ें", ifDesc:"हाथ से बनी फ़्रेम-दर-फ़्रेम एनिमेशन",
+    "hi":      {name:"हिन्दी", desc:"तीन एल्बमों में चौबीस गाने, हर गाने के साथ एक छोटी एनिमेटेड फ़िल्म।", watch:"देखें", listen:"सुनें", coLine:"यही चौबीस गाने Coordigo में भी बजते हैं — जब उँगली के नीचे एक दृश्य उभरता है।", fullEp:"पूरा संस्करण", moreTitle:"हमारी और चीज़ें", ifDesc:"हाथ से बनी फ़्रेम-दर-फ़्रेम एनिमेशन",
                 pyDesc:"38 गेम खोद निकालिए, फिर अपना बनाइए", cpDesc:"बीजिंग, ताइपे, हांगकांग — एक-एक वाक्य", coDesc:"उँगली के नीचे एक दृश्य उभरता है",
                 privacy:"गोपनीयता नीति"},
-    "ar":      {name:"العربية", watch:"مشاهدة", listen:"استماع", coLine:"الأغاني الأربع والعشرون نفسها تُشغَّل في Coordigo، بينما يظهر منظر تحت إصبعك.", fullEp:"شاهد الحلقة كاملة", rtl:true, kicker:"سلسلة من استوديونا", title:"قصص تشيلفريندز المصوّرة",
-                intro:"حلقات قصيرة من القصص المصوّرة المتحركة، تُقرأ بلهجات إنجليزية مختلفة. ثلاثة مجلدات حتى الآن — ابدأ من أي حلقة.",
-                moreTitle:"المزيد منّا", ifDesc:"رسوم متحركة مرسومة يدويًا، إطارًا بإطار",
+    "ar":      {name:"العربية", desc:"أربع وعشرون أغنية في ثلاثة ألبومات، لكل منها فيلم رسوم متحركة قصير.", watch:"مشاهدة", listen:"استماع", coLine:"الأغاني الأربع والعشرون نفسها تُشغَّل في Coordigo، بينما يظهر منظر تحت إصبعك.", fullEp:"النسخة الكاملة", rtl:true, moreTitle:"المزيد منّا", ifDesc:"رسوم متحركة مرسومة يدويًا، إطارًا بإطار",
                 pyDesc:"انبش 38 لعبة ثم اصنع لعبتك", cpDesc:"بكين، تايبيه، هونغ كونغ — جملةً جملة", coDesc:"منظر يظهر تحت إصبعك",
                 privacy:"سياسة الخصوصية"}
   };
-  var EN = {watch:"Watch", listen:"Listen", coLine:"The same twenty-four songs play in Coordigo, while a landscape comes up under your finger.", fullEp:"Watch the full episode", kicker:"A series from our studio", title:"Chillfriends Comics",
-    intro:"Short animated comic episodes, read aloud in different English accents. Three volumes and counting — start anywhere.",
-    moreTitle:"More from us", ifDesc:"hand-drawn animation, frame by frame",
+  var EN = {desc:"Twenty-four songs in three albums, each with a short animated film.", watch:"Watch", listen:"Listen", coLine:"The same twenty-four songs play in Coordigo, while a landscape comes up under your finger.", fullEp:"Full version", moreTitle:"More from us", ifDesc:"hand-drawn animation, frame by frame",
     pyDesc:"dig up 38 games, then make your own", cpDesc:"Beijing, Taipei, Hong Kong — one sentence at a time", coDesc:"a landscape comes up under your finger",
     privacy:"Privacy Policy",
     pcTitle:"A postcard, at random", pcAnother:"another one \u21bb",
@@ -500,7 +459,7 @@
     }
     document.getElementById("aposter").src = POSTER + "Chillfriends_E" + pad(ep.n) + ".jpg" + MV;
     document.getElementById("fullLink").href = FULL + "Chillfriends_E" + pad(ep.n) + ".mp4" + MV;
-    document.getElementById("nowEp").textContent = "E" + ep.n + " · Vol. " + ep.v;
+    document.getElementById("nowEp").textContent = ALBUMS[ep.v];
     document.getElementById("nowTitle").textContent = ep.t;
     document.querySelectorAll(".ep").forEach(function(b){
       b.classList.toggle("on", +b.dataset.n === ep.n);
@@ -513,12 +472,12 @@
   var volsBox = document.getElementById("volumes");
   [1,2,3].forEach(function(v){
     var sec = document.createElement("section"); sec.className = "vol";
-    var h = document.createElement("h2"); h.textContent = "Vol. " + v; sec.appendChild(h);
+    var h = document.createElement("h2"); h.textContent = ALBUMS[v]; sec.appendChild(h);
     var rail = document.createElement("div"); rail.className = "rail";
     EPISODES.filter(function(e){ return e.v === v; }).forEach(function(e){
       var b = document.createElement("button");
       b.type = "button"; b.className = "ep"; b.dataset.n = e.n;
-      b.innerHTML = '<div class="e-num">E' + e.n + '</div><div class="e-title"></div>';
+      b.innerHTML = '<div class="e-title"></div>';
       b.querySelector(".e-title").textContent = e.t;
       b.addEventListener("click", function(){ select(e, true); });
       rail.appendChild(b);
